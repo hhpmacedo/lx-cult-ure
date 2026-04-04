@@ -24,7 +24,8 @@
       "originalUrl": "https://example.com/berardo-paula-rego",
       "tags": ["pintura", "retrospectiva", "essencial"],
       "aiScore": 97,
-      "featured": true
+      "featured": true,
+      "status": "ongoing"
     },
     {
       "id": "evt-002",
@@ -41,7 +42,8 @@
       "originalUrl": "https://example.com/sao-luiz-cegueira",
       "tags": ["teatro", "saramago", "estreia"],
       "aiScore": 94,
-      "featured": true
+      "featured": true,
+      "status": "new"
     },
     {
       "id": "evt-003",
@@ -58,7 +60,8 @@
       "originalUrl": "https://example.com/capitolio-mao-morta-fausto",
       "tags": ["rock", "concerto", "imperdível"],
       "aiScore": 92,
-      "featured": true
+      "featured": true,
+      "status": "new"
     },
     {
       "id": "evt-004",
@@ -73,7 +76,8 @@
       "criticSource": "Ípsilon / Público",
       "tags": ["cinema", "lusofonia", "ciclo"],
       "aiScore": 88,
-      "featured": false
+      "featured": false,
+      "status": "new"
     },
     {
       "id": "evt-005",
@@ -90,7 +94,8 @@
       "originalUrl": "https://example.com/maat-territorios",
       "tags": ["instalação", "arte contemporânea", "interactivo"],
       "aiScore": 86,
-      "featured": false
+      "featured": false,
+      "status": "new"
     },
     {
       "id": "evt-006",
@@ -105,7 +110,8 @@
       "criticSource": "Jazz.pt",
       "tags": ["jazz", "ao vivo", "intimista"],
       "aiScore": 85,
-      "featured": false
+      "featured": false,
+      "status": "new"
     },
     {
       "id": "evt-007",
@@ -122,7 +128,8 @@
       "originalUrl": "https://example.com/ler-devagar-tavares",
       "tags": ["lançamento", "romance", "literatura portuguesa"],
       "aiScore": 90,
-      "featured": true
+      "featured": true,
+      "status": "new"
     },
     {
       "id": "evt-008",
@@ -139,7 +146,8 @@
       "originalUrl": "https://example.com/maria-matos-sopro",
       "tags": ["dança", "contemporânea", "premiada"],
       "aiScore": 91,
-      "featured": false
+      "featured": false,
+      "status": "new"
     },
     {
       "id": "evt-009",
@@ -153,7 +161,8 @@
       "blurb": "A Tasca do Chico mantém viva a tradição do fado vadio, onde qualquer um pode cantar. Esta semana, a casa promete noites especiais com a presença de Ana Moura numa visita surpresa confirmada pelos bastidores.",
       "tags": ["fado", "tradição", "ao vivo"],
       "aiScore": 78,
-      "featured": false
+      "featured": false,
+      "status": "new"
     },
     {
       "id": "evt-010",
@@ -167,7 +176,8 @@
       "blurb": "Uma noite de poesia falada com três vozes da nova geração: Matilde Campilho, Luís Quintais e Raquel Lima. Um encontro entre a página e a performance, no espaço industrial da Fábrica que é já um clássico alternativo de Lisboa.",
       "tags": ["poesia", "spoken word", "alternativo"],
       "aiScore": 82,
-      "featured": false
+      "featured": false,
+      "status": "new"
     },
     {
       "id": "evt-011",
@@ -182,7 +192,8 @@
       "originalUrl": "https://example.com/musicbox-electronica",
       "tags": ["eletrónica", "dj", "noite"],
       "aiScore": 80,
-      "featured": false
+      "featured": false,
+      "status": "new"
     },
     {
       "id": "evt-012",
@@ -199,7 +210,8 @@
       "originalUrl": "https://example.com/filomena-soares-blaufuks",
       "tags": ["fotografia", "lisboa", "gratuito"],
       "aiScore": 84,
-      "featured": false
+      "featured": false,
+      "status": "new"
     }
   ]
 }
