@@ -231,9 +231,35 @@ export default function WeeklyNewsletter({
               <Link href={`${siteUrl}/edicao/${edition.slug}`} style={styles.footerLink}>
                 Ver no browser
               </Link>
+              {' · '}
+              <Link href={`${siteUrl}/rss.xml`} style={styles.footerLink}>
+                RSS
+              </Link>
             </Text>
+            <Hr style={{ borderTop: '1px solid #ddd', margin: '16px 0' }} />
             <Text style={styles.footerSmall}>
               Lisboa, Portugal · © {edition.year} LX Cult(ure)
+              {' · '}
+              <Link href={`${siteUrl}/privacidade`} style={{ ...styles.footerLink, fontSize: '11px', color: '#aaa' }}>
+                Privacidade
+              </Link>
+            </Text>
+            <Text style={{ ...styles.footerSmall, marginTop: '8px' }}>
+              {'{{RESEND_UNSUBSCRIBE_URL}}' !== '' ? (
+                <Link
+                  href="{{RESEND_UNSUBSCRIBE_URL}}"
+                  style={{ ...styles.footerLink, fontSize: '11px', color: '#aaa' }}
+                >
+                  Cancelar subscrição
+                </Link>
+              ) : (
+                <Link
+                  href={`mailto:ola@lxculture.pt?subject=Cancelar%20subscrição`}
+                  style={{ ...styles.footerLink, fontSize: '11px', color: '#aaa' }}
+                >
+                  Cancelar subscrição
+                </Link>
+              )}
             </Text>
           </Section>
         </Container>

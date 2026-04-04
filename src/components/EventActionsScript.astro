@@ -1,0 +1,125 @@
+---
+/**
+ * Client-side script for event favorite/dismiss functionality.
+ * Include once per page that uses EventActions.
+ */
+---
+
+<script>
+  const STORAGE_KEYS = {
+    favorites: 'lxc:favorites',
+    dismissed: 'lxc:dismissed',
+  };
+
+  function getSet(key: string): Set<string> {
+    try {
+      const raw = localStorage.getItem(key);
+      return raw ? new Set(JSON.parse(raw)) : new Set();
+    } catch {
+      return new Set();
+    }
+  }
+
+  function saveSet(key: string, set: Set<string>): void {
+    localStorage.setItem(key, JSON.stringify([...set]));
+  }
+
+  function initEventActions(): void {
+    const favorites = getSet(STORAGE_KEYS.favorites);
+    const dismissed = getSet(STORAGE_KEYS.dismissed);
+
+    // Apply stored state to all action containers
+    document.querySelectorAll<HTMLElement>('.event-actions').forEach((container) => {
+      const eventId = container.dataset.eventId;
+      if (!eventId) return;
+
+      const favBtn = container.querySelector<HTMLButtonElement>('[data-action="favorite"]');
+      const dismissBtn = container.querySelector<HTMLButtonElement>('[data-action="dismiss"]');
+      const card = container.closest<HTMLElement>('.event-card');
+
+      // Restore state
+      if (favorites.has(eventId)) {
+        favBtn?.classList.add('is-active');
+      }
+      if (dismissed.has(eventId)) {
+        dismissBtn?.classList.add('is-active');
+        card?.classList.add('is-dismissed');
+      }
+
+      // Favorite toggle
+      favBtn?.addEventListener('click', () => {
+        const isFav = favorites.has(eventId);
+
+        if (isFav) {
+          favorites.delete(eventId);
+          favBtn.classList.remove('is-active');
+        } else {
+          favorites.add(eventId);
+          favBtn.classList.add('is-active');
+          // Unfavorite cancels dismiss
+          if (dismissed.has(eventId)) {
+            dismissed.delete(eventId);
+            dismissBtn?.classList.remove('is-active');
+            card?.classList.remove('is-dismissed');
+            saveSet(STORAGE_KEYS.dismissed, dismissed);
+          }
+        }
+
+        saveSet(STORAGE_KEYS.favorites, favorites);
+        emitSignal(eventId, isFav ? 'unfavorite' : 'favorite');
+      });
+
+      // Dismiss toggle
+      dismissBtn?.addEventListener('click', () => {
+        const isDismissed = dismissed.has(eventId);
+
+        if (isDismissed) {
+          dismissed.delete(eventId);
+          dismissBtn.classList.remove('is-active');
+          card?.classList.remove('is-dismissed');
+        } else {
+          dismissed.add(eventId);
+          dismissBtn.classList.add('is-active');
+          card?.classList.add('is-dismissed');
+          // Dismiss cancels favorite
+          if (favorites.has(eventId)) {
+            favorites.delete(eventId);
+            favBtn?.classList.remove('is-active');
+            saveSet(STORAGE_KEYS.favorites, favorites);
+          }
+        }
+
+        saveSet(STORAGE_KEYS.dismissed, dismissed);
+        emitSignal(eventId, isDismissed ? 'undismiss' : 'dismiss');
+      });
+    });
+  }
+
+  /**
+   * Send user signal to the feedback API (best-effort, non-blocking).
+   * This data feeds back into the curation pipeline.
+   */
+  function emitSignal(eventId: string, action: string): void {
+    try {
+      const payload = {
+        eventId,
+        action,
+        timestamp: new Date().toISOString(),
+        favorites: [...getSet(STORAGE_KEYS.favorites)],
+        dismissed: [...getSet(STORAGE_KEYS.dismissed)],
+      };
+
+      // Fire and forget
+      navigator.sendBeacon?.(
+        '/api/feedback',
+        new Blob([JSON.stringify(payload)], { type: 'application/json' })
+      );
+    } catch {
+      // Silent fail — user experience is more important
+    }
+  }
+
+  // Initialize on DOM ready and after Astro view transitions
+  document.addEventListener('DOMContentLoaded', initEventActions);
+  document.addEventListener('astro:after-swap', initEventActions);
+</script>

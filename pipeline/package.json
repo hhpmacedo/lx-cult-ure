@@ -15,7 +15,9 @@
     "agents:publisher": "tsx src/agents/run-agents.ts publisher",
     "feedback": "tsx src/feedback/collect.ts",
     "validate": "tsx src/feedback/validate-post-event.ts",
-    "improve": "tsx -e \"import {runMetaAgent} from './src/agents/meta/meta-agent.js'; runMetaAgent().then(r => console.log(r.summary))\""
+    "improve": "tsx -e \"import {runMetaAgent} from './src/agents/meta/meta-agent.js'; runMetaAgent().then(r => console.log(r.summary))\"",
+    "health": "tsx src/monitoring/health.ts",
+    "test": "vitest run"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.82.0",
@@ -28,5 +30,8 @@
     "typescript": "^6.0.2"
   },
   "keywords": [],
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "vitest": "^4.1.2"
+  }
 }

@@ -1,0 +1,154 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Política de Privacidade — LX Cult(ure)"
+  description="Política de privacidade e proteção de dados da LX Cult(ure)."
+>
+  <section class="privacy-hero">
+    <div class="container content">
+      <h1>Política de Privacidade</h1>
+      <p class="privacy-updated">Última actualização: Abril 2026</p>
+    </div>
+  </section>
+
+  <section class="privacy-body">
+    <div class="container content">
+
+      <div class="privacy-section">
+        <h2>1. Responsável pelo tratamento</h2>
+        <p>
+          A LX Cult(ure) é responsável pelo tratamento dos dados pessoais recolhidos através deste website
+          e da newsletter associada, nos termos do Regulamento Geral sobre a Proteção de Dados (RGPD — UE 2016/679).
+        </p>
+        <p>Contacto: <a href="mailto:ola@lxculture.pt">ola@lxculture.pt</a></p>
+      </div>
+
+      <div class="privacy-section">
+        <h2>2. Dados que recolhemos</h2>
+        <p>Recolhemos apenas os dados estritamente necessários:</p>
+        <ul>
+          <li><strong>Email</strong> — quando subscreve a newsletter, para lhe enviar as edições semanais.</li>
+        </ul>
+        <p>
+          Não recolhemos nome, morada, telefone, dados de pagamento, ou qualquer outra informação pessoal.
+          Não utilizamos cookies de tracking nem ferramentas de analytics que identifiquem utilizadores individuais.
+        </p>
+      </div>
+
+      <div class="privacy-section">
+        <h2>3. Finalidade e base legal</h2>
+        <p>O seu email é utilizado exclusivamente para:</p>
+        <ul>
+          <li>Envio da newsletter semanal LX Cult(ure)</li>
+          <li>Comunicações relacionadas com o serviço (ex: alterações importantes)</li>
+        </ul>
+        <p>Base legal: consentimento (artigo 6.º, n.º 1, alínea a) do RGPD), dado no momento da subscrição.</p>
+      </div>
+
+      <div class="privacy-section">
+        <h2>4. Processador de dados</h2>
+        <p>
+          O envio de emails é processado pela <a href="https://resend.com/legal/privacy-policy" target="_blank" rel="noopener">Resend, Inc.</a>,
+          que actua como subprocessador. Os dados são tratados em conformidade com o RGPD e
+          as cláusulas contratuais padrão da Comissão Europeia para transferências internacionais.
+        </p>
+      </div>
+
+      <div class="privacy-section">
+        <h2>5. Retenção dos dados</h2>
+        <p>
+          O seu email é mantido enquanto a subscrição estiver activa.
+          Após cancelamento, o email é eliminado no prazo de 30 dias.
+        </p>
+      </div>
+
+      <div class="privacy-section">
+        <h2>6. Os seus direitos</h2>
+        <p>Nos termos do RGPD, tem direito a:</p>
+        <ul>
+          <li><strong>Acesso</strong> — saber que dados temos sobre si</li>
+          <li><strong>Rectificação</strong> — corrigir dados incorrectos</li>
+          <li><strong>Apagamento</strong> — pedir a eliminação dos seus dados</li>
+          <li><strong>Portabilidade</strong> — receber os seus dados em formato estruturado</li>
+          <li><strong>Oposição</strong> — opor-se ao tratamento</li>
+          <li><strong>Retirar consentimento</strong> — a qualquer momento, sem prejuízo do tratamento anterior</li>
+        </ul>
+        <p>
+          Para exercer qualquer direito, contacte <a href="mailto:ola@lxculture.pt">ola@lxculture.pt</a>.
+          Responderemos no prazo de 30 dias.
+        </p>
+      </div>
+
+      <div class="privacy-section">
+        <h2>7. Cancelamento da newsletter</h2>
+        <p>
+          Pode cancelar a subscrição a qualquer momento através do link "Cancelar subscrição"
+          incluído no rodapé de cada email, ou contactando-nos directamente.
+        </p>
+      </div>
+
+      <div class="privacy-section">
+        <h2>8. Autoridade de controlo</h2>
+        <p>
+          Se considerar que os seus dados não estão a ser tratados correctamente, pode apresentar
+          reclamação à <a href="https://www.cnpd.pt" target="_blank" rel="noopener">Comissão Nacional de Proteção de Dados (CNPD)</a>.
+        </p>
+      </div>
+
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .privacy-hero {
+    background: var(--cor-fundo-escuro);
+    color: var(--cor-texto-claro);
+    padding: var(--space-3xl) 0 var(--space-2xl);
+  }
+
+  .privacy-hero h1 {
+    margin-bottom: var(--space-sm);
+  }
+
+  .privacy-updated {
+    font-size: 0.9rem;
+    opacity: 0.6;
+  }
+
+  .privacy-body {
+    padding: var(--space-2xl) 0 var(--space-3xl);
+  }
+
+  .privacy-section {
+    margin-bottom: var(--space-xl);
+  }
+
+  .privacy-section h2 {
+    font-size: 1.2rem;
+    margin-bottom: var(--space-sm);
+  }
+
+  .privacy-section p {
+    font-size: 1rem;
+    line-height: 1.7;
+    max-width: 40rem;
+    margin-bottom: var(--space-sm);
+  }
+
+  .privacy-section ul {
+    max-width: 40rem;
+    margin: var(--space-sm) 0 var(--space-md) var(--space-lg);
+  }
+
+  .privacy-section li {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: var(--space-xs);
+  }
+
+  .privacy-section strong {
+    color: var(--cor-primaria);
+  }
+</style>

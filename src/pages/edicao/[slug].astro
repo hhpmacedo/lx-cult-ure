@@ -5,6 +5,7 @@ import EditionHeader from '../../components/EditionHeader.astro';
 import CategorySection from '../../components/CategorySection.astro';
 import SubscribeForm from '../../components/SubscribeForm.astro';
 import type { Category } from '../../lib/types';
+import EventActionsScript from '../../components/EventActionsScript.astro';
 
 export async function getStaticPaths() {
   const editions = await getCollection('editions');
@@ -31,7 +32,7 @@ const eventsByCategory = categories
   .filter((group: { events: unknown[] }) => group.events.length > 0);
 ---
 
-<BaseLayout title={`LX Cult(ure) — Semana ${edition.weekNumber}, ${edition.year}`}>
+<BaseLayout title={`LX Cult(ure) — Semana ${edition.weekNumber}, ${edition.year}`} ogImage={`/og/${edition.slug}.png`}>
   <EditionHeader
     weekNumber={edition.weekNumber}
     year={edition.year}
@@ -44,4 +45,5 @@ const eventsByCategory = categories
   ))}
 
   <SubscribeForm />
+  <EventActionsScript />
 </BaseLayout>

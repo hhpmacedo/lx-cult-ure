@@ -1,6 +1,7 @@
 ---
 import type { CuratedEvent } from '../lib/types';
 import { CATEGORY_COLORS } from '../lib/types';
+import EventActions from './EventActions.astro';
 
 interface Props {
   event: CuratedEvent;
@@ -42,13 +43,16 @@ const catColor = CATEGORY_COLORS[event.category];
     </blockquote>
   )}
 
-  {event.tags.length > 0 && (
-    <div class="event-tags">
-      {event.tags.map((tag) => (
-        <span class="tag">{tag}</span>
-      ))}
-    </div>
-  )}
+  <div class="event-bottom">
+    {event.tags.length > 0 && (
+      <div class="event-tags">
+        {event.tags.map((tag) => (
+          <span class="tag">{tag}</span>
+        ))}
+      </div>
+    )}
+    <EventActions eventId={event.id} />
+  </div>
 </article>
 
 <style>
@@ -170,10 +174,18 @@ const catColor = CATEGORY_COLORS[event.category];
     margin-top: var(--space-xs);
   }
 
+  .event-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-md);
+  }
+
   .event-tags {
     display: flex;
     gap: var(--space-xs);
     flex-wrap: wrap;
+    flex: 1;
   }
 
   @media (max-width: 600px) {

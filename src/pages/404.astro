@@ -1,0 +1,99 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Página não encontrada — LX Cult(ure)" description="A página que procura não existe.">
+  <section class="not-found">
+    <div class="container content">
+      <span class="not-found-code">404</span>
+      <h1>Página não encontrada</h1>
+      <p>
+        A página que procura não existe ou foi movida.
+        Talvez estivesse à procura da edição desta semana?
+      </p>
+      <div class="not-found-actions">
+        <a href="/" class="btn-primary">Esta Semana</a>
+        <a href="/arquivo" class="btn-secondary">Arquivo</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .not-found {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: var(--space-3xl) 0;
+  }
+
+  .not-found-code {
+    font-family: var(--font-display);
+    font-size: clamp(6rem, 15vw, 12rem);
+    font-weight: 700;
+    line-height: 1;
+    color: var(--cor-magenta);
+    opacity: 0.15;
+    display: block;
+    margin-bottom: var(--space-md);
+  }
+
+  .not-found h1 {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    margin-bottom: var(--space-md);
+  }
+
+  .not-found p {
+    font-size: 1.1rem;
+    color: #666;
+    max-width: 30rem;
+    margin: 0 auto var(--space-xl);
+    line-height: 1.6;
+  }
+
+  .not-found-actions {
+    display: flex;
+    gap: var(--space-md);
+    justify-content: center;
+  }
+
+  .btn-primary {
+    display: inline-block;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    background: var(--cor-magenta);
+    color: var(--cor-branco);
+    padding: 0.8em 2em;
+    text-decoration: none;
+    transition: background 0.2s;
+  }
+
+  .btn-primary:hover {
+    background: var(--cor-primaria);
+    color: var(--cor-branco);
+  }
+
+  .btn-secondary {
+    display: inline-block;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border: 2px solid var(--cor-texto);
+    color: var(--cor-texto);
+    padding: 0.8em 2em;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+
+  .btn-secondary:hover {
+    background: var(--cor-texto);
+    color: var(--cor-texto-claro);
+  }
+</style>

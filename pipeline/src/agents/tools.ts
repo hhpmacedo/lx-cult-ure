@@ -5,6 +5,7 @@ import type { RawEvent, CriticReview, PipelineConfig } from '../types.js';
 import { getScrapers } from '../scrapers/index.js';
 import { getAllReviewScrapers } from '../reviews/index.js';
 import { matchReviewsToEvents } from '../reviews/matcher.js';
+import { recordScraperRun } from '../monitoring/health.js';
 
 /**
  * Tool definitions and implementations for the 3-agent pipeline.
@@ -163,12 +164,28 @@ export async function executeTool(
       const results: Array<{ source: string; count: number }> = [];
 
       for (const scraper of allScrapers) {
+        const startTime = Date.now();
         try {
           const events = await scraper.scrape();
           allEvents.push(...events);
           results.push({ source: scraper.id, count: events.length });
+          recordScraperRun({
+            sourceId: scraper.id,
+            timestamp: new Date().toISOString(),
+            success: true,
+            eventCount: events.length,
+            durationMs: Date.now() - startTime,
+          });
         } catch (error) {
           results.push({ source: scraper.id, count: 0 });
+          recordScraperRun({
+            sourceId: scraper.id,
+            timestamp: new Date().toISOString(),
+            success: false,
+            eventCount: 0,
+            durationMs: Date.now() - startTime,
+            error: error instanceof Error ? error.message : String(error),
+          });
         }
       }
 

@@ -1,0 +1,54 @@
+name: Weekly Pipeline
+
+on:
+  # Run every Friday at 06:00 UTC (07:00 Lisbon)
+  schedule:
+    - cron: '0 6 * * 5'
+  # Manual trigger
+  workflow_dispatch:
+
+jobs:
+  pipeline:
+    name: Scrape, Curate & Publish
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install site dependencies
+        run: npm ci
+
+      - name: Install pipeline dependencies
+        run: cd pipeline && npm ci
+
+      - name: Install Playwright browsers
+        run: cd pipeline && npx playwright install chromium --with-deps
+
+      - name: Run pipeline agents
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: cd pipeline && npm run agents
+
+      - name: Build site with new content
+        run: npm run build
+
+      - name: Health check
+        run: cd pipeline && npm run health
+
+      - name: Commit new edition
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add src/content/editions/ memory/
+          git diff --staged --quiet || git commit -m "Add weekly edition $(date +%Y-W%V)"
+          git push
+
+      - name: Send newsletter
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+        run: npm run newsletter:send

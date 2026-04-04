@@ -1,0 +1,117 @@
+---
+/**
+ * Favorite / Dismiss action buttons for events.
+ *
+ * Uses localStorage to persist user preferences.
+ * Data stored in keys:
+ *   - lxc:favorites → Set of event IDs
+ *   - lxc:dismissed → Set of event IDs
+ *
+ * These are used as curation signals (via the API) and to personalize the UI.
+ */
+interface Props {
+  eventId: string;
+}
+
+const { eventId } = Astro.props;
+---
+
+<div class="event-actions" data-event-id={eventId}>
+  <button
+    class="action-btn action-fav"
+    data-action="favorite"
+    title="Guardar nos favoritos"
+    aria-label="Guardar nos favoritos"
+  >
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+    </svg>
+  </button>
+  <button
+    class="action-btn action-dismiss"
+    data-action="dismiss"
+    title="Não me interessa"
+    aria-label="Não me interessa"
+  >
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <line x1="18" y1="6" x2="6" y2="18"/>
+      <line x1="6" y1="6" x2="18" y2="18"/>
+    </svg>
+  </button>
+</div>
+
+<style>
+  .event-actions {
+    display: flex;
+    gap: 6px;
+    margin-top: var(--space-sm);
+  }
+
+  .action-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border: 2px solid var(--cor-borda);
+    border-radius: 4px;
+    background: transparent;
+    color: #999;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    padding: 0;
+  }
+
+  .action-btn:hover {
+    border-color: var(--cor-texto);
+    color: var(--cor-texto);
+  }
+
+  /* Favorited state */
+  .action-fav.is-active {
+    background: var(--cor-magenta);
+    border-color: var(--cor-magenta);
+    color: var(--cor-branco);
+  }
+
+  .action-fav.is-active:hover {
+    background: #c4144f;
+    border-color: #c4144f;
+    color: var(--cor-branco);
+  }
+
+  /* Dismissed state */
+  .action-dismiss.is-active {
+    background: #ddd;
+    border-color: #ccc;
+    color: #888;
+  }
+
+  /* Featured card overrides */
+  :global(.event-card--featured) .action-btn {
+    border-color: rgba(255,255,255,0.2);
+    color: rgba(255,255,255,0.5);
+  }
+
+  :global(.event-card--featured) .action-btn:hover {
+    border-color: rgba(255,255,255,0.5);
+    color: rgba(255,255,255,0.9);
+  }
+
+  :global(.event-card--featured) .action-fav.is-active {
+    background: var(--cor-magenta);
+    border-color: var(--cor-magenta);
+    color: var(--cor-branco);
+  }
+
+  /* When event is dismissed, fade the whole card */
+  :global(.event-card.is-dismissed) {
+    opacity: 0.35;
+    transform: scale(0.98);
+    transition: opacity 0.3s, transform 0.3s;
+  }
+
+  :global(.event-card.is-dismissed:hover) {
+    opacity: 0.7;
+  }
+</style>

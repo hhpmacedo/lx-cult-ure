@@ -1,0 +1,249 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SubscribeForm from '../components/SubscribeForm.astro';
+---
+
+<BaseLayout
+  title="Sobre — LX Cult(ure)"
+  description="Quem somos e porquê criámos a LX Cult(ure), uma newsletter semanal de curadoria cultural para Lisboa."
+>
+  <section class="sobre-hero">
+    <div class="container content">
+      <h1>Sobre a <span class="accent-lx">LX</span> Cult<span class="accent-paren">(</span>ure<span class="accent-paren">)</span></h1>
+      <div class="deco-bars">
+        <span class="deco-bar bar-magenta"></span>
+        <span class="deco-bar bar-amarelo"></span>
+        <span class="deco-bar bar-azul"></span>
+      </div>
+    </div>
+  </section>
+
+  <section class="sobre-body">
+    <div class="container content">
+      <div class="sobre-block">
+        <h2>O que é</h2>
+        <p>
+          A LX Cult(ure) é uma newsletter semanal gratuita com os melhores eventos culturais em Lisboa.
+          Todas as sextas-feiras, enviamos uma selecção curada de teatro, exposições, concertos, leituras
+          e conversas — tudo o que vale a pena ver e fazer na cidade durante a semana seguinte.
+        </p>
+      </div>
+
+      <div class="sobre-block">
+        <h2>O que nos diferencia</h2>
+        <p>
+          Não somos um agregador. Não listamos tudo. Cada evento é avaliado com base em <strong>críticas reais</strong>
+          de publicações como o Ípsilon/Público, a Time Out Lisboa, a Blitz e a ArteCapital. A nossa curadoria
+          cruza dados de mais de 6 fontes com a recepção crítica para destacar o que realmente importa.
+        </p>
+        <p>
+          Quando lê «Unanimemente positivo — 3 críticas», está a ver um consenso real, não uma opinião gerada por IA.
+          As citações dos críticos são autênticas, com fonte e link.
+        </p>
+      </div>
+
+      <div class="sobre-block">
+        <h2>Para quem</h2>
+        <p>
+          Para quem vive em Lisboa — ou visita regularmente — e quer cultura com substância.
+          Para quem prefere um espectáculo no Teatro Nacional a uma experiência de tuk-tuk.
+          Para quem quer saber o que os críticos recomendam sem ter de ler cinco jornais.
+        </p>
+      </div>
+
+      <div class="sobre-block">
+        <h2>Como funciona</h2>
+        <div class="como-grid">
+          <div class="como-step">
+            <span class="como-num">01</span>
+            <h3>Recolha</h3>
+            <p>Recolhemos eventos de 6 fontes e críticas de 4 publicações culturais portuguesas.</p>
+          </div>
+          <div class="como-step">
+            <span class="como-num">02</span>
+            <h3>Cruzamento</h3>
+            <p>Cruzamos eventos com críticas reais — ratings, citações, e consenso dos críticos.</p>
+          </div>
+          <div class="como-step">
+            <span class="como-num">03</span>
+            <h3>Curadoria</h3>
+            <p>Seleccionamos 15–25 eventos, privilegiando os que têm recepção crítica forte.</p>
+          </div>
+          <div class="como-step">
+            <span class="como-num">04</span>
+            <h3>Entrega</h3>
+            <p>Todas as sextas na sua caixa de correio — organizado por categoria, com destaques.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="sobre-block">
+        <h2>Fontes de críticas</h2>
+        <div class="fontes-grid">
+          <div class="fonte">
+            <h3>Ípsilon / Público</h3>
+            <p>A secção cultural de referência em Portugal. Críticas aprofundadas de teatro, música, cinema e artes visuais.</p>
+          </div>
+          <div class="fonte">
+            <h3>Time Out Lisboa</h3>
+            <p>Picks editoriais e ratings. Excelente cobertura do que é imperdível na semana.</p>
+          </div>
+          <div class="fonte">
+            <h3>Blitz</h3>
+            <p>A publicação de música portuguesa. Reviews de concertos, álbuns e festivais.</p>
+          </div>
+          <div class="fonte">
+            <h3>ArteCapital</h3>
+            <p>Artes visuais e exposições. A voz da arte contemporânea em Portugal.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="sobre-block sobre-contact">
+        <h2>Contacto</h2>
+        <p>
+          Sugestões, correções, ou quer que incluamos o seu evento?
+          Escreva-nos para <a href="mailto:ola@lxculture.pt">ola@lxculture.pt</a>.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <SubscribeForm />
+</BaseLayout>
+
+<style>
+  .sobre-hero {
+    background: var(--cor-fundo-escuro);
+    color: var(--cor-texto-claro);
+    padding: var(--space-3xl) 0 var(--space-2xl);
+  }
+
+  .sobre-hero h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    margin-bottom: var(--space-md);
+  }
+
+  .accent-lx {
+    color: var(--cor-amarelo);
+  }
+
+  .accent-paren {
+    color: var(--cor-magenta);
+  }
+
+  .deco-bars {
+    display: flex;
+    gap: 6px;
+    margin-top: var(--space-md);
+  }
+
+  .deco-bar {
+    display: block;
+    height: 5px;
+  }
+
+  .bar-magenta { width: 64px; background: var(--cor-magenta); }
+  .bar-amarelo { width: 32px; background: var(--cor-amarelo); }
+  .bar-azul { width: 16px; background: var(--cor-primaria); }
+
+  .sobre-body {
+    padding: var(--space-2xl) 0;
+  }
+
+  .sobre-block {
+    margin-bottom: var(--space-2xl);
+  }
+
+  .sobre-block h2 {
+    font-size: 1.5rem;
+    margin-bottom: var(--space-md);
+    position: relative;
+    padding-left: 1.5rem;
+  }
+
+  .sobre-block h2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.15em;
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+    background: var(--cor-magenta);
+  }
+
+  .sobre-block p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    max-width: 38rem;
+    margin-bottom: var(--space-md);
+  }
+
+  .sobre-block strong {
+    color: var(--cor-primaria);
+  }
+
+  .como-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--space-lg);
+    margin-top: var(--space-md);
+  }
+
+  .como-step {
+    background: var(--cor-branco);
+    padding: var(--space-lg);
+    border-left: 4px solid var(--cor-primaria);
+  }
+
+  .como-num {
+    font-family: var(--font-display);
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--cor-primaria);
+    opacity: 0.3;
+    display: block;
+    margin-bottom: var(--space-sm);
+  }
+
+  .como-step h3 {
+    font-size: 1.1rem;
+    margin-bottom: var(--space-xs);
+  }
+
+  .como-step p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+
+  .fontes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: var(--space-lg);
+    margin-top: var(--space-md);
+  }
+
+  .fonte {
+    padding: var(--space-lg);
+    background: var(--cor-branco);
+    border-top: 4px solid var(--cor-magenta);
+  }
+
+  .fonte h3 {
+    font-size: 1rem;
+    margin-bottom: var(--space-xs);
+  }
+
+  .fonte p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+    color: #555;
+  }
+
+  .sobre-contact p a {
+    font-weight: 600;
+  }
+</style>

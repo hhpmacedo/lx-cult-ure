@@ -5,6 +5,7 @@ import EditionHeader from '../components/EditionHeader.astro';
 import CategorySection from '../components/CategorySection.astro';
 import SubscribeForm from '../components/SubscribeForm.astro';
 import type { Category } from '../lib/types';
+import EventActionsScript from '../components/EventActionsScript.astro';
 
 const editions = await getCollection('editions');
 const sorted = editions.sort((a, b) => b.data.slug.localeCompare(a.data.slug));
@@ -44,4 +45,5 @@ const eventsByCategory = categories
   ))}
 
   <SubscribeForm />
+  <EventActionsScript />
 </BaseLayout>
