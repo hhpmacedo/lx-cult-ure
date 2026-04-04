@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-LX Cult(ure) is a weekly cultural events newsletter for Lisbon. It combines an Astro static site (frontend) with an AI-powered scraping/curation pipeline, delivered via email through Resend.
+LX Cult(ure) is a weekly cultural events newsletter for Lisbon. It combines an Astro static site (frontend) with an AI-powered scraping/curation pipeline, delivered via email through Resend. The legal entity behind the project is Burgundy Avenue, Lda.
 
 ## Commands
 
@@ -21,6 +21,7 @@ npm run preview              # Preview production build
 
 ```bash
 npm install                  # Install pipeline dependencies
+npx playwright install chromium  # Install browser for scrapers
 npm run pipeline             # Full pipeline: scrape → curate → review → publish
 npm run pipeline:scrape      # Scrape events from all sources
 npm run pipeline:curate      # AI curation with Claude
@@ -39,17 +40,17 @@ npm run newsletter:send      # Send production newsletter
 
 ## Architecture
 
-**Two-package structure**: the site root is an Astro project; `pipeline/` is a separate npm package with its own dependencies and tsconfig.
+**Two-package structure**: the site root is an Astro project; `pipeline/` is a separate npm package with its own dependencies and tsconfig. Both need their own `npm install` and `.env` files.
 
 ### Data Flow
 
 ```
-Scrapers (7 sources) → raw-events.json (cache)
-  → Claude Curator (batched, Portuguese persona)
+Scrapers (6 sources, ~1000 events) → .cache/raw-events.json
+  → Claude Curator (batched 80/batch, Portuguese persona)
   → [Optional human review server]
   → publishEdition() → src/content/editions/{weekId}.json
   → Astro static build → Vercel
-  → send-newsletter.ts → Resend
+  → send-newsletter.ts → Resend (Broadcasts API + Segments)
 ```
 
 ### Key Architectural Decisions
@@ -57,9 +58,10 @@ Scrapers (7 sources) → raw-events.json (cache)
 - **Content collections**: Weekly editions are JSON files in `src/content/editions/` validated by Zod schema in `src/content.config.ts`. Astro's content loader pattern drives all edition pages.
 - **Scraper interface**: Each source implements the `Scraper` base class in `pipeline/src/scrapers/`. Playwright for browser-rendered pages, Cheerio for static HTML.
 - **AI curation**: Uses Claude Sonnet via `@anthropic-ai/sdk`. Batch processing (80 events/batch) with a Portuguese-language curator persona defined in `pipeline/src/ai/prompts.ts`.
+- **Event status**: Each curated event has `status: 'new' | 'ongoing'`. Claude classifies events based on whether they start this week or were already running. The edition page and email split into "Estreias da semana" and "Ainda a decorrer" sections.
 - **Dual pipeline modes**: Sequential pipeline (`run-pipeline.ts`) and multi-agent system (`agents/run-agents.ts` with scout/curator/publisher agents).
 - **Feedback loop**: `/api/feedback` collects user favorites/dismissals that feed back into future curation.
-- **Email**: React Email components (`src/emails/WeeklyNewsletter.tsx`) rendered to HTML/text via `@react-email/render`.
+- **Email**: React Email components (`src/emails/WeeklyNewsletter.tsx`) rendered to HTML/text via `@react-email/render`. Sent via Resend Broadcasts API targeting a Segment.
 
 ### Event Categories
 
@@ -74,4 +76,5 @@ Four fixed categories: `artes-performativas`, `artes-visuais`, `literatura`, `mu
 - UI and content are in **Portuguese**; code and comments are in **English**.
 - Edition files are named by ISO week: `src/content/editions/{weekId}.json`.
 - The weekly pipeline runs automatically via GitHub Actions every Friday at 6am UTC.
-- Environment variables: `RESEND_API_KEY`, `RESEND_SEGMENT_ID`, `ANTHROPIC_API_KEY`, `NEWSLETTER_SEND_SECRET`.
+- Environment variables: `RESEND_API_KEY`, `RESEND_SEGMENT_ID`, `ANTHROPIC_API_KEY`.
+- Both root and `pipeline/` need their own `.env` file with the relevant keys.
