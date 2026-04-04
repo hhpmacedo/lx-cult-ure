@@ -153,6 +153,34 @@ async function stepPublish(config: PipelineConfig) {
   publishEdition(data, config);
 }
 
+async function stepAutoPublish(config: PipelineConfig) {
+  console.log('\n═══════════════════════════════════════');
+  console.log('  PASSO 3: AUTO-PUBLICAÇÃO');
+  console.log('═══════════════════════════════════════\n');
+
+  const curatedPath = join(config.cacheDir, 'curated-events.json');
+
+  if (!existsSync(curatedPath)) {
+    console.error('Nenhum ficheiro de eventos curados encontrado.');
+    process.exit(1);
+  }
+
+  const data = JSON.parse(readFileSync(curatedPath, 'utf-8'));
+  const allEvents = data.events || [];
+
+  // Sort by aiScore descending, take top 25, drop below 60
+  const selected = allEvents
+    .sort((a: { aiScore: number }, b: { aiScore: number }) => b.aiScore - a.aiScore)
+    .slice(0, 25)
+    .filter((e: { aiScore: number }) => e.aiScore >= 60);
+
+  console.log(`  Candidatos: ${allEvents.length}`);
+  console.log(`  Selecionados: ${selected.length} (top 25, score >= 60)`);
+
+  const result = { introText: data.introText, events: selected };
+  publishEdition(result, config);
+}
+
 // --- Main ---
 
 async function main() {
@@ -179,13 +207,19 @@ async function main() {
       await stepPublish(config);
       break;
 
-    default:
+    default: {
       // Full pipeline
-      console.log('\nA executar pipeline completo...\n');
+      const autoMode = process.argv.includes('--auto');
+      console.log(`\nA executar pipeline ${autoMode ? 'automático' : 'completo'}...\n`);
       await stepScrape(config);
       await stepCurate(config);
-      await stepReview(config);
+      if (autoMode) {
+        await stepAutoPublish(config);
+      } else {
+        await stepReview(config);
+      }
       break;
+    }
   }
 }
 
