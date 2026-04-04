@@ -39,6 +39,7 @@ interface CuratedEvent {
   tags: string[];
   aiScore: number;
   featured: boolean;
+  status?: 'new' | 'ongoing';
 }
 
 interface Edition {
@@ -154,51 +155,90 @@ export default function WeeklyNewsletter({
             <Text style={styles.introText}>{edition.introText}</Text>
           </Section>
 
-          {/* Events by category */}
-          {categoryOrder.map((cat) => {
-            const events = edition.events
-              .filter((e) => e.category === cat)
-              .sort((a, b) => {
-                if (a.featured && !b.featured) return -1;
-                if (!a.featured && b.featured) return 1;
-                return b.aiScore - a.aiScore;
-              });
-
-            if (events.length === 0) return null;
+          {/* Estreias da semana */}
+          {(() => {
+            const newEvents = edition.events.filter((e) => e.status !== 'ongoing');
+            const hasNew = categoryOrder.some(
+              (cat) => newEvents.filter((e) => e.category === cat).length > 0
+            );
+            if (!hasNew) return null;
 
             return (
-              <Section key={cat} style={{ marginBottom: '32px' }}>
-                {/* Category header */}
-                <Row style={{ marginBottom: '16px' }}>
-                  <Column style={{ width: '20px' }}>
-                    <div
-                      style={{
-                        width: '20px',
-                        height: '20px',
-                        borderRadius: '50%',
-                        backgroundColor: categoryColors[cat],
-                      }}
-                    />
-                  </Column>
-                  <Column style={{ paddingLeft: '12px' }}>
-                    <Heading as="h2" style={styles.categoryTitle}>
-                      {categoryLabels[cat]}
-                    </Heading>
-                  </Column>
-                </Row>
-
-                {/* Event cards */}
-                {events.map((event) => (
-                  <EventCard
-                    key={event.id}
-                    event={event}
-                    catColor={categoryColors[cat]}
-                    siteUrl={siteUrl}
-                  />
-                ))}
-              </Section>
+              <>
+                <Section style={{ padding: '0 32px 8px' }}>
+                  <Heading as="h2" style={styles.sectionHeading}>
+                    ESTREIAS DA SEMANA
+                  </Heading>
+                </Section>
+                {categoryOrder.map((cat) => {
+                  const events = newEvents
+                    .filter((e) => e.category === cat)
+                    .sort((a, b) => {
+                      if (a.featured && !b.featured) return -1;
+                      if (!a.featured && b.featured) return 1;
+                      return b.aiScore - a.aiScore;
+                    });
+                  if (events.length === 0) return null;
+                  return (
+                    <Section key={cat} style={{ marginBottom: '32px' }}>
+                      <Row style={{ marginBottom: '16px' }}>
+                        <Column style={{ width: '20px' }}>
+                          <div style={{ width: '20px', height: '20px', borderRadius: '50%', backgroundColor: categoryColors[cat] }} />
+                        </Column>
+                        <Column style={{ paddingLeft: '12px' }}>
+                          <Heading as="h2" style={styles.categoryTitle}>{categoryLabels[cat]}</Heading>
+                        </Column>
+                      </Row>
+                      {events.map((event) => (
+                        <EventCard key={event.id} event={event} catColor={categoryColors[cat]} siteUrl={siteUrl} />
+                      ))}
+                    </Section>
+                  );
+                })}
+              </>
             );
-          })}
+          })()}
+
+          {/* Ainda a decorrer */}
+          {(() => {
+            const ongoingEvents = edition.events.filter((e) => e.status === 'ongoing');
+            const hasOngoing = categoryOrder.some(
+              (cat) => ongoingEvents.filter((e) => e.category === cat).length > 0
+            );
+            if (!hasOngoing) return null;
+
+            return (
+              <>
+                <Section style={{ padding: '0 32px 8px' }}>
+                  <Hr style={{ borderTop: `1px solid #ddd`, margin: '0 0 24px' }} />
+                  <Heading as="h2" style={{ ...styles.sectionHeading, color: colors.cinza }}>
+                    AINDA A DECORRER
+                  </Heading>
+                </Section>
+                {categoryOrder.map((cat) => {
+                  const events = ongoingEvents
+                    .filter((e) => e.category === cat)
+                    .sort((a, b) => b.aiScore - a.aiScore);
+                  if (events.length === 0) return null;
+                  return (
+                    <Section key={`ongoing-${cat}`} style={{ marginBottom: '32px' }}>
+                      <Row style={{ marginBottom: '16px' }}>
+                        <Column style={{ width: '20px' }}>
+                          <div style={{ width: '20px', height: '20px', borderRadius: '50%', backgroundColor: categoryColors[cat] }} />
+                        </Column>
+                        <Column style={{ paddingLeft: '12px' }}>
+                          <Heading as="h2" style={styles.categoryTitle}>{categoryLabels[cat]}</Heading>
+                        </Column>
+                      </Row>
+                      {events.map((event) => (
+                        <EventCard key={event.id} event={event} catColor={categoryColors[cat]} siteUrl={siteUrl} />
+                      ))}
+                    </Section>
+                  );
+                })}
+              </>
+            );
+          })()}
 
           {/* Subscribe CTA */}
           <Section style={styles.ctaSection}>
@@ -546,5 +586,14 @@ const styles = {
     fontSize: '11px',
     color: '#aaa',
     margin: '16px 0 0',
+  } as React.CSSProperties,
+
+  sectionHeading: {
+    fontSize: '13px',
+    fontWeight: 900,
+    letterSpacing: '2px',
+    color: colors.texto,
+    margin: '0 0 16px',
+    textTransform: 'uppercase' as const,
   } as React.CSSProperties,
 };
