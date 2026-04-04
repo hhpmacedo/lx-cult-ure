@@ -1,5 +1,6 @@
 import Anthropic from '@anthropic-ai/sdk';
 import { loadMemory, saveMemory, recordPromptVersion } from '../../memory/store.js';
+import type { Memory } from '../../memory/types.js';
 import { readFileSync, writeFileSync, existsSync } from 'fs';
 import { join, resolve } from 'path';
 
