@@ -38,6 +38,7 @@ Para cada evento relevante, devolve um objeto com:
 - "venue": nome do espaço
 - "venueNeighborhood": bairro de Lisboa (ex: "Belém", "Chiado", "Marvila", "Santos")
 - "dates": datas em formato legível (ex: "3–5 Abr", "Até 20 Mai")
+- "status": "new" se o evento começa esta semana, "ongoing" se já estava a decorrer antes desta semana
 - "time": horário se disponível (ex: "21h", "10h–19h")
 - "price": preço se disponível (ex: "12€", "Gratuito", "8€–15€")
 - "blurb": descrição editorial de 2-3 frases em português, escrita como um crítico cultural recomendaria a um amigo lisboeta. Tom informado, entusiasta mas exigente.
@@ -54,6 +55,7 @@ REGRAS:
 3. Remove duplicados (mesmo evento de fontes diferentes)
 4. Se a informação for incompleta, faz o melhor com o que tens
 5. Escreve TUDO em português
+6. Classifica cada evento: "new" se a data de início cai dentro da semana ${weekStart} a ${weekEnd}, "ongoing" se o evento começou antes mas ainda decorre. Para eventos "ongoing", inclui apenas os verdadeiramente notáveis — grandes exposições, festivais relevantes, espetáculos de referência. Não incluas workshops recorrentes ou eventos de rotina.
 
 EVENTOS RECOLHIDOS:
 ${rawEventsJson}
