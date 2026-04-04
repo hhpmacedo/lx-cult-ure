@@ -90,6 +90,8 @@ export class EventbriteLisboaScraper extends BaseScraper {
               venue: item.venue || undefined,
               neighborhood: item.address || undefined,
               priceText: item.price || undefined,
+              source: this.id,
+              scrapedAt: new Date().toISOString(),
             });
           }
         }
@@ -158,6 +160,8 @@ export class EventbriteLisboaScraper extends BaseScraper {
               dateText: item.dateText || undefined,
               venue: item.venue || undefined,
               priceText: item.price || undefined,
+              source: this.id,
+              scrapedAt: new Date().toISOString(),
             });
           }
         }

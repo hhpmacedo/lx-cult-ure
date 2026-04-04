@@ -72,6 +72,8 @@ export class FeverLisboaScraper extends BaseScraper {
           dateText: item.startDate || undefined,
           venue: item.venue || undefined,
           priceText: item.price || undefined,
+          source: this.id,
+          scrapedAt: new Date().toISOString(),
         });
       }
       return events;
@@ -140,6 +142,8 @@ export class FeverLisboaScraper extends BaseScraper {
         dateText: item.dateText || undefined,
         venue: item.venue || undefined,
         priceText: item.price || undefined,
+        source: this.id,
+        scrapedAt: new Date().toISOString(),
       });
     }
 

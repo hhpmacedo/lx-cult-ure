@@ -93,6 +93,8 @@ export class CartazCulturalScraper extends BaseScraper {
         dateText: item.dateText || undefined,
         venue: item.venue || undefined,
         category: item.category || undefined,
+        source: this.id,
+        scrapedAt: new Date().toISOString(),
       });
     }
 
@@ -159,6 +161,8 @@ export class CartazCulturalScraper extends BaseScraper {
             url: item.url || `${this.baseUrl}${path}`,
             dateText: item.dateText || undefined,
             venue: item.venue || undefined,
+            source: this.id,
+            scrapedAt: new Date().toISOString(),
           });
         }
       } catch {

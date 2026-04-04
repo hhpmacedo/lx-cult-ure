@@ -78,6 +78,8 @@ export class LisboaLiveScraper extends BaseScraper {
         dateText: item.dateText || undefined,
         venue: item.venue || undefined,
         category: item.category || undefined,
+        source: this.id,
+        scrapedAt: new Date().toISOString(),
       });
     }
 
