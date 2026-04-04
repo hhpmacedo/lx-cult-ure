@@ -20,9 +20,16 @@ export async function buildFeedbackContext(
 
   let text: string;
   try {
-    const blob = await get('feedback/signals.jsonl', { token });
-    if (!blob) return null;
-    text = await blob.text();
+    const result = await get('feedback/signals.jsonl', { token, access: 'private' });
+    if (!result || result.statusCode !== 200) return null;
+    const reader = result.stream.getReader();
+    const chunks: Uint8Array[] = [];
+    while (true) {
+      const { done, value } = await reader.read();
+      if (done) break;
+      if (value) chunks.push(value);
+    }
+    text = new TextDecoder().decode(Buffer.concat(chunks));
   } catch {
     return null;
   }
