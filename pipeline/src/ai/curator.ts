@@ -1,6 +1,8 @@
 import Anthropic from '@anthropic-ai/sdk';
 import type { RawEvent, CuratedEvent } from '../types.js';
 import { CURATOR_SYSTEM_PROMPT, buildCurationPrompt } from './prompts.js';
+import { join, resolve } from 'path';
+import { buildFeedbackContext } from '../feedback/aggregate.js';
 
 interface CurationResult {
   introText: string;
@@ -36,6 +38,13 @@ export async function curateEvents(
     `[curator] Processing ${rawEvents.length} events in ${batches.length} batch(es)...`
   );
 
+  // Fetch user feedback signals
+  const cacheDir = join(resolve('.'), '.cache');
+  const feedbackContext = await buildFeedbackContext(cacheDir);
+  if (feedbackContext) {
+    console.log('[curator] Feedback context loaded');
+  }
+
   const allCuratedEvents: CuratedEvent[] = [];
   let introText = '';
 
@@ -63,7 +72,8 @@ export async function curateEvents(
     const userPrompt = buildCurationPrompt(
       JSON.stringify(simplified, null, 2),
       weekStart,
-      weekEnd
+      weekEnd,
+      feedbackContext
     );
 
     const response = await client.messages.create({

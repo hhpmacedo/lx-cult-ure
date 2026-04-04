@@ -28,10 +28,15 @@ Responde SEMPRE em JSON válido.`;
 export function buildCurationPrompt(
   rawEventsJson: string,
   weekStart: string,
-  weekEnd: string
+  weekEnd: string,
+  feedbackContext?: string | null
 ): string {
-  return `Analisa os seguintes eventos recolhidos de várias fontes para a semana de ${weekStart} a ${weekEnd} em Lisboa.
+  const feedbackSection = feedbackContext
+    ? `\n${feedbackContext}\n`
+    : '';
 
+  return `Analisa os seguintes eventos recolhidos de várias fontes para a semana de ${weekStart} a ${weekEnd} em Lisboa.
+${feedbackSection}
 Para cada evento relevante, devolve um objeto com:
 - "title": nome do evento (limpo, em português)
 - "category": uma das 4 categorias
