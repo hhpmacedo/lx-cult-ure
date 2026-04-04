@@ -6,13 +6,25 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "newsletter:preview": "npx tsx scripts/send-newsletter.ts --dry-run",
+    "newsletter:test": "npx tsx scripts/send-newsletter.ts --dry-run --to=",
+    "newsletter:send": "npx tsx scripts/send-newsletter.ts"
   },
   "dependencies": {
     "@astrojs/vercel": "^10.0.4",
+    "@react-email/components": "^1.0.11",
+    "@react-email/render": "^2.0.5",
+    "@types/react": "^19.2.14",
     "astro": "^6.1.3",
+    "react": "^19.2.4",
     "resend": "^6.10.0"
   },
-  "keywords": ["lisbon", "culture", "newsletter", "events"],
+  "keywords": [
+    "lisbon",
+    "culture",
+    "newsletter",
+    "events"
+  ],
   "license": "ISC"
 }
