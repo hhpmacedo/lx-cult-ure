@@ -8,7 +8,11 @@
     "pipeline:scrape": "tsx src/run-pipeline.ts scrape",
     "pipeline:curate": "tsx src/run-pipeline.ts curate",
     "pipeline:review": "tsx src/run-pipeline.ts review",
-    "pipeline:publish": "tsx src/run-pipeline.ts publish"
+    "pipeline:publish": "tsx src/run-pipeline.ts publish",
+    "agents": "tsx src/agents/run-agents.ts",
+    "agents:scout": "tsx src/agents/run-agents.ts scout",
+    "agents:curator": "tsx src/agents/run-agents.ts curator",
+    "agents:publisher": "tsx src/agents/run-agents.ts publisher"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.82.0",
