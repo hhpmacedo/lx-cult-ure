@@ -74,4 +74,4 @@ Four fixed categories: `artes-performativas`, `artes-visuais`, `literatura`, `mu
 - UI and content are in **Portuguese**; code and comments are in **English**.
 - Edition files are named by ISO week: `src/content/editions/{weekId}.json`.
 - The weekly pipeline runs automatically via GitHub Actions every Friday at 6am UTC.
-- Environment variables: `RESEND_API_KEY`, `RESEND_AUDIENCE_ID`, `ANTHROPIC_API_KEY`, `NEWSLETTER_SEND_SECRET`.
+- Environment variables: `RESEND_API_KEY`, `RESEND_SEGMENT_ID`, `ANTHROPIC_API_KEY`, `NEWSLETTER_SEND_SECRET`.

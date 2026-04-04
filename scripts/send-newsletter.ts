@@ -104,33 +104,32 @@ async function main() {
 
   // Production send
   const apiKey = process.env.RESEND_API_KEY;
-  const audienceId = process.env.RESEND_AUDIENCE_ID;
+  const segmentId = process.env.RESEND_SEGMENT_ID;
 
   if (!apiKey) {
     console.error('RESEND_API_KEY não configurada.');
     process.exit(1);
   }
 
-  if (!audienceId) {
-    console.error('RESEND_AUDIENCE_ID não configurado.');
+  if (!segmentId) {
+    console.error('RESEND_SEGMENT_ID não configurado.');
     process.exit(1);
   }
 
   const resend = new Resend(apiKey);
   const subject = `LX Cult(ure) — Semana ${edition.weekNumber} · ${formatDateRange(edition.dateRange.start, edition.dateRange.end)}`;
 
-  console.log(`\nA enviar para audiência ${audienceId}...`);
+  console.log(`\nA enviar para segmento ${segmentId}...`);
   console.log(`Assunto: ${subject}`);
 
-  const result = await resend.batch.send([
-    {
-      from: 'LX Cult(ure) <newsletter@lxculture.pt>',
-      to: audienceId,
-      subject,
-      html,
-      text,
-    },
-  ]);
+  const result = await resend.broadcasts.create({
+    segmentId,
+    from: 'LX Cult(ure) <newsletter@lxculture.pt>',
+    subject,
+    html,
+    text,
+    send: true,
+  });
 
   console.log(`\n✓ Newsletter enviada!`);
   console.log(`  Resultado: ${JSON.stringify(result)}`);

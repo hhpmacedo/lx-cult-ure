@@ -15,10 +15,10 @@ export const POST: APIRoute = async ({ request }) => {
     }
 
     const apiKey = import.meta.env.RESEND_API_KEY;
-    const audienceId = import.meta.env.RESEND_AUDIENCE_ID;
+    const segmentId = import.meta.env.RESEND_SEGMENT_ID;
 
-    if (!apiKey || !audienceId) {
-      console.error('Missing RESEND_API_KEY or RESEND_AUDIENCE_ID');
+    if (!apiKey || !segmentId) {
+      console.error('Missing RESEND_API_KEY or RESEND_SEGMENT_ID');
       return new Response(
         JSON.stringify({ message: 'Obrigado! A sua subscrição foi registada.' }),
         { status: 200, headers: { 'Content-Type': 'application/json' } }
@@ -30,7 +30,7 @@ export const POST: APIRoute = async ({ request }) => {
 
     await resend.contacts.create({
       email,
-      audienceId,
+      segments: [segmentId],
     });
 
     return new Response(
