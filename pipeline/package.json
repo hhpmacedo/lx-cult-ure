@@ -1,0 +1,25 @@
+{
+  "name": "lx-culture-pipeline",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Curation pipeline for LX Cult(ure) — scrape, curate, review, publish",
+  "scripts": {
+    "pipeline": "tsx src/run-pipeline.ts",
+    "pipeline:scrape": "tsx src/run-pipeline.ts scrape",
+    "pipeline:curate": "tsx src/run-pipeline.ts curate",
+    "pipeline:review": "tsx src/run-pipeline.ts review",
+    "pipeline:publish": "tsx src/run-pipeline.ts publish"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.82.0",
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.5.2",
+    "cheerio": "^1.2.0",
+    "express": "^5.2.1",
+    "playwright": "^1.56.1",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.2"
+  },
+  "keywords": [],
+  "license": "ISC"
+}
