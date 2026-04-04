@@ -1,0 +1,47 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import EditionHeader from '../../components/EditionHeader.astro';
+import CategorySection from '../../components/CategorySection.astro';
+import SubscribeForm from '../../components/SubscribeForm.astro';
+import type { Category } from '../../lib/types';
+
+export async function getStaticPaths() {
+  const editions = await getCollection('editions');
+  return editions.map((entry) => ({
+    params: { slug: entry.data.slug },
+    props: { edition: entry.data },
+  }));
+}
+
+const { edition } = Astro.props;
+
+const categories: Category[] = [
+  'artes-performativas',
+  'artes-visuais',
+  'literatura',
+  'musica-noite',
+];
+
+const eventsByCategory = categories
+  .map((cat) => ({
+    category: cat,
+    events: edition.events.filter((e: { category: Category }) => e.category === cat),
+  }))
+  .filter((group: { events: unknown[] }) => group.events.length > 0);
+---
+
+<BaseLayout title={`LX Cult(ure) — Semana ${edition.weekNumber}, ${edition.year}`}>
+  <EditionHeader
+    weekNumber={edition.weekNumber}
+    year={edition.year}
+    dateRange={edition.dateRange}
+    introText={edition.introText}
+  />
+
+  {eventsByCategory.map(({ category, events }: { category: Category; events: any[] }) => (
+    <CategorySection category={category} events={events} />
+  ))}
+
+  <SubscribeForm />
+</BaseLayout>

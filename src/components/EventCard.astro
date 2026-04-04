@@ -1,0 +1,187 @@
+---
+import type { CuratedEvent } from '../lib/types';
+import { CATEGORY_COLORS } from '../lib/types';
+
+interface Props {
+  event: CuratedEvent;
+}
+
+const { event } = Astro.props;
+const catColor = CATEGORY_COLORS[event.category];
+---
+
+<article class={`event-card ${event.featured ? 'event-card--featured' : ''}`} style={`--card-accent: ${catColor}`}>
+  {event.featured && <span class="badge-featured">Destaque</span>}
+
+  <h3 class="event-title">
+    {event.originalUrl ? (
+      <a href={event.originalUrl} target="_blank" rel="noopener">{event.title}</a>
+    ) : (
+      event.title
+    )}
+  </h3>
+
+  <div class="event-meta">
+    <span class="event-venue">{event.venue}</span>
+    <span class="event-sep">&middot;</span>
+    <span class="event-neighborhood">{event.venueNeighborhood}</span>
+  </div>
+
+  <div class="event-details">
+    <span class="event-dates">{event.dates}</span>
+    {event.time && <span class="event-time">{event.time}</span>}
+    {event.price && <span class="event-price">{event.price}</span>}
+  </div>
+
+  <p class="event-blurb">{event.blurb}</p>
+
+  {event.criticQuote && (
+    <blockquote class="event-quote">
+      <p>&laquo;{event.criticQuote}&raquo;</p>
+      {event.criticSource && <cite>— {event.criticSource}</cite>}
+    </blockquote>
+  )}
+
+  {event.tags.length > 0 && (
+    <div class="event-tags">
+      {event.tags.map((tag) => (
+        <span class="tag">{tag}</span>
+      ))}
+    </div>
+  )}
+</article>
+
+<style>
+  .event-card {
+    border-left: 5px solid var(--card-accent);
+    padding: var(--space-lg) var(--space-xl);
+    background: var(--cor-branco);
+    position: relative;
+    transition: transform 0.2s;
+  }
+
+  .event-card:hover {
+    transform: translateX(4px);
+  }
+
+  .event-card--featured {
+    border-left-width: 8px;
+    background: var(--cor-fundo-escuro);
+    color: var(--cor-texto-claro);
+    padding: var(--space-xl);
+  }
+
+  .event-card--featured .event-title a,
+  .event-card--featured .event-title {
+    color: var(--cor-texto-claro);
+  }
+
+  .event-card--featured .event-quote {
+    border-color: rgba(255,255,255,0.2);
+    color: rgba(255,255,255,0.8);
+  }
+
+  .event-card--featured .event-quote cite {
+    color: rgba(255,255,255,0.6);
+  }
+
+  .event-card--featured .event-meta,
+  .event-card--featured .event-details {
+    color: rgba(255,255,255,0.7);
+  }
+
+  .badge-featured {
+    position: absolute;
+    top: 0;
+    right: var(--space-lg);
+  }
+
+  .event-title {
+    font-size: 1.3rem;
+    margin-bottom: var(--space-sm);
+  }
+
+  .event-title a {
+    color: var(--cor-texto);
+    text-decoration: none;
+  }
+
+  .event-title a:hover {
+    color: var(--cor-primaria);
+  }
+
+  .event-meta {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: var(--space-xs);
+    display: flex;
+    align-items: center;
+    gap: 0.4em;
+  }
+
+  .event-venue {
+    font-weight: 600;
+  }
+
+  .event-sep {
+    opacity: 0.4;
+  }
+
+  .event-details {
+    display: flex;
+    gap: var(--space-md);
+    font-size: 0.85rem;
+    color: #888;
+    margin-bottom: var(--space-md);
+    font-family: var(--font-display);
+    font-weight: 500;
+  }
+
+  .event-price {
+    font-weight: 600;
+    color: var(--cor-primaria);
+  }
+
+  .event-card--featured .event-price {
+    color: var(--cor-amarelo);
+  }
+
+  .event-blurb {
+    font-size: 0.95rem;
+    line-height: 1.65;
+    margin-bottom: var(--space-md);
+  }
+
+  .event-quote {
+    border-left: 3px solid var(--cor-borda);
+    padding-left: var(--space-md);
+    margin-bottom: var(--space-md);
+    font-style: italic;
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.5;
+  }
+
+  .event-quote cite {
+    display: block;
+    font-style: normal;
+    font-size: 0.8rem;
+    color: #999;
+    margin-top: var(--space-xs);
+  }
+
+  .event-tags {
+    display: flex;
+    gap: var(--space-xs);
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 600px) {
+    .event-card {
+      padding: var(--space-md);
+    }
+    .event-card--featured {
+      padding: var(--space-lg);
+    }
+  }
+</style>

@@ -1,0 +1,75 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ArchiveCard from '../../components/ArchiveCard.astro';
+import SubscribeForm from '../../components/SubscribeForm.astro';
+
+const editions = await getCollection('editions');
+const sorted = editions.sort((a, b) => b.data.slug.localeCompare(a.data.slug));
+---
+
+<BaseLayout title="Arquivo — LX Cult(ure)">
+  <section class="archive-header">
+    <div class="container">
+      <h1>Arquivo</h1>
+      <p class="archive-subtitle">Todas as edições da LX Cult(ure)</p>
+    </div>
+  </section>
+
+  <section class="archive-list">
+    <div class="container">
+      <div class="archive-grid">
+        {sorted.map((entry) => (
+          <ArchiveCard
+            slug={entry.data.slug}
+            weekNumber={entry.data.weekNumber}
+            year={entry.data.year}
+            dateRange={entry.data.dateRange}
+            eventCount={entry.data.events.length}
+          />
+        ))}
+      </div>
+
+      {sorted.length === 0 && (
+        <p class="archive-empty">Ainda não há edições publicadas. Volte em breve!</p>
+      )}
+    </div>
+  </section>
+
+  <SubscribeForm />
+</BaseLayout>
+
+<style>
+  .archive-header {
+    background: var(--cor-fundo-escuro);
+    color: var(--cor-texto-claro);
+    padding: var(--space-3xl) 0 var(--space-2xl);
+  }
+
+  .archive-header h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    margin-bottom: var(--space-sm);
+  }
+
+  .archive-subtitle {
+    font-size: 1.1rem;
+    opacity: 0.7;
+  }
+
+  .archive-list {
+    padding: var(--space-2xl) 0;
+  }
+
+  .archive-grid {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+  }
+
+  .archive-empty {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #888;
+    padding: var(--space-3xl) 0;
+  }
+</style>

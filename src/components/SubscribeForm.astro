@@ -1,0 +1,194 @@
+---
+---
+
+<section class="subscribe" id="subscrever">
+  <div class="container">
+    <div class="subscribe-inner">
+      <div class="subscribe-content">
+        <h2 class="subscribe-title">Receba a cultura de Lisboa<br/>todas as semanas</h2>
+        <p class="subscribe-desc">
+          Todas as quintas-feiras, uma seleção dos melhores eventos culturais
+          da semana seguinte. Curadoria baseada em críticas. Sem spam.
+        </p>
+      </div>
+      <form class="subscribe-form" id="subscribe-form">
+        <div class="form-row">
+          <input
+            type="email"
+            name="email"
+            required
+            placeholder="o-seu@email.pt"
+            class="subscribe-input"
+            aria-label="Email"
+          />
+          <button type="submit" class="subscribe-btn">Subscrever</button>
+        </div>
+        <p class="subscribe-legal">
+          Ao subscrever, aceita receber a newsletter semanal da LX Cult(ure).
+          Pode cancelar a qualquer momento.
+        </p>
+        <div class="subscribe-status" id="subscribe-status" aria-live="polite"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<script>
+  const form = document.getElementById('subscribe-form') as HTMLFormElement;
+  const status = document.getElementById('subscribe-status') as HTMLDivElement;
+
+  form?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const data = new FormData(form);
+    const email = data.get('email') as string;
+
+    status.textContent = 'A enviar...';
+    status.className = 'subscribe-status';
+
+    try {
+      const res = await fetch('/api/subscribe', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email }),
+      });
+
+      const result = await res.json();
+
+      if (res.ok) {
+        status.textContent = result.message || 'Subscrito com sucesso!';
+        status.classList.add('status-success');
+        form.reset();
+      } else {
+        status.textContent = result.error || 'Ocorreu um erro. Tente novamente.';
+        status.classList.add('status-error');
+      }
+    } catch {
+      status.textContent = 'Erro de ligação. Tente novamente.';
+      status.classList.add('status-error');
+    }
+  });
+</script>
+
+<style>
+  .subscribe {
+    background: var(--cor-primaria);
+    color: var(--cor-branco);
+    padding: var(--space-3xl) 0;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .subscribe::before {
+    content: '';
+    position: absolute;
+    top: -4rem;
+    left: -4rem;
+    width: 16rem;
+    height: 16rem;
+    border-radius: 50%;
+    background: var(--cor-magenta);
+    opacity: 0.2;
+  }
+
+  .subscribe-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-2xl);
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  .subscribe-title {
+    font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+    color: var(--cor-branco);
+    margin-bottom: var(--space-md);
+  }
+
+  .subscribe-desc {
+    font-size: 1rem;
+    opacity: 0.85;
+    line-height: 1.6;
+  }
+
+  .form-row {
+    display: flex;
+    gap: 0;
+  }
+
+  .subscribe-input {
+    flex: 1;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    padding: 0.9em 1.2em;
+    border: 3px solid var(--cor-branco);
+    background: transparent;
+    color: var(--cor-branco);
+    outline: none;
+  }
+
+  .subscribe-input::placeholder {
+    color: rgba(255,255,255,0.5);
+  }
+
+  .subscribe-input:focus {
+    border-color: var(--cor-amarelo);
+  }
+
+  .subscribe-btn {
+    font-family: var(--font-display);
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 0.9em 1.5em;
+    background: var(--cor-amarelo);
+    color: var(--cor-texto);
+    border: 3px solid var(--cor-amarelo);
+    cursor: pointer;
+    transition: all 0.2s;
+    white-space: nowrap;
+  }
+
+  .subscribe-btn:hover {
+    background: var(--cor-branco);
+    border-color: var(--cor-branco);
+  }
+
+  .subscribe-legal {
+    font-size: 0.75rem;
+    opacity: 0.6;
+    margin-top: var(--space-sm);
+  }
+
+  .subscribe-status {
+    font-size: 0.9rem;
+    margin-top: var(--space-sm);
+    min-height: 1.5em;
+  }
+
+  .status-success {
+    color: var(--cor-amarelo);
+    font-weight: 600;
+  }
+
+  .status-error {
+    color: #ff6b6b;
+    font-weight: 600;
+  }
+
+  @media (max-width: 768px) {
+    .subscribe-inner {
+      grid-template-columns: 1fr;
+      gap: var(--space-lg);
+    }
+
+    .form-row {
+      flex-direction: column;
+    }
+
+    .subscribe-btn {
+      width: 100%;
+    }
+  }
+</style>

@@ -1,0 +1,47 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import EditionHeader from '../components/EditionHeader.astro';
+import CategorySection from '../components/CategorySection.astro';
+import SubscribeForm from '../components/SubscribeForm.astro';
+import type { Category } from '../lib/types';
+
+const editions = await getCollection('editions');
+const sorted = editions.sort((a, b) => b.data.slug.localeCompare(a.data.slug));
+const latest = sorted[0];
+
+if (!latest) {
+  return Astro.redirect('/arquivo');
+}
+
+const edition = latest.data;
+
+const categories: Category[] = [
+  'artes-performativas',
+  'artes-visuais',
+  'literatura',
+  'musica-noite',
+];
+
+const eventsByCategory = categories
+  .map((cat) => ({
+    category: cat,
+    events: edition.events.filter((e) => e.category === cat),
+  }))
+  .filter((group) => group.events.length > 0);
+---
+
+<BaseLayout title={`LX Cult(ure) — Semana ${edition.weekNumber}, ${edition.year}`}>
+  <EditionHeader
+    weekNumber={edition.weekNumber}
+    year={edition.year}
+    dateRange={edition.dateRange}
+    introText={edition.introText}
+  />
+
+  {eventsByCategory.map(({ category, events }) => (
+    <CategorySection category={category} events={events} />
+  ))}
+
+  <SubscribeForm />
+</BaseLayout>

@@ -1,0 +1,108 @@
+---
+---
+
+<header class="header">
+  <div class="container header-inner">
+    <a href="/" class="logo">
+      <span class="logo-lx">LX</span>
+      <span class="logo-culture">Cult<span class="logo-paren">(</span>ure<span class="logo-paren">)</span></span>
+    </a>
+    <nav class="nav">
+      <a href="/" class="nav-link">Esta Semana</a>
+      <a href="/arquivo" class="nav-link">Arquivo</a>
+      <a href="#subscrever" class="nav-link nav-cta">Subscrever</a>
+    </nav>
+  </div>
+</header>
+
+<style>
+  .header {
+    background: var(--cor-fundo-escuro);
+    color: var(--cor-texto-claro);
+    padding: var(--space-md) 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo {
+    display: flex;
+    align-items: baseline;
+    gap: 0.3em;
+    color: var(--cor-texto-claro);
+    text-decoration: none;
+  }
+
+  .logo:hover {
+    color: var(--cor-texto-claro);
+  }
+
+  .logo-lx {
+    font-family: var(--font-display);
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    color: var(--cor-amarelo);
+  }
+
+  .logo-culture {
+    font-family: var(--font-display);
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+  }
+
+  .logo-paren {
+    color: var(--cor-magenta);
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+    gap: var(--space-lg);
+  }
+
+  .nav-link {
+    font-family: var(--font-display);
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--cor-texto-claro);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .nav-link:hover {
+    color: var(--cor-amarelo);
+  }
+
+  .nav-cta {
+    background: var(--cor-magenta);
+    color: var(--cor-branco);
+    padding: 0.4em 1em;
+  }
+
+  .nav-cta:hover {
+    background: var(--cor-primaria);
+    color: var(--cor-branco);
+  }
+
+  @media (max-width: 600px) {
+    .nav {
+      gap: var(--space-md);
+    }
+    .nav-link {
+      font-size: 0.8rem;
+    }
+    .logo-lx, .logo-culture {
+      font-size: 1.4rem;
+    }
+  }
+</style>

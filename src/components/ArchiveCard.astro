@@ -1,0 +1,81 @@
+---
+import { formatDateRange } from '../lib/dates';
+
+interface Props {
+  slug: string;
+  weekNumber: number;
+  year: number;
+  dateRange: { start: string; end: string };
+  eventCount: number;
+}
+
+const { slug, weekNumber, year, dateRange, eventCount } = Astro.props;
+const formattedRange = formatDateRange(dateRange.start, dateRange.end);
+---
+
+<a href={`/edicao/${slug}`} class="archive-card">
+  <span class="archive-week">S{weekNumber}</span>
+  <div class="archive-info">
+    <span class="archive-dates">{formattedRange}</span>
+    <span class="archive-count">{eventCount} eventos</span>
+  </div>
+  <span class="archive-arrow">&rarr;</span>
+</a>
+
+<style>
+  .archive-card {
+    display: flex;
+    align-items: center;
+    gap: var(--space-lg);
+    padding: var(--space-lg) var(--space-xl);
+    background: var(--cor-branco);
+    border-left: 5px solid var(--cor-primaria);
+    text-decoration: none;
+    color: var(--cor-texto);
+    transition: all 0.2s;
+  }
+
+  .archive-card:hover {
+    transform: translateX(4px);
+    border-color: var(--cor-magenta);
+    color: var(--cor-texto);
+  }
+
+  .archive-week {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--cor-primaria);
+    min-width: 3rem;
+  }
+
+  .archive-card:hover .archive-week {
+    color: var(--cor-magenta);
+  }
+
+  .archive-info {
+    flex: 1;
+  }
+
+  .archive-dates {
+    display: block;
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 1.1rem;
+  }
+
+  .archive-count {
+    font-size: 0.85rem;
+    color: #888;
+  }
+
+  .archive-arrow {
+    font-size: 1.5rem;
+    opacity: 0.3;
+    transition: opacity 0.2s;
+  }
+
+  .archive-card:hover .archive-arrow {
+    opacity: 1;
+  }
+</style>

@@ -1,0 +1,89 @@
+---
+---
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <span class="footer-logo">LX Cult(ure)</span>
+      <p class="footer-desc">
+        Os melhores eventos culturais de Lisboa, todas as semanas na sua caixa de correio.
+        Curadoria baseada em críticas. Para quem vive a cidade.
+      </p>
+    </div>
+    <div class="footer-links">
+      <a href="/">Esta Semana</a>
+      <a href="/arquivo">Arquivo</a>
+      <a href="#subscrever">Subscrever</a>
+    </div>
+    <div class="footer-copy">
+      <p>&copy; {new Date().getFullYear()} LX Cult(ure). Lisboa.</p>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    background: var(--cor-fundo-escuro);
+    color: var(--cor-texto-claro);
+    padding: var(--space-2xl) 0 var(--space-lg);
+    margin-top: var(--space-3xl);
+  }
+
+  .footer-inner {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: var(--space-xl);
+  }
+
+  .footer-logo {
+    font-family: var(--font-display);
+    font-size: 1.3rem;
+    font-weight: 700;
+    display: block;
+    margin-bottom: var(--space-sm);
+  }
+
+  .footer-desc {
+    font-size: 0.9rem;
+    opacity: 0.7;
+    max-width: 28rem;
+    line-height: 1.5;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+  }
+
+  .footer-links a {
+    font-family: var(--font-display);
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--cor-texto-claro);
+    opacity: 0.7;
+    transition: opacity 0.2s;
+  }
+
+  .footer-links a:hover {
+    opacity: 1;
+    color: var(--cor-amarelo);
+  }
+
+  .footer-copy {
+    grid-column: 1 / -1;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: var(--space-md);
+    margin-top: var(--space-md);
+    font-size: 0.8rem;
+    opacity: 0.5;
+  }
+
+  @media (max-width: 600px) {
+    .footer-inner {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

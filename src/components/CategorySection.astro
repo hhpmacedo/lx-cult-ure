@@ -1,0 +1,82 @@
+---
+import type { Category, CuratedEvent } from '../lib/types';
+import { CATEGORY_LABELS, CATEGORY_COLORS } from '../lib/types';
+import EventCard from './EventCard.astro';
+
+interface Props {
+  category: Category;
+  events: CuratedEvent[];
+}
+
+const { category, events } = Astro.props;
+const label = CATEGORY_LABELS[category];
+const color = CATEGORY_COLORS[category];
+
+const sortedEvents = [...events].sort((a, b) => {
+  if (a.featured && !b.featured) return -1;
+  if (!a.featured && b.featured) return 1;
+  return b.aiScore - a.aiScore;
+});
+---
+
+<section class={`category-section cat-${category}`} style={`--section-color: ${color}`}>
+  <div class="container">
+    <div class="category-header">
+      <div class="category-accent" aria-hidden="true"></div>
+      <h2 class="category-title">{label}</h2>
+      <span class="category-count">{events.length}</span>
+    </div>
+    <div class="category-events">
+      {sortedEvents.map((event) => (
+        <EventCard event={event} />
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .category-section {
+    padding: var(--space-2xl) 0;
+  }
+
+  .category-header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    margin-bottom: var(--space-xl);
+  }
+
+  .category-accent {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background: var(--section-color);
+    flex-shrink: 0;
+  }
+
+  .category-title {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+  }
+
+  .category-count {
+    font-family: var(--font-display);
+    font-size: 0.8rem;
+    font-weight: 700;
+    width: 1.8rem;
+    height: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--cor-texto);
+    color: var(--cor-fundo);
+    border-radius: 50%;
+  }
+
+  .category-events {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+  }
+</style>

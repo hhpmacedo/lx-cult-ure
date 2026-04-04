@@ -1,0 +1,129 @@
+---
+import { formatDateRange } from '../lib/dates';
+
+interface Props {
+  weekNumber: number;
+  year: number;
+  dateRange: { start: string; end: string };
+  introText: string;
+}
+
+const { weekNumber, year, dateRange, introText } = Astro.props;
+const formattedRange = formatDateRange(dateRange.start, dateRange.end);
+---
+
+<section class="edition-header">
+  <div class="container">
+    <div class="edition-meta">
+      <span class="edition-week">Semana {weekNumber}</span>
+      <span class="edition-dot"></span>
+      <span class="edition-year">{year}</span>
+    </div>
+    <h1 class="edition-title">{formattedRange}</h1>
+    <div class="edition-deco">
+      <div class="deco-bar bar-1"></div>
+      <div class="deco-bar bar-2"></div>
+      <div class="deco-bar bar-3"></div>
+    </div>
+    <p class="edition-intro">{introText}</p>
+  </div>
+</section>
+
+<style>
+  .edition-header {
+    padding: var(--space-3xl) 0 var(--space-2xl);
+    background: var(--cor-fundo-escuro);
+    color: var(--cor-texto-claro);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .edition-header::before {
+    content: '';
+    position: absolute;
+    top: -5rem;
+    right: -5rem;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    background: var(--cor-primaria);
+    opacity: 0.15;
+  }
+
+  .edition-header::after {
+    content: '';
+    position: absolute;
+    bottom: -3rem;
+    left: 10%;
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    background: var(--cor-magenta);
+    opacity: 0.1;
+  }
+
+  .edition-meta {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-md);
+  }
+
+  .edition-week, .edition-year {
+    font-family: var(--font-display);
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--cor-amarelo);
+  }
+
+  .edition-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--cor-magenta);
+  }
+
+  .edition-title {
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    margin-bottom: var(--space-lg);
+    position: relative;
+    z-index: 1;
+  }
+
+  .edition-deco {
+    display: flex;
+    gap: 6px;
+    margin-bottom: var(--space-xl);
+  }
+
+  .deco-bar {
+    height: 5px;
+    border-radius: 2px;
+  }
+
+  .bar-1 {
+    width: 4rem;
+    background: var(--cor-magenta);
+  }
+
+  .bar-2 {
+    width: 2rem;
+    background: var(--cor-amarelo);
+  }
+
+  .bar-3 {
+    width: 1rem;
+    background: var(--cor-primaria);
+  }
+
+  .edition-intro {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    max-width: 42rem;
+    opacity: 0.85;
+    position: relative;
+    z-index: 1;
+  }
+</style>
