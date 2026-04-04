@@ -1,15 +1,7 @@
 import type { APIRoute } from 'astro';
+import { put, get } from '@vercel/blob';
 
-/**
- * Receives user feedback signals (favorites, dismissals) from the client.
- *
- * These signals feed back into the curation pipeline to improve future editions.
- * Data is stored as JSONL (one JSON object per line) for easy processing.
- *
- * Signals received:
- * - favorite/unfavorite: user marked an event as interesting
- * - dismiss/undismiss: user marked an event as not interesting
- */
+export const prerender = false;
 
 export const POST: APIRoute = async ({ request }) => {
   try {
@@ -18,21 +10,36 @@ export const POST: APIRoute = async ({ request }) => {
     const signal = {
       eventId: body.eventId,
       action: body.action,
+      editionSlug: body.editionSlug || '',
       timestamp: body.timestamp || new Date().toISOString(),
-      favoritesCount: body.favorites?.length || 0,
-      dismissedCount: body.dismissed?.length || 0,
-      ip: request.headers.get('x-forwarded-for')?.split(',')[0]?.trim() || 'unknown',
     };
 
-    // In production, write to a persistent store.
-    // For now, log to console where it can be captured by the pipeline.
-    console.log(`[feedback] ${JSON.stringify(signal)}`);
+    const line = JSON.stringify(signal) + '\n';
+
+    // Read existing signals, append new one
+    let existing = '';
+    try {
+      const blob = await get('feedback/signals.jsonl');
+      if (blob) {
+        existing = await blob.text();
+      }
+    } catch {
+      // File doesn't exist yet — that's fine
+    }
+
+    await put('feedback/signals.jsonl', existing + line, {
+      access: 'private',
+      addRandomSuffix: false,
+      allowOverwrite: true,
+      contentType: 'application/x-ndjson',
+    });
 
     return new Response(JSON.stringify({ ok: true }), {
       status: 200,
       headers: { 'Content-Type': 'application/json' },
     });
-  } catch {
+  } catch (error) {
+    console.error('[feedback] Error:', error);
     return new Response(JSON.stringify({ error: 'Invalid request' }), {
       status: 400,
       headers: { 'Content-Type': 'application/json' },

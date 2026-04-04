@@ -101,9 +101,14 @@
    */
   function emitSignal(eventId: string, action: string): void {
     try {
+      // Extract edition slug from URL (e.g., /edicao/2026-W14 → 2026-W14)
+      const slugMatch = window.location.pathname.match(/\/edicao\/([^/]+)/);
+      const editionSlug = slugMatch?.[1] || '';
+
       const payload = {
         eventId,
         action,
+        editionSlug,
         timestamp: new Date().toISOString(),
         favorites: [...getSet(STORAGE_KEYS.favorites)],
         dismissed: [...getSet(STORAGE_KEYS.dismissed)],
