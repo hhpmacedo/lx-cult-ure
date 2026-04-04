@@ -102,6 +102,7 @@ export async function curateEvents(
           featured: e.featured || false,
           tags: e.tags || [],
           aiScore: e.aiScore || 50,
+          status: e.status || 'new',
         }));
         allCuratedEvents.push(...events);
       }

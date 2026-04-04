@@ -43,6 +43,7 @@ export interface CuratedEvent {
   tags: string[];
   aiScore: number;
   featured: boolean;
+  status: 'new' | 'ongoing';
 }
 
 export interface Edition {
