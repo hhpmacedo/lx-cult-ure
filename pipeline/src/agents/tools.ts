@@ -1,8 +1,10 @@
 import type Anthropic from '@anthropic-ai/sdk';
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'fs';
 import { join } from 'path';
-import type { RawEvent, PipelineConfig } from '../types.js';
+import type { RawEvent, CriticReview, PipelineConfig } from '../types.js';
 import { getScrapers } from '../scrapers/index.js';
+import { getAllReviewScrapers } from '../reviews/index.js';
+import { matchReviewsToEvents } from '../reviews/matcher.js';
 
 /**
  * Tool definitions and implementations for the 3-agent pipeline.
@@ -95,6 +97,26 @@ export const PUBLISH_EDITION_TOOL: Anthropic.Tool = {
   },
 };
 
+export const SCRAPE_REVIEWS_TOOL: Anthropic.Tool = {
+  name: 'scrape_reviews',
+  description:
+    'Scrape critic reviews from Portuguese cultural publications (Ípsilon/Público, Time Out, Blitz, ArteCapital). Returns reviews with ratings, quotes, and sentiment.',
+  input_schema: {
+    type: 'object' as const,
+    properties: {},
+  },
+};
+
+export const MATCH_REVIEWS_TOOL: Anthropic.Tool = {
+  name: 'match_reviews_to_events',
+  description:
+    'Match scraped critic reviews to scraped events using AI. Enriches events with review data (quotes, ratings, critic scores). Must run after both scrape_all_sources and scrape_reviews.',
+  input_schema: {
+    type: 'object' as const,
+    properties: {},
+  },
+};
+
 export const NOTIFY_HUMAN_TOOL: Anthropic.Tool = {
   name: 'notify_human',
   description:
@@ -175,6 +197,69 @@ export async function executeTool(
         return content.slice(0, 50000) + '\n...[truncated]';
       }
       return content;
+    }
+
+    case 'scrape_reviews': {
+      const reviewScrapers = getAllReviewScrapers();
+      const allReviews: CriticReview[] = [];
+      const results: Array<{ source: string; count: number }> = [];
+
+      for (const scraper of reviewScrapers) {
+        try {
+          const reviews = await scraper.scrapeReviews();
+          allReviews.push(...reviews);
+          results.push({ source: scraper.id, count: reviews.length });
+        } catch (error) {
+          results.push({ source: scraper.id, count: 0 });
+        }
+      }
+
+      writeFileSync(
+        join(config.cacheDir, 'reviews.json'),
+        JSON.stringify(allReviews, null, 2)
+      );
+
+      return JSON.stringify({
+        totalReviews: allReviews.length,
+        sources: results,
+        bySentiment: {
+          positive: allReviews.filter((r) => r.sentiment === 'positive').length,
+          mixed: allReviews.filter((r) => r.sentiment === 'mixed').length,
+          negative: allReviews.filter((r) => r.sentiment === 'negative').length,
+          neutral: allReviews.filter((r) => r.sentiment === 'neutral').length,
+        },
+        savedTo: 'reviews.json',
+      });
+    }
+
+    case 'match_reviews_to_events': {
+      const rawPath = join(config.cacheDir, 'raw-events.json');
+      const reviewsPath = join(config.cacheDir, 'reviews.json');
+
+      if (!existsSync(rawPath)) {
+        return JSON.stringify({ error: 'raw-events.json not found. Run scrape_all_sources first.' });
+      }
+      if (!existsSync(reviewsPath)) {
+        return JSON.stringify({ error: 'reviews.json not found. Run scrape_reviews first.' });
+      }
+
+      const events: RawEvent[] = JSON.parse(readFileSync(rawPath, 'utf-8'));
+      const reviews: CriticReview[] = JSON.parse(readFileSync(reviewsPath, 'utf-8'));
+
+      const enriched = await matchReviewsToEvents(events, reviews);
+
+      writeFileSync(
+        join(config.cacheDir, 'enriched-events.json'),
+        JSON.stringify(enriched, null, 2)
+      );
+
+      const withReviews = enriched.filter((e) => e.matchedReviews.length > 0);
+      return JSON.stringify({
+        totalEvents: enriched.length,
+        eventsWithReviews: withReviews.length,
+        totalReviewMatches: enriched.reduce((a, e) => a + e.matchedReviews.length, 0),
+        savedTo: 'enriched-events.json',
+      });
     }
 
     case 'write_file': {

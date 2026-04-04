@@ -21,11 +21,17 @@ PROCESSO:
 5. Guarda o resultado em "curated-events.json" usando "write_file"
 
 CRITÉRIOS DE CURADORIA (por importância):
-1. Relevância cultural — substância artística, não entretenimento genérico
-2. Recepção crítica — eventos com boas críticas ou artistas reconhecidos
+1. Recepção crítica — eventos com críticas positivas de Ípsilon, Time Out, Blitz, ArteCapital são PRIORITÁRIOS. Se um evento tem criticScore ≥80 ou matchedReviews com sentiment "positive", deve ser incluído quase sempre.
+2. Relevância cultural — substância artística, não entretenimento genérico
 3. Interesse local — EXCLUIR experiências turísticas (tuk-tuk, "fado para estrangeiros", etc.)
 4. Diversidade — cobrir as 4 categorias equilibradamente
 5. Acessibilidade — incluir opções gratuitas
+
+COMO INCORPORAR CRÍTICAS:
+- Se o evento tem matchedReviews, USA a melhor quote no campo "criticQuote"
+- Indica a fonte no campo "criticSource" (ex: "Ípsilon / Público", "Time Out Lisboa")
+- A pontuação aiScore deve ser INFLUENCIADA pelo criticScore: um evento com criticScore 90 deve ter aiScore ≥85
+- No blurb, faz referência natural à recepção crítica quando relevante (ex: "Os críticos do Ípsilon consideram-na a exposição do ano")
 
 SINAIS DE EVENTO TURÍSTICO (excluir):
 - "experience", "tour", "tasting" no título
@@ -132,9 +138,23 @@ export async function runCuratorAgent(config: PipelineConfig): Promise<string> {
 
   const prompt = `Cura a edição semanal para ${config.weekId} (${config.weekStart} a ${config.weekEnd}).
 
-Lê os eventos em bruto de "raw-events.json", aplica a curadoria editorial, e guarda o resultado em "curated-events.json".
+FICHEIROS DISPONÍVEIS (lê por esta ordem de preferência):
+1. "enriched-events.json" — eventos COM críticas cruzadas (preferir este!)
+2. "raw-events.json" — eventos em bruto (fallback se enriched não existir)
 
-Seleciona 15-25 dos melhores eventos, escreve blurbs em português, e marca 4 destaques.
+Os eventos enriquecidos têm campos extra:
+- matchedReviews: array de críticas correspondentes (source, sentiment, rating, quote)
+- criticConsensus: resumo da recepção crítica ("Unanimemente positivo", etc.)
+- criticScore: pontuação 0-100 baseada nas críticas
+
+COMO USAR AS CRÍTICAS:
+- Eventos com criticScore ≥80: candidatos fortes a destaque
+- Eventos com criticScore 60-80: boa qualidade, incluir se possível
+- Eventos com criticScore <60 ou sem críticas: avaliar pelos outros critérios
+- USA as quotes das críticas nos campos "criticQuote" e "criticSource"
+- O criticConsensus pode informar o blurb editorial
+
+Guarda o resultado em "curated-events.json". Seleciona 15-25 dos melhores eventos, escreve blurbs em português, e marca 4 destaques.
 
 ${memorySummary ? `\nCONTEXTO DA MEMÓRIA DO SISTEMA:\n${memorySummary}` : ''}`;
 
