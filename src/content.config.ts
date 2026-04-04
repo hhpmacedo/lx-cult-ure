@@ -36,6 +36,7 @@ const editions = defineCollection({
         tags: z.array(z.string()),
         aiScore: z.number(),
         featured: z.boolean(),
+        status: z.enum(['new', 'ongoing']).default('new'),
       })
     ),
   }),
