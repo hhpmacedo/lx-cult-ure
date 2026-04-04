@@ -1,8 +1,11 @@
+import { readFileSync, existsSync } from 'fs';
+import { join, resolve } from 'path';
 import { runAgent } from './agent-loop.js';
 import { READ_FILE_TOOL, WRITE_FILE_TOOL } from './tools.js';
+import { getMemorySummary, loadMemory } from '../memory/store.js';
 import type { PipelineConfig } from '../types.js';
 
-const CURATOR_SYSTEM_PROMPT = `Tu és o Curator Agent da LX Cult(ure) — um crítico cultural experiente que vive em Lisboa há décadas.
+const BASE_CURATOR_PROMPT = `Tu és o Curator Agent da LX Cult(ure) — um crítico cultural experiente que vive em Lisboa há décadas.
 
 A TUA MISSÃO: Transformar eventos em bruto numa edição semanal curada, editorial e pronta para publicação.
 
@@ -59,17 +62,86 @@ IMPORTANTE:
 - Sê exigente mas justo — queremos qualidade, não quantidade
 - O tom é informado, entusiasta mas criterioso — como um amigo culto que recomenda`;
 
+/**
+ * Build the curator's system prompt, incorporating learned patterns
+ * and any evolved prompt from the Meta Agent.
+ */
+function buildCuratorPrompt(): string {
+  // Check if Meta Agent has evolved the prompt
+  const evolvedPromptPath = join(resolve('.'), 'memory', 'curator-prompt.txt');
+  let basePrompt = BASE_CURATOR_PROMPT;
+
+  if (existsSync(evolvedPromptPath)) {
+    const evolved = readFileSync(evolvedPromptPath, 'utf-8').trim();
+    if (evolved.length > 100) {
+      basePrompt = evolved;
+      console.log('  📝 [Curator] A usar prompt evoluído pelo Meta Agent');
+    }
+  }
+
+  // Append learned patterns from memory
+  const mem = loadMemory();
+  const pat = mem.curationPatterns;
+  const additions: string[] = [];
+
+  // Add learned tourist indicators
+  if (pat.touristIndicators.length > 6) {
+    additions.push(
+      `\nINDICADORES TURÍSTICOS APRENDIDOS (excluir também):\n${pat.touristIndicators.map((i) => `- "${i}"`).join('\n')}`
+    );
+  }
+
+  // Add learned rejection patterns
+  if (pat.rejectedPatterns.length > 0) {
+    additions.push(
+      `\nPADRÕES REJEITADOS PELO CURADOR HUMANO:\n${pat.rejectedPatterns.slice(-10).map((p) => `- ${p}`).join('\n')}`
+    );
+  }
+
+  // Add category weight hints
+  const catWeights = Object.entries(pat.preferredCategories);
+  const maxCat = catWeights.reduce((a, b) => (b[1] > a[1] ? b : a));
+  const minCat = catWeights.reduce((a, b) => (b[1] < a[1] ? b : a));
+  if (maxCat[1] > 1.2 || minCat[1] < 0.8) {
+    additions.push(
+      `\nPREFERÊNCIAS DE CATEGORIA (baseado em feedback):
+  Mais eventos de: ${maxCat[0]} (peso: ${maxCat[1].toFixed(2)})
+  Menos eventos de: ${minCat[0]} (peso: ${minCat[1].toFixed(2)})`
+    );
+  }
+
+  // Add preferred venues if known
+  if (pat.preferredVenues.length > 0) {
+    const topVenues = pat.preferredVenues
+      .sort((a, b) => b.score - a.score)
+      .slice(0, 5);
+    additions.push(
+      `\nESPAÇOS FAVORITOS DO CURADOR:\n${topVenues.map((v) => `- ${v.name}`).join('\n')}`
+    );
+  }
+
+  if (additions.length > 0) {
+    return basePrompt + '\n\n--- APRENDIZAGENS DO SISTEMA ---' + additions.join('\n');
+  }
+
+  return basePrompt;
+}
+
 export async function runCuratorAgent(config: PipelineConfig): Promise<string> {
+  const memorySummary = getMemorySummary();
+
   const prompt = `Cura a edição semanal para ${config.weekId} (${config.weekStart} a ${config.weekEnd}).
 
 Lê os eventos em bruto de "raw-events.json", aplica a curadoria editorial, e guarda o resultado em "curated-events.json".
 
-Seleciona 15-25 dos melhores eventos, escreve blurbs em português, e marca 4 destaques.`;
+Seleciona 15-25 dos melhores eventos, escreve blurbs em português, e marca 4 destaques.
+
+${memorySummary ? `\nCONTEXTO DA MEMÓRIA DO SISTEMA:\n${memorySummary}` : ''}`;
 
   return runAgent(
     {
       name: 'Curator',
-      systemPrompt: CURATOR_SYSTEM_PROMPT,
+      systemPrompt: buildCuratorPrompt(),
       tools: [READ_FILE_TOOL, WRITE_FILE_TOOL],
       maxTurns: 8,
     },

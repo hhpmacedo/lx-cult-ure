@@ -12,7 +12,10 @@
     "agents": "tsx src/agents/run-agents.ts",
     "agents:scout": "tsx src/agents/run-agents.ts scout",
     "agents:curator": "tsx src/agents/run-agents.ts curator",
-    "agents:publisher": "tsx src/agents/run-agents.ts publisher"
+    "agents:publisher": "tsx src/agents/run-agents.ts publisher",
+    "feedback": "tsx src/feedback/collect.ts",
+    "validate": "tsx src/feedback/validate-post-event.ts",
+    "improve": "tsx -e \"import {runMetaAgent} from './src/agents/meta/meta-agent.js'; runMetaAgent().then(r => console.log(r.summary))\""
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.82.0",
