@@ -29,10 +29,11 @@ jobs:
       - name: Install Playwright browsers
         run: cd pipeline && npx playwright install chromium --with-deps
 
-      - name: Run pipeline agents
+      - name: Run auto pipeline
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-        run: cd pipeline && npm run agents
+          BLOB_READ_WRITE_TOKEN: ${{ secrets.BLOB_READ_WRITE_TOKEN }}
+        run: cd pipeline && npm run pipeline:auto
 
       - name: Build site with new content
         run: npm run build
@@ -51,4 +52,5 @@ jobs:
       - name: Send newsletter
         env:
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          RESEND_SEGMENT_ID: ${{ secrets.RESEND_SEGMENT_ID }}
         run: npm run newsletter:send
