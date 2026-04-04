@@ -24,10 +24,20 @@ const categories: Category[] = [
   'musica-noite',
 ];
 
-const eventsByCategory = categories
+const newEvents = edition.events.filter((e: { status?: string }) => e.status !== 'ongoing');
+const ongoingEvents = edition.events.filter((e: { status?: string }) => e.status === 'ongoing');
+
+const newByCategory = categories
   .map((cat) => ({
     category: cat,
-    events: edition.events.filter((e: { category: Category }) => e.category === cat),
+    events: newEvents.filter((e: { category: Category }) => e.category === cat),
+  }))
+  .filter((group: { events: unknown[] }) => group.events.length > 0);
+
+const ongoingByCategory = categories
+  .map((cat) => ({
+    category: cat,
+    events: ongoingEvents.filter((e: { category: Category }) => e.category === cat),
   }))
   .filter((group: { events: unknown[] }) => group.events.length > 0);
 ---
@@ -40,10 +50,50 @@ const eventsByCategory = categories
     introText={edition.introText}
   />
 
-  {eventsByCategory.map(({ category, events }: { category: Category; events: any[] }) => (
-    <CategorySection category={category} events={events} />
-  ))}
+  {newByCategory.length > 0 && (
+    <div class="section-group">
+      <div class="container">
+        <h2 class="section-heading">Estreias da semana</h2>
+      </div>
+      {newByCategory.map(({ category, events }: { category: Category; events: any[] }) => (
+        <CategorySection category={category} events={events} />
+      ))}
+    </div>
+  )}
+
+  {ongoingByCategory.length > 0 && (
+    <div class="section-group">
+      <div class="container">
+        <h2 class="section-heading section-heading--ongoing">Ainda a decorrer</h2>
+      </div>
+      {ongoingByCategory.map(({ category, events }: { category: Category; events: any[] }) => (
+        <CategorySection category={category} events={events} />
+      ))}
+    </div>
+  )}
 
   <SubscribeForm />
   <EventActionsScript />
 </BaseLayout>
+
+<style>
+  .section-heading {
+    font-size: clamp(1.3rem, 3vw, 1.8rem);
+    font-family: var(--font-display);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    padding-bottom: var(--space-md);
+    border-bottom: 3px solid var(--cor-texto);
+    margin-bottom: var(--space-lg);
+  }
+
+  .section-heading--ongoing {
+    border-bottom-color: var(--cor-borda);
+    color: #666;
+  }
+
+  .section-group {
+    margin-bottom: var(--space-xl);
+  }
+</style>
