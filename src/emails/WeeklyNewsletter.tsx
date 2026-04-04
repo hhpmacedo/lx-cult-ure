@@ -294,7 +294,7 @@ export default function WeeklyNewsletter({
                 </Link>
               ) : (
                 <Link
-                  href={`mailto:ola@lxculture.pt?subject=Cancelar%20subscrição`}
+                  href={`mailto:macedo.h@gmail.com?subject=Cancelar%20subscrição`}
                   style={{ ...styles.footerLink, fontSize: '11px', color: '#aaa' }}
                 >
                   Cancelar subscrição
