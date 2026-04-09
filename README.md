@@ -2,7 +2,7 @@
 
 Curadoria semanal dos melhores eventos culturais de Lisboa.
 
-**Website**: [lxculture.pt](https://lxculture.pt)
+**Website**: [[lxculture.pt](https://lx-cult-ure.vercel.app/)]
 
 ## O que é
 
