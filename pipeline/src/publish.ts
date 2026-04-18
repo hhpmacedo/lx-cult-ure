@@ -28,6 +28,10 @@ export function publishEdition(
     events: input.events.map((e, i) => ({
       ...e,
       id: e.id || `evt-${String(i + 1).padStart(3, '0')}`,
+      time: coerceString(e.time),
+      price: coerceString(e.price),
+      criticSource: coerceString(e.criticSource),
+      criticQuote: coerceString(e.criticQuote),
     })),
   };
 
@@ -47,6 +51,22 @@ export function publishEdition(
   );
 
   return filePath;
+}
+
+function coerceString(value: unknown): string | undefined {
+  if (value === undefined || value === null) return undefined;
+  if (typeof value === 'string') return value.trim() || undefined;
+  if (typeof value === 'number' || typeof value === 'boolean') return String(value);
+  if (typeof value === 'object') {
+    const obj = value as Record<string, unknown>;
+    if (typeof obj.start === 'string' && typeof obj.end === 'string') {
+      return `${obj.start}–${obj.end}`;
+    }
+    for (const key of ['value', 'text', 'label', 'quote', 'source', 'name']) {
+      if (typeof obj[key] === 'string') return obj[key] as string;
+    }
+  }
+  return undefined;
 }
 
 /**
