@@ -1,0 +1,510 @@
+{
+  "slug": "2026-W16",
+  "weekNumber": 16,
+  "year": 2026,
+  "dateRange": {
+    "start": "2026-04-13",
+    "end": "2026-04-19"
+  },
+  "introText": "Esta semana Lisboa celebra a diversidade da língua portuguesa com um concerto especial na Gulbenkian, enquanto as exposições de Teresa Couto Pinto sobre António Variações e a 7.ª Masterclass Narrativa chegam ao fim. A inauguração do Café Central na Graça promete animar o bairro com música ao vivo, e o som do carrilhão de Mafra ecoa pelos domingos. Entre fado autêntico, arte contemporânea e novos espaços culturais, a semana oferece o melhor da cena cultural lisboeta — longe dos roteiros turísticos.",
+  "publishedAt": "2026-04-18T10:47:37.157Z",
+  "events": [
+    {
+      "title": "Por Um Mundu Nôbu",
+      "category": "musica-noite",
+      "venue": "Fundação Calouste Gulbenkian",
+      "venueNeighborhood": "Avenidas Novas",
+      "dates": "16 Abr",
+      "status": "new",
+      "time": "21h",
+      "price": "Gratuito",
+      "blurb": "Calema, Carolina Deslandes, Dino D'Santiago, Jota Pê, Koffy, Soraia Morais e a Orquestra Sem Fronteiras celebram a diversidade da língua portuguesa numa noite única. Um encontro musical que atravessa continentes e gerações, mostrando a riqueza da lusofonia contemporânea. Evento gratuito que promete ser memorável no Grande Auditório.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/coisas-para-fazer/gratis-em-lisboa-esta-semana",
+      "tags": [
+        "lusofonia",
+        "música ao vivo",
+        "gratuito",
+        "diversidade"
+      ],
+      "aiScore": 95,
+      "featured": true,
+      "id": "evt-081"
+    },
+    {
+      "title": "Meu nome António e Alexandre Farto Aka Vhils. Selected Editions. 2008-2024",
+      "category": "artes-visuais",
+      "venue": "Local não especificado",
+      "venueNeighborhood": "Lisboa",
+      "dates": "Até 31 Mai",
+      "status": "ongoing",
+      "price": "Gratuito",
+      "blurb": "Teresa Couto Pinto revela a intimidade de António Variações em 85 fotografias inéditas, ao lado de edições selecionadas de Vhils. Um diálogo visual entre a espontaneidade do músico português mais icónico e a arte urbana contemporânea. Entrada gratuita para uma exposição imperdível sobre dois génios portugueses.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/arte/meu-nome-antonio",
+      "tags": [
+        "António Variações",
+        "Vhils",
+        "fotografia",
+        "arte urbana"
+      ],
+      "aiScore": 92,
+      "featured": true,
+      "id": "evt-084"
+    },
+    {
+      "title": "Xerazade, a Coleção Interminável do CAM",
+      "category": "artes-visuais",
+      "venue": "Centro de Arte Moderna da Gulbenkian",
+      "venueNeighborhood": "Avenidas Novas",
+      "dates": "Domingo 20 Abr",
+      "status": "ongoing",
+      "time": "A partir das 14h",
+      "price": "Gratuito",
+      "blurb": "Aos domingos, a Gulbenkian abre as portas gratuitamente para a grande exposição do CAM. Com o Museu Gulbenkian encerrado para obras até julho, esta é a oportunidade de descobrir tesouros da coleção de arte moderna. Uma viagem pela arte contemporânea portuguesa e internacional.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/arte/linha-de-mare-coleccao-do-cam",
+      "tags": [
+        "arte moderna",
+        "domingo gratuito",
+        "coleção",
+        "Gulbenkian"
+      ],
+      "aiScore": 88,
+      "featured": false,
+      "id": "evt-087"
+    },
+    {
+      "title": "Coro dos Anjos",
+      "category": "musica-noite",
+      "venue": "Jardim dos Coruchéus",
+      "venueNeighborhood": "Anjos",
+      "dates": "13–19 Abr",
+      "status": "new",
+      "price": "Gratuito",
+      "blurb": "Nascido no bairro dos Anjos, este grupo foca-se na música de raiz portuguesa e nas inquietações contemporâneas. Colaboraram com Criatura e as Cantadeiras do Campo do Gerês, resgatando instrumentos tradicionais e o espírito comunitário. Uma experiência autêntica que celebra a cultura popular portuguesa.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/coisas-para-fazer/gratis-em-lisboa-esta-semana",
+      "tags": [
+        "música tradicional",
+        "bairro",
+        "comunitário",
+        "raiz portuguesa"
+      ],
+      "aiScore": 85,
+      "featured": false,
+      "id": "evt-085"
+    },
+    {
+      "title": "Adrien Moignard Trio",
+      "category": "musica-noite",
+      "venue": "Django Portugal Fest",
+      "venueNeighborhood": "Centro",
+      "dates": "8 Mai",
+      "status": "ongoing",
+      "time": "21h",
+      "price": "17€",
+      "blurb": "O guitarrista francês Adrien Moignard é uma das vozes mais respeitadas do jazz manouche contemporâneo. Com o seu trio, promete uma noite de virtuosismo técnico e sensibilidade musical refinada, no âmbito do prestigiado Django Portugal Fest.",
+      "originalUrl": "https://www.eventbrite.pt/e/adrien-moignard-trio-django-portugal-fest-tickets-1975366719032",
+      "tags": [
+        "jazz manouche",
+        "virtuosismo",
+        "internacional"
+      ],
+      "aiScore": 85,
+      "featured": false,
+      "id": "evt-161"
+    },
+    {
+      "title": "TV Girl",
+      "category": "musica-noite",
+      "venue": "LAV - Lisboa Ao Vivo",
+      "venueNeighborhood": "Marvila",
+      "dates": "Data a confirmar",
+      "status": "new",
+      "blurb": "Os californianos TV Girl trazem finalmente a Lisboa o seu indie pop dreamwave que conquistou o Spotify e as playlists de uma geração. Brad Petering e companhia prometem uma noite de samples nostálgicos e melodias viciantes que definiram o som lo-fi dos anos 2010. Uma oportunidade rara de ver ao vivo esta dupla cult.",
+      "originalUrl": "https://feverup.com/m/476626",
+      "tags": [
+        "indie pop",
+        "ao vivo",
+        "internacional"
+      ],
+      "aiScore": 85,
+      "featured": false,
+      "id": "evt-241"
+    },
+    {
+      "title": "Casa-Museu Amália Rodrigues",
+      "category": "artes-visuais",
+      "venue": "Casa-Museu Amália Rodrigues",
+      "venueNeighborhood": "São Bento",
+      "dates": "Até 30 Out",
+      "status": "ongoing",
+      "price": "9€",
+      "blurb": "A casa onde viveu a Rainha do Fado permanece como um dos espaços mais íntimos para compreender Amália além do mito. O espólio pessoal, desde vestidos de cena a cartas privadas, oferece uma perspetiva única sobre a mulher por trás da voz que definiu o fado moderno. Uma visita obrigatória para quem quer entender a cultura portuguesa do século XX.",
+      "originalUrl": "https://feverup.com/m/101650",
+      "tags": [
+        "fado",
+        "museu",
+        "património cultural"
+      ],
+      "aiScore": 85,
+      "featured": false,
+      "id": "evt-482"
+    },
+    {
+      "title": "Mosteiro dos Jerónimos",
+      "category": "artes-visuais",
+      "venue": "Mosteiro dos Jerónimos",
+      "venueNeighborhood": "Belém",
+      "dates": "19 Abr–12 Jul",
+      "status": "new",
+      "price": "18€",
+      "blurb": "O jóia da arquitetura manuelina mantém-se como uma visita obrigatória para compreender a grandeza artística portuguesa. Para além da beleza arquitectónica, o mosteiro oferece uma lição de história viva sobre os Descobrimentos. Uma experiência cultural fundamental que transcende o turismo convencional.",
+      "originalUrl": "https://feverup.com/m/113633",
+      "tags": [
+        "património",
+        "arquitetura",
+        "história",
+        "manuelino"
+      ],
+      "aiScore": 85,
+      "featured": false,
+      "id": "evt-726"
+    },
+    {
+      "title": "Concerto de carrilhão em Mafra",
+      "category": "musica-noite",
+      "venue": "Palácio de Mafra",
+      "venueNeighborhood": "Mafra",
+      "dates": "20 Abr",
+      "status": "new",
+      "time": "16h",
+      "price": "Gratuito",
+      "blurb": "Abel Chaves faz soar o grande carrilhão de Mafra numa experiência sonora de grande intensidade. Os ecos do palácio amplificam esta arte musical única, passando por grandes clássicos. Uma experiência cultural fora de Lisboa que vale a viagem de domingo.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/noticias/este-domingo-ha-concerto-de-carrilhao-em-mafra-e-a-entrada-e-livre-041224",
+      "tags": [
+        "carrilhão",
+        "música clássica",
+        "Mafra",
+        "experiência única"
+      ],
+      "aiScore": 82,
+      "featured": false,
+      "id": "evt-088"
+    },
+    {
+      "title": "Exposição na Sala Subterrânea do Metro Terreiro do Paço",
+      "category": "artes-visuais",
+      "venue": "Estação Metro Terreiro do Paço",
+      "venueNeighborhood": "Baixa",
+      "dates": "18 Abr–31 Jul",
+      "status": "new",
+      "price": "19,20€–24€",
+      "blurb": "A descoberta arqueológica mais fascinante de Lisboa ganha nova vida nesta exposição permanente. Os vestígios do Palácio da Ribeira, revelados durante as obras do metro, oferecem uma viagem no tempo ao coração do antigo poder real. Uma experiência única que transforma uma estação de metro num museu subterrâneo.",
+      "originalUrl": "https://feverup.com/m/471066",
+      "tags": [
+        "arqueologia",
+        "história",
+        "património",
+        "subterrâneo"
+      ],
+      "aiScore": 82,
+      "featured": false,
+      "id": "evt-722"
+    },
+    {
+      "title": "Visita à Fábrica de Moagem",
+      "category": "artes-visuais",
+      "venue": "Antiga Fábrica de Moagem da Manutenção Militar",
+      "venueNeighborhood": "Beato",
+      "dates": "18 Abr",
+      "status": "new",
+      "time": "15h",
+      "price": "Gratuito",
+      "blurb": "O Museu de Lisboa abre as portas de um dos patrimónios industriais mais importantes da cidade. Uma visita guiada de 60 minutos que revela os segredos desta antiga fábrica militar no coração do Beato. Perfeito para quem quer conhecer a Lisboa industrial longe das multidões turísticas.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/coisas-para-fazer/gratis-em-lisboa-esta-semana",
+      "tags": [
+        "património industrial",
+        "Beato",
+        "visita guiada",
+        "gratuito"
+      ],
+      "aiScore": 80,
+      "featured": false,
+      "id": "evt-083"
+    },
+    {
+      "title": "Emel Mathlouthi",
+      "category": "musica-noite",
+      "venue": "Local a confirmar",
+      "venueNeighborhood": "Centro",
+      "dates": "5 Jul",
+      "status": "ongoing",
+      "time": "20h30",
+      "price": "26€",
+      "blurb": "A cantora tunisina que se tornou a voz da Primavera Árabe regressa a Lisboa. Mathlouthi combina tradição árabe com sonoridades contemporâneas, criando uma experiência musical de rara intensidade política e emocional.",
+      "originalUrl": "https://www.eventbrite.pt/e/emel-mathlouthi-live-in-lisbon-tickets-1982792451598",
+      "tags": [
+        "world music",
+        "política",
+        "tunisina"
+      ],
+      "aiScore": 80,
+      "featured": false,
+      "id": "evt-162"
+    },
+    {
+      "title": "Concerto à Luz de Velas na Igreja de Santa Catarina",
+      "category": "musica-noite",
+      "venue": "Igreja de Santa Catarina",
+      "venueNeighborhood": "Chiado",
+      "dates": "9 Mai",
+      "status": "new",
+      "price": "21€–25€",
+      "blurb": "A Igreja de Santa Catarina transforma-se num palco íntimo para música clássica à luz de centenas de velas. O ambiente único deste templo do século XVII oferece uma experiência sensorial completa, onde a arquitetura sacra dialoga com repertórios que vão do barroco ao contemporâneo. Lisboa redescobre a contemplação musical.",
+      "originalUrl": "https://feverup.com/m/189244",
+      "tags": [
+        "música clássica",
+        "ambiente único",
+        "contemplativo"
+      ],
+      "aiScore": 80,
+      "featured": false,
+      "id": "evt-243"
+    },
+    {
+      "title": "Museu da Farmácia",
+      "category": "artes-visuais",
+      "venue": "Museu da Farmácia",
+      "venueNeighborhood": "Santa Catarina",
+      "dates": "18 Abr–30 Dez",
+      "status": "new",
+      "price": "Desde 5€",
+      "blurb": "Um dos museus mais curiosos e bem organizados de Lisboa oferece uma perspetiva fascinante sobre a história da medicina e da farmácia. A coleção é rica e bem apresentada, com peças únicas que contam histórias surpreendentes. Uma descoberta cultural que combina ciência, arte e história de forma exemplar.",
+      "originalUrl": "https://feverup.com/m/114041",
+      "tags": [
+        "museu",
+        "ciência",
+        "medicina",
+        "história"
+      ],
+      "aiScore": 80,
+      "featured": false,
+      "id": "evt-728"
+    },
+    {
+      "title": "Inauguração do Café Central",
+      "category": "musica-noite",
+      "venue": "Café Central",
+      "venueNeighborhood": "Graça",
+      "dates": "19–20 Abr",
+      "status": "new",
+      "price": "Gratuito",
+      "blurb": "A Graça ganha um novo espaço cultural com concertos de Benjamim e Samuel Úria no sábado, e Jam do Pika no domingo. Um café com nome clássico que promete dinamizar o bairro da Estrela d'Ouro. Festa de abertura com música ao vivo e ambiente genuinamente lisboeta.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/coisas-para-fazer/gratis-em-lisboa-esta-semana",
+      "tags": [
+        "inauguração",
+        "música ao vivo",
+        "bairro",
+        "Graça"
+      ],
+      "aiScore": 78,
+      "featured": false,
+      "id": "evt-086"
+    },
+    {
+      "title": "Sunset Fado Experience at Ando Living Rooftop",
+      "category": "musica-noite",
+      "venue": "Ando Living Rooftop",
+      "venueNeighborhood": "Lisboa",
+      "dates": "13–19 Abr",
+      "status": "new",
+      "price": "45€",
+      "blurb": "Fiona French, fadista francesa, oferece uma experiência de fado ao pôr-do-sol num rooftop lisboeta. Uma proposta que junta a tradição do fado com um ambiente contemporâneo e vistas sobre a cidade. Para quem procura fado autêntico fora dos circuitos turísticos habituais.",
+      "originalUrl": "https://www.eventbrite.pt/e/sunset-fado-experience-at-ando-living-rooftop-fiona-french-fadista-tickets-1987353986271",
+      "tags": [
+        "fado",
+        "rooftop",
+        "pôr-do-sol",
+        "autêntico"
+      ],
+      "aiScore": 78,
+      "featured": false,
+      "id": "evt-095"
+    },
+    {
+      "title": "ACAI Days by The AI Art Magazine",
+      "category": "artes-visuais",
+      "venue": "Local a confirmar",
+      "venueNeighborhood": "Centro",
+      "dates": "4 Jun",
+      "status": "ongoing",
+      "time": "9h",
+      "price": "Gratuito",
+      "blurb": "Evento dedicado à interseção entre arte e inteligência artificial. Uma reflexão necessária sobre os novos paradigmas da criação artística, com palestras e demonstrações que exploram as potencialidades e desafios da AI na arte contemporânea.",
+      "originalUrl": "https://www.eventbrite.pt/e/acai-days-by-the-ai-art-magazine-tickets-1983878950345",
+      "tags": [
+        "AI",
+        "arte digital",
+        "contemporâneo"
+      ],
+      "aiScore": 78,
+      "featured": false,
+      "id": "evt-170"
+    },
+    {
+      "title": "Fado no Auditório do Museu da Farmácia",
+      "category": "musica-noite",
+      "venue": "Auditório do Museu da Farmácia",
+      "venueNeighborhood": "Estrela",
+      "dates": "16 Mai",
+      "status": "new",
+      "price": "15€",
+      "blurb": "O fado encontra casa num dos auditórios mais peculiares de Lisboa, onde a história da medicina portuguesa serve de cenário para a expressão máxima da alma lisboeta. Um ambiente intimista que privilegia a autenticidade sobre o espetáculo turístico, oferecendo uma experiência genuína desta arte Património da Humanidade.",
+      "originalUrl": "https://feverup.com/m/121235",
+      "tags": [
+        "fado autêntico",
+        "intimista",
+        "património"
+      ],
+      "aiScore": 78,
+      "featured": false,
+      "id": "evt-245"
+    },
+    {
+      "title": "Oceanário de Lisboa",
+      "category": "artes-visuais",
+      "venue": "Oceanário",
+      "venueNeighborhood": "Parque das Nações",
+      "dates": "18 Abr–14 Jun",
+      "status": "new",
+      "price": "31€",
+      "blurb": "Uma das instituições culturais mais relevantes de Lisboa continua a renovar-se com exposições temporárias de qualidade. Para além da coleção permanente impressionante, o Oceanário mantém-se como referência internacional na divulgação científica. Uma visita sempre gratificante, especialmente para quem procura experiências familiares de qualidade.",
+      "originalUrl": "https://feverup.com/m/133656",
+      "tags": [
+        "oceanário",
+        "ciência",
+        "família",
+        "exposição"
+      ],
+      "aiScore": 78,
+      "featured": false,
+      "id": "evt-725"
+    },
+    {
+      "title": "Horizonte de Quéops: Viagem ao Antigo Egito",
+      "category": "artes-performativas",
+      "venue": "Local a confirmar",
+      "venueNeighborhood": "Centro",
+      "dates": "Em exibição",
+      "status": "ongoing",
+      "time": "Várias sessões",
+      "price": "A definir",
+      "blurb": "Experiência imersiva que combina tecnologia e narrativa histórica numa viagem ao Antigo Egito. Uma proposta ambiciosa que utiliza recursos multimédia para criar uma experiência sensorial única sobre uma das civilizações mais fascinantes da humanidade.",
+      "originalUrl": "https://feverup.com/m/471066",
+      "tags": [
+        "imersivo",
+        "história",
+        "multimédia"
+      ],
+      "aiScore": 76,
+      "featured": true,
+      "id": "evt-172"
+    },
+    {
+      "title": "7.ª Masterclass Narrativa",
+      "category": "artes-visuais",
+      "venue": "Local não especificado",
+      "venueNeighborhood": "Lisboa",
+      "dates": "Até 18 Abr",
+      "status": "ongoing",
+      "blurb": "Última oportunidade para ver o trabalho de seis artistas emergentes que exploraram paisagens da Beira Baixa às pressões urbanas de Lisboa. Uma exposição que documenta diferentes olhares sobre o território português, resultado de uma formação que tem revelado novos talentos. Termina esta semana, não percas.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/arte/7-masterclass-narrativa",
+      "tags": [
+        "fotografia",
+        "paisagem",
+        "emergentes",
+        "último fim de semana"
+      ],
+      "aiScore": 75,
+      "featured": false,
+      "id": "evt-082"
+    },
+    {
+      "title": "Festival ECO",
+      "category": "artes-performativas",
+      "venue": "Local não especificado",
+      "venueNeighborhood": "Lisboa",
+      "dates": "17 Abr",
+      "status": "new",
+      "price": "Gratuito",
+      "blurb": "Um festival dedicado às questões ambientais que cruza arte, performance e consciência ecológica. Evento gratuito que promete sensibilizar através de diferentes linguagens artísticas. Uma proposta necessária que junta cultura e sustentabilidade.",
+      "originalUrl": "https://www.eventbrite.pt/e/festival-eco-tickets-1987602206705",
+      "tags": [
+        "ecologia",
+        "sustentabilidade",
+        "arte",
+        "gratuito"
+      ],
+      "aiScore": 75,
+      "featured": false,
+      "id": "evt-090"
+    },
+    {
+      "title": "Collage in Motion: Arte da Encadernação Não-Adesiva",
+      "category": "artes-visuais",
+      "venue": "Local a confirmar",
+      "venueNeighborhood": "Centro",
+      "dates": "Workshop",
+      "status": "new",
+      "time": "A definir",
+      "price": "40€",
+      "blurb": "Workshop que explora técnicas alternativas de encadernação através da colagem. Uma abordagem experimental ao livro de artista que combina artes visuais e design gráfico, ideal para quem procura expandir a sua prática criativa.",
+      "originalUrl": "https://www.eventbrite.pt/e/collage-in-motion-the-art-of-non-adhesive-bookmaking-tickets-1985074591540",
+      "tags": [
+        "workshop",
+        "livro de artista",
+        "experimental"
+      ],
+      "aiScore": 75,
+      "featured": false,
+      "id": "evt-166"
+    },
+    {
+      "title": "Separados... Mas Pouco",
+      "category": "artes-performativas",
+      "venue": "Teatro Custom Café",
+      "venueNeighborhood": "Príncipe Real",
+      "dates": "Até 23 Mai",
+      "status": "ongoing",
+      "price": "20€",
+      "blurb": "Comédia portuguesa que explora com humor inteligente as complexidades dos relacionamentos modernos. O Teatro Custom Café acolhe esta produção que tem conquistado o público lisboeta com o seu retrato irreverente mas tocante das separações contemporâneas. Um espetáculo que fala a linguagem do nosso tempo.",
+      "originalUrl": "https://feverup.com/m/104482",
+      "tags": [
+        "comédia",
+        "teatro português",
+        "relacionamentos"
+      ],
+      "aiScore": 75,
+      "featured": false,
+      "id": "evt-242"
+    },
+    {
+      "title": "Pilar 7 Bridge Experience",
+      "category": "artes-visuais",
+      "venue": "Pilar 7",
+      "venueNeighborhood": "Alcântara",
+      "dates": "18 Abr–12 Jul",
+      "status": "new",
+      "price": "5,50€",
+      "blurb": "Uma perspetiva única sobre a Ponte 25 de Abril através de uma experiência imersiva no próprio pilar da ponte. O projeto oferece uma abordagem inovadora ao património arquitetónico lisboeta, combinando tecnologia e história numa proposta acessível. Uma oportunidade rara de conhecer um dos ícones da cidade por dentro.",
+      "originalUrl": "https://feverup.com/m/493878",
+      "tags": [
+        "património",
+        "arquitetura",
+        "imersivo",
+        "ponte"
+      ],
+      "aiScore": 75,
+      "featured": false,
+      "id": "evt-721"
+    }
+  ]
+}
