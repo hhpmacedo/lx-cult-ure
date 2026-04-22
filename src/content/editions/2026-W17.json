@@ -1,0 +1,520 @@
+{
+  "slug": "2026-W17",
+  "weekNumber": 17,
+  "year": 2026,
+  "dateRange": {
+    "start": "2026-04-20",
+    "end": "2026-04-26"
+  },
+  "introText": "A primavera lisboeta aquece os circuitos culturais com uma semana particularmente rica. Entre as paredes do Gulbenkian, a exposição 'Arte e Moda na Coleção Gulbenkian' promete diálogos inesperados entre mestres da pintura e gigantes da alta-costura. Nos espaços alternativos, a Underdogs continua a apostar em residências abertas ao público, enquanto o teatro independente ganha força com propostas como 'As Cadeiras' de Ionesco. É uma Lisboa que celebra tanto os seus clássicos como as vozes emergentes, num equilíbrio perfeito entre tradição e contemporaneidade.",
+  "publishedAt": "2026-04-22T07:34:36.074Z",
+  "events": [
+    {
+      "title": "Arte e Moda na Coleção Gulbenkian",
+      "category": "artes-visuais",
+      "venue": "Museu Calouste Gulbenkian",
+      "venueNeighborhood": "Avenidas Novas",
+      "dates": "22 Abr em diante",
+      "status": "new",
+      "blurb": "Rembrandt dialoga com Dior, Monet conversa com Givenchy. Esta exposição coloca obras-primas da coleção Gulbenkian em diálogo com peças de alta-costura, explorando as ligações profundas entre arte pictórica e design de moda. Um exercício curatorial ambicioso que promete revelar paralelos inesperados entre dois mundos aparentemente distintos.",
+      "originalUrl": "https://cartazculturallisboa.pt/evento/arte-e-moda-na-colecao-gulbenkian/",
+      "tags": [
+        "exposição",
+        "moda",
+        "arte clássica",
+        "Gulbenkian"
+      ],
+      "aiScore": 95,
+      "featured": true,
+      "id": "evt-001"
+    },
+    {
+      "title": "João Penalva: Retrospetiva",
+      "category": "artes-visuais",
+      "venue": "Culturgest",
+      "venueNeighborhood": "Campo Pequeno",
+      "dates": "Em exibição",
+      "status": "ongoing",
+      "blurb": "Cinquenta anos de criação artística de João Penalva ganham uma retrospetiva que a própria Culturgest admite não conseguir conter por completo. As suas instalações conceptuais e trabalhos multimédia revelam um artista que sempre questionou as fronteiras entre diferentes linguagens. Uma exposição fundamental para compreender uma das vozes mais consistentes da arte portuguesa contemporânea.",
+      "criticSource": "Time Out Lisboa",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/noticias/um-artista-em-retrospectiva-as-instalacoes-de-joao-penalva-nao-cabem-na-culturgest-041726",
+      "tags": [
+        "retrospetiva",
+        "instalações",
+        "arte contemporânea",
+        "multimédia"
+      ],
+      "aiScore": 94,
+      "featured": false,
+      "id": "evt-011"
+    },
+    {
+      "title": "Lourdes Castro: Existe Luz na Sombra",
+      "category": "artes-visuais",
+      "venue": "Sociedade Nacional de Belas Artes",
+      "venueNeighborhood": "Chiado",
+      "dates": "Até 16 Mai",
+      "status": "ongoing",
+      "blurb": "A SNBA dedica uma retrospetiva significativa a uma das vozes mais singulares da arte portuguesa contemporânea. Lourdes Castro, pioneira na exploração poética das sombras, tem aqui reunido um conjunto de obras que permite compreender a evolução do seu trabalho único. Uma oportunidade rara de ver em profundidade a obra de uma artista que transformou a ausência em presença visual.",
+      "criticSource": "Time Out Lisboa",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/arte/lourdes-castro-existe-luz-na-sombra",
+      "tags": [
+        "retrospetiva",
+        "arte portuguesa",
+        "sombras",
+        "contemporâneo"
+      ],
+      "aiScore": 92,
+      "featured": false,
+      "id": "evt-009"
+    },
+    {
+      "title": "A Oferta",
+      "category": "artes-visuais",
+      "venue": "Museu Nacional de Arte Contemporânea",
+      "venueNeighborhood": "Chiado",
+      "dates": "Até 26 Abr",
+      "status": "ongoing",
+      "blurb": "Jaime Welsh estreia-se em exposição individual num museu com uma reflexão sobre arquitetura modernista e monumental. O artista intervém em espaços como o antigo Banco Nacional Ultramarino e a Reitoria da Universidade, criando diálogos críticos com o legado arquitectónico do Estado Novo. Uma proposta corajosa que questiona como lidamos com a herança visual de regimes autoritários.",
+      "criticSource": "Time Out Lisboa",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/arte/a-oferta",
+      "tags": [
+        "arte contemporânea",
+        "arquitectura",
+        "Estado Novo",
+        "crítica"
+      ],
+      "aiScore": 91,
+      "featured": false,
+      "id": "evt-014"
+    },
+    {
+      "title": "COME FROM AWAY",
+      "category": "artes-performativas",
+      "venue": "",
+      "venueNeighborhood": "",
+      "dates": "22 Abr em diante",
+      "status": "new",
+      "blurb": "O musical que conquistou a Broadway chega a Lisboa com a história real de como uma pequena cidade do Canadá acolheu passageiros de voos desviados após o 11 de Setembro. Uma produção que combina humanidade, humor e música de qualidade excepcional. É o tipo de teatro musical que prova que o género pode ser simultaneamente popular e artisticamente relevante.",
+      "originalUrl": "https://cartazculturallisboa.pt/evento/come-from-away/",
+      "tags": [
+        "musical",
+        "teatro",
+        "Broadway",
+        "história real"
+      ],
+      "aiScore": 90,
+      "featured": true,
+      "id": "evt-005"
+    },
+    {
+      "title": "Emel Mathlouthi Live in Lisbon",
+      "category": "musica-noite",
+      "venue": "Local não especificado",
+      "venueNeighborhood": "Centro",
+      "dates": "5 Jul",
+      "status": "new",
+      "time": "20h30",
+      "price": "26€",
+      "blurb": "A cantora tunisina Emel Mathlouthi, conhecida como a 'voz da revolução' após o seu papel na Primavera Árabe, traz a Lisboa as suas composições que misturam tradição árabe com sonoridades contemporâneas. Uma artista com uma mensagem política forte e uma presença de palco magnética. Um concerto que transcende o mero entretenimento para se assumir como ato cultural e político.",
+      "originalUrl": "https://www.eventbrite.pt/e/emel-mathlouthi-live-in-lisbon-tickets-1982792451598",
+      "tags": [
+        "world music",
+        "árabe",
+        "política",
+        "internacional"
+      ],
+      "aiScore": 90,
+      "featured": true,
+      "id": "evt-167"
+    },
+    {
+      "title": "À Espera de Godot",
+      "category": "artes-visuais",
+      "venue": "Galeria Vera Cortês",
+      "venueNeighborhood": "Marvila",
+      "dates": "Até 16 Mai",
+      "status": "ongoing",
+      "blurb": "Daniel Blaufuks revisita o clássico de Beckett para refletir sobre a espera como condição contemporânea. O artista, conhecido pelas suas explorações fotográficas da memória e do tempo, encontra na peça irlandesa um ponto de partida para questionar a nossa relação com a temporalidade. Uma exposição que promete ser tanto literária quanto visual.",
+      "criticSource": "Time Out Lisboa",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/arte/still-waiting-for-godot",
+      "tags": [
+        "fotografia",
+        "Beckett",
+        "tempo",
+        "contemporâneo"
+      ],
+      "aiScore": 89,
+      "featured": false,
+      "id": "evt-013"
+    },
+    {
+      "title": "Meu nome António",
+      "category": "artes-visuais",
+      "venue": "MUDE",
+      "venueNeighborhood": "Baixa",
+      "dates": "Até 31 Mai",
+      "status": "ongoing",
+      "time": "Consultar",
+      "price": "Gratuito",
+      "blurb": "As fotografias íntimas de Teresa Couto Pinto revelam António Variações como poucos o conheceram — espontâneo, humano, longe dos palcos. Estas 85 imagens capturam a essência do músico que revolucionou a música portuguesa, numa exposição que é simultaneamente documento histórico e declaração de amor. Imperdível para quem quer compreender o génio por trás do mito.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/arte/meu-nome-antonio",
+      "tags": [
+        "fotografia",
+        "António Variações",
+        "música portuguesa",
+        "grátis"
+      ],
+      "aiScore": 89,
+      "featured": false,
+      "id": "evt-082"
+    },
+    {
+      "title": "As Cadeiras",
+      "category": "artes-performativas",
+      "venue": "",
+      "venueNeighborhood": "",
+      "dates": "22 Abr em diante",
+      "status": "new",
+      "blurb": "O clássico de Ionesco volta aos palcos lisboetas numa altura em que o absurdo parece fazer mais sentido do que nunca. Esta peça sobre a incomunicabilidade humana e a vacuidade da linguagem mantém toda a sua pertinência contemporânea. Uma oportunidade rara de revisitar um dos textos fundamentais do teatro do absurdo.",
+      "originalUrl": "https://cartazculturallisboa.pt/evento/as-cadeiras/",
+      "tags": [
+        "teatro",
+        "absurdo",
+        "clássico",
+        "Ionesco"
+      ],
+      "aiScore": 88,
+      "featured": false,
+      "id": "evt-002"
+    },
+    {
+      "title": "25 de Abril — Celebrações na cidade",
+      "category": "artes-performativas",
+      "venue": "Vários locais",
+      "venueNeighborhood": "Lisboa",
+      "dates": "25 Abr",
+      "status": "new",
+      "time": "Vários horários",
+      "price": "Maioritariamente gratuito",
+      "blurb": "Lisboa celebra meio século de liberdade com um programa que vai da Avenida da Liberdade aos bairros históricos. Entre leituras, música e manifestações culturais, a cidade torna-se palco de memória e celebração. Um dia para estar na rua, para sentir o pulsar da democracia portuguesa.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/coisas-para-fazer/coisas-para-fazer-no-25-de-abril-em-lisboa",
+      "tags": [
+        "25 de abril",
+        "celebração",
+        "democracia",
+        "cidade"
+      ],
+      "aiScore": 88,
+      "featured": false,
+      "id": "evt-086"
+    },
+    {
+      "title": "Adrien Moignard Trio",
+      "category": "musica-noite",
+      "venue": "Django Portugal Fest",
+      "venueNeighborhood": "Santos",
+      "dates": "8 Mai",
+      "status": "new",
+      "time": "21h",
+      "price": "17€",
+      "blurb": "O guitarrista francês Adrien Moignard, uma das vozes mais respeitadas do jazz manouche contemporâneo, traz o seu trio a Lisboa no contexto do Django Portugal Fest. A sua abordagem sofisticada ao legado de Django Reinhardt, temperada com influências do jazz moderno, promete uma noite memorável para os amantes do género. Um concerto que confirma Lisboa como paragem obrigatória dos grandes nomes do jazz europeu.",
+      "originalUrl": "https://www.eventbrite.pt/e/adrien-moignard-trio-django-portugal-fest-tickets-1975366719032",
+      "tags": [
+        "jazz manouche",
+        "trio",
+        "francês",
+        "festival"
+      ],
+      "aiScore": 88,
+      "featured": false,
+      "id": "evt-161"
+    },
+    {
+      "title": "TV Girl no LAV",
+      "category": "musica-noite",
+      "venue": "LAV - Lisboa ao Vivo",
+      "venueNeighborhood": "Marvila",
+      "dates": "20–26 Abr",
+      "status": "new",
+      "time": "22h",
+      "price": "25€–35€",
+      "blurb": "Os mestres do dream pop lo-fi chegam finalmente a Lisboa para apresentar o seu universo melancólico de samples vintage e melodias hipnóticas. Uma oportunidade rara de ver ao vivo uma das bandas mais cultuadas da cena indie americana contemporânea, num dos espaços mais interessantes da cidade.",
+      "originalUrl": "https://feverup.com/m/476626",
+      "tags": [
+        "dream pop",
+        "indie",
+        "internacional",
+        "ao vivo"
+      ],
+      "aiScore": 88,
+      "featured": false,
+      "id": "evt-241"
+    },
+    {
+      "title": "Palácio Nacional de Queluz",
+      "category": "artes-visuais",
+      "venue": "Palácio Nacional de Queluz",
+      "venueNeighborhood": "Queluz",
+      "dates": "22 Abr–14 Jun",
+      "status": "ongoing",
+      "price": "Gratuito",
+      "blurb": "O Versalhes português abre as suas portas gratuitamente, oferecendo uma rara oportunidade de explorar um dos palácios mais elegantes da Europa. Os jardins e salas de aparato mantêm intacto o esplendor do século XVIII, numa visita que nos transporta para a corte de D. Maria I. A entrada gratuita torna esta jóia da arquitectura barroca acessível a todos os lisboetas.",
+      "originalUrl": "https://feverup.com/m/156665",
+      "tags": [
+        "palácio",
+        "barroco",
+        "jardins",
+        "gratuito"
+      ],
+      "aiScore": 88,
+      "featured": false,
+      "id": "evt-485"
+    },
+    {
+      "title": "Residências Artísticas na Underdogs",
+      "category": "artes-visuais",
+      "venue": "Underdogs",
+      "venueNeighborhood": "Marvila",
+      "dates": "Em curso",
+      "status": "ongoing",
+      "price": "Gratuito",
+      "blurb": "Cinco artistas transformam a galeria de Marvila em estúdio aberto durante cinco semanas. ±MaisMenos±, Nuno Viegas, Rita João, Tamara Alves e Wasted Rita permitem ao público assistir ao processo criativo em tempo real. É uma oportunidade única de compreender como nasce a arte contemporânea, longe do produto final e perto da experimentação pura.",
+      "criticSource": "Time Out Lisboa",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/noticias/de-galeria-a-estudio-underdogs-recebe-cinco-artistas-em-residencias-abertas-ao-publico-041526",
+      "tags": [
+        "residências",
+        "processo criativo",
+        "arte contemporânea",
+        "Marvila"
+      ],
+      "aiScore": 87,
+      "featured": false,
+      "id": "evt-012"
+    },
+    {
+      "title": "Jazz no Cinema São Jorge",
+      "category": "musica-noite",
+      "venue": "Cinema São Jorge",
+      "venueNeighborhood": "Arroios",
+      "dates": "23–24 Abr",
+      "status": "new",
+      "time": "19h e 21h",
+      "price": "Consultar",
+      "blurb": "O Hot Clube de Portugal programa dois dias de jazz de qualidade na recta final das comemorações do 25 de Abril. Destaque para Leida de Mariana Dionísio e Ricardo Toscano Trio, nomes que garantem um encontro sério com a tradição jazzística portuguesa. Uma oportunidade rara de ouvir jazz nacional numa das salas mais emblemáticas da cidade.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/musica/jazz-no-cinema-sao-jorge",
+      "tags": [
+        "jazz",
+        "Hot Clube",
+        "25 de abril",
+        "música nacional"
+      ],
+      "aiScore": 87,
+      "featured": false,
+      "id": "evt-081"
+    },
+    {
+      "title": "Festival de Fotografia da Narrativa",
+      "category": "artes-visuais",
+      "venue": "Vários locais",
+      "venueNeighborhood": "Vários",
+      "dates": "1–4 Mai",
+      "status": "new",
+      "price": "Gratuito",
+      "blurb": "O Ciclo Narrativa junta fotografia, livros e conversas num programa que explora os traumas do México e uma Lisboa dos anos 80. É um festival que aposta na fotografia como narrativa, longe do mero esteticismo. As exposições são acompanhadas por apresentações de livros e debates, criando um ambiente de reflexão em torno da imagem contemporânea.",
+      "criticSource": "Time Out Lisboa",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/noticias/traumas-do-mexico-e-uma-lisboa-dos-anos-80-fazem-o-festival-de-fotografia-da-narrativa-041626",
+      "tags": [
+        "fotografia",
+        "festival",
+        "narrativa",
+        "gratuito"
+      ],
+      "aiScore": 86,
+      "featured": false,
+      "id": "evt-015"
+    },
+    {
+      "title": "Xerazade, a Coleção Interminável do CAM",
+      "category": "artes-visuais",
+      "venue": "Centro de Arte Moderna Gulbenkian",
+      "venueNeighborhood": "Avenidas Novas",
+      "dates": "Ongoing",
+      "status": "ongoing",
+      "time": "A partir das 14h",
+      "price": "Gratuito aos domingos",
+      "blurb": "Com o Museu Gulbenkian em obras, o CAM assume protagonismo com esta grande exposição que percorre a sua coleção através de narrativas entrelaçadas. Uma viagem pela arte contemporânea portuguesa e internacional, gratuita aos domingos. Aproveitem enquanto a entrada principal está fechada — há tesouros por descobrir.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/arte/linha-de-mare-coleccao-do-cam",
+      "tags": [
+        "arte contemporânea",
+        "coleção",
+        "grátis domingo",
+        "Gulbenkian"
+      ],
+      "aiScore": 86,
+      "featured": false,
+      "id": "evt-085"
+    },
+    {
+      "title": "Dois Temas – Um Olhar",
+      "category": "artes-visuais",
+      "venue": "Mercado da Ribeira",
+      "venueNeighborhood": "Cais do Sodré",
+      "dates": "Até 2 Mai",
+      "status": "ongoing",
+      "blurb": "O fotojornalista Fernando Negreira documenta as profissões e mercados de Lisboa entre 1975 e 1980, uma Lisboa em transformação pós-revolução. Estas imagens capturam um momento único da cidade, quando velhas tradições coexistiam com novas realidades sociais. Um testemunho visual precioso de uma época que definiu muito do que Lisboa é hoje.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/arte/dois-temas-um-olhar",
+      "tags": [
+        "fotografia",
+        "Lisboa",
+        "anos 70",
+        "memória"
+      ],
+      "aiScore": 85,
+      "featured": false,
+      "id": "evt-010"
+    },
+    {
+      "title": "Hyperosmia",
+      "category": "artes-visuais",
+      "venue": "Arquivo Municipal Fotográfico",
+      "venueNeighborhood": "Belém",
+      "dates": "23 Abr–19 Set",
+      "status": "new",
+      "time": "Consultar",
+      "price": "Consultar",
+      "blurb": "Rita Barros, residente no mítico Chelsea Hotel há décadas, explora como os estímulos ambientais interferem na memória e no corpo. Uma reflexão visual sobre percepção e espaço, assinada por uma fotógrafa que conviveu com as figuras lendárias de Nova Iorque. A abertura esta semana promete ser um momento especial.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/arte/hyperosmia",
+      "tags": [
+        "fotografia",
+        "Nova Iorque",
+        "Chelsea Hotel",
+        "memória"
+      ],
+      "aiScore": 85,
+      "featured": false,
+      "id": "evt-084"
+    },
+    {
+      "title": "Freedom in Fragments — Workshop de Colagem Analógica com Lia Rodrigues",
+      "category": "artes-visuais",
+      "venue": "Local não especificado",
+      "venueNeighborhood": "Centro",
+      "dates": "Por anunciar",
+      "status": "new",
+      "time": "Por anunciar",
+      "price": "40€",
+      "blurb": "A artista Lia Rodrigues conduz um workshop dedicado à arte da colagem analógica, explorando a liberdade criativa através da fragmentação e reconstrução de imagens. Uma oportunidade rara de trabalhar diretamente com uma das figuras mais interessantes da cena artística contemporânea portuguesa. O foco no processo analógico oferece uma alternativa refrescante ao domínio digital na arte visual.",
+      "originalUrl": "https://www.eventbrite.pt/e/freedom-in-fragments-analogue-collage-workshop-with-lia-rodrigues-tickets-1985526826186",
+      "tags": [
+        "workshop",
+        "colagem",
+        "analógico",
+        "artista português"
+      ],
+      "aiScore": 85,
+      "featured": false,
+      "id": "evt-163"
+    },
+    {
+      "title": "Casa-Museu Amália Rodrigues",
+      "category": "artes-visuais",
+      "venue": "Casa-Museu Amália Rodrigues",
+      "venueNeighborhood": "São Bento",
+      "dates": "22 Abr–30 Out",
+      "status": "ongoing",
+      "price": "9€",
+      "blurb": "A casa onde viveu a Rainha do Fado permanece como um santuário íntimo da cultura portuguesa. Mais do que um museu, é uma viagem pela vida pessoal de Amália, com os seus objectos, cartas e memórias que nos aproximam da mulher por trás da voz única. Uma visita obrigatória para quem procura compreender a alma do fado e da própria Lisboa.",
+      "originalUrl": "https://feverup.com/m/101650",
+      "tags": [
+        "fado",
+        "património",
+        "biografia",
+        "cultura portuguesa"
+      ],
+      "aiScore": 85,
+      "featured": false,
+      "id": "evt-481"
+    },
+    {
+      "title": "Experiência Imersiva: Horizonte de Quéops",
+      "category": "artes-visuais",
+      "venue": "Sala Subterrânea da Estação do Metro Terreiro do Paço",
+      "venueNeighborhood": "Baixa",
+      "dates": "23 Abr–31 Jul",
+      "status": "new",
+      "price": "Desde 21€",
+      "blurb": "Uma viagem ao Antigo Egito numa das localizações mais singulares de Lisboa. A experiência imersiva transforma o espaço subterrâneo da estação de metro numa janela para a antiguidade, prometendo uma abordagem tecnológica sofisticada ao património arqueológico. A escolha do local confere uma dimensão quase arqueológica à própria experiência.",
+      "originalUrl": "https://feverup.com/m/471066",
+      "tags": [
+        "imersivo",
+        "história",
+        "tecnologia",
+        "estreia"
+      ],
+      "aiScore": 85,
+      "featured": false,
+      "id": "evt-721"
+    },
+    {
+      "title": "Shortcutz Lisboa – Competição e Mostra de Curtas-Metragens",
+      "category": "artes-performativas",
+      "venue": "",
+      "venueNeighborhood": "",
+      "dates": "22 Abr",
+      "status": "new",
+      "blurb": "A competição mensal que celebra o formato curto do cinema regressa com uma seleção de trabalhos nacionais e internacionais. É sempre uma oportunidade para descobrir talentos emergentes e acompanhar as tendências do cinema contemporâneo. O formato íntimo e a curadoria cuidada fazem desta uma das melhores montras de cinema independente da cidade.",
+      "originalUrl": "https://cartazculturallisboa.pt/evento/shortcutz-lisboa-competicao-e-mostra-de-curtas-metragens/",
+      "tags": [
+        "cinema",
+        "curtas-metragens",
+        "competição",
+        "independente"
+      ],
+      "aiScore": 82,
+      "featured": false,
+      "id": "evt-003"
+    },
+    {
+      "title": "À distância de um braço",
+      "category": "artes-visuais",
+      "venue": "Lumina",
+      "venueNeighborhood": "Estrela",
+      "dates": "Até 30 Mai",
+      "status": "ongoing",
+      "time": "Consultar",
+      "price": "Consultar",
+      "blurb": "A segunda individual de João Miguel Barros em Portugal apresenta o seu trabalho mais recente, incluindo fotografias que integraram a Bienal de Macau. O núcleo 'short stories' revela um olhar poético e contemplativo sobre o quotidiano, consolidando o fotógrafo como uma das vozes mais interessantes da sua geração.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/arte/a-distancia-de-um-braco",
+      "tags": [
+        "fotografia contemporânea",
+        "Bienal de Macau",
+        "short stories"
+      ],
+      "aiScore": 82,
+      "featured": false,
+      "id": "evt-083"
+    },
+    {
+      "title": "Collage in Motion: The Art of Non-Adhesive Bookmaking",
+      "category": "artes-visuais",
+      "venue": "Local não especificado",
+      "venueNeighborhood": "Centro",
+      "dates": "Por anunciar",
+      "status": "new",
+      "time": "Por anunciar",
+      "price": "40€",
+      "blurb": "Workshop experimental que explora as possibilidades da colagem como técnica de criação de livros de artista sem recurso a adesivos. Uma proposta que desafia as convenções tradicionais da encadernação e convida os participantes a repensar a materialidade do livro como objeto artístico. Ideal para quem procura expandir horizontes criativos através de técnicas não convencionais.",
+      "originalUrl": "https://www.eventbrite.pt/e/collage-in-motion-the-art-of-non-adhesive-bookmaking-tickets-1985074591540",
+      "tags": [
+        "workshop",
+        "colagem",
+        "livro de artista",
+        "experimental"
+      ],
+      "aiScore": 82,
+      "featured": false,
+      "id": "evt-162"
+    }
+  ]
+}
