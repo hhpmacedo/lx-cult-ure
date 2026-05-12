@@ -1,4 +1,5 @@
-import type Anthropic from '@anthropic-ai/sdk';
+import { betaZodTool } from '@anthropic-ai/sdk/helpers/beta/zod';
+import { z } from 'zod';
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'fs';
 import { join } from 'path';
 import type { RawEvent, CriticReview, PipelineConfig } from '../types.js';
@@ -8,157 +9,50 @@ import { matchReviewsToEvents } from '../reviews/matcher.js';
 import { recordScraperRun } from '../monitoring/health.js';
 
 /**
- * Tool definitions and implementations for the 3-agent pipeline.
- * Each agent gets a subset of these tools.
+ * Zod-typed tool definitions for the 3-agent pipeline.
+ *
+ * Each tool is defined with betaZodTool which:
+ * - Generates JSON Schema from Zod automatically
+ * - Provides type-safe `run` functions
+ * - Integrates with the SDK's Tool Runner (auto agentic loop)
+ *
+ * Tools are factory functions that take PipelineConfig and return
+ * betaZodTool instances.
  */
 
-// --- Tool Definitions ---
-
-export const SCRAPE_TOOL: Anthropic.Tool = {
-  name: 'scrape_source',
-  description:
-    'Scrape events from a specific source website. Returns raw event data as JSON. Available sources: cartaz-cultural, timeout-lisboa, visit-lisboa, eventbrite-lisboa, lisboa-live, fever-lisboa',
-  input_schema: {
-    type: 'object' as const,
-    properties: {
-      source_id: {
-        type: 'string',
-        description: 'ID of the source to scrape',
-        enum: [
-          'cartaz-cultural',
-          'timeout-lisboa',
-          'visit-lisboa',
-          'eventbrite-lisboa',
-          'lisboa-live',
-          'fever-lisboa',
-        ],
-      },
-    },
-    required: ['source_id'],
-  },
-};
-
-export const SCRAPE_ALL_TOOL: Anthropic.Tool = {
-  name: 'scrape_all_sources',
-  description:
-    'Scrape events from ALL configured source websites. Returns combined raw event data.',
-  input_schema: {
-    type: 'object' as const,
-    properties: {},
-  },
-};
-
-export const READ_FILE_TOOL: Anthropic.Tool = {
-  name: 'read_file',
-  description: 'Read a file from the pipeline cache directory',
-  input_schema: {
-    type: 'object' as const,
-    properties: {
-      filename: {
-        type: 'string',
-        description: 'Filename to read (e.g., "raw-events.json", "curated-events.json")',
-      },
-    },
-    required: ['filename'],
-  },
-};
-
-export const WRITE_FILE_TOOL: Anthropic.Tool = {
-  name: 'write_file',
-  description: 'Write data to a file in the pipeline cache directory',
-  input_schema: {
-    type: 'object' as const,
-    properties: {
-      filename: {
-        type: 'string',
-        description: 'Filename to write',
-      },
-      content: {
-        type: 'string',
-        description: 'Content to write (JSON string)',
-      },
-    },
-    required: ['filename', 'content'],
-  },
-};
-
-export const PUBLISH_EDITION_TOOL: Anthropic.Tool = {
-  name: 'publish_edition',
-  description:
-    'Publish the curated edition to the Astro content collection. Writes the JSON file to src/content/editions/',
-  input_schema: {
-    type: 'object' as const,
-    properties: {
-      edition_json: {
-        type: 'string',
-        description: 'Complete edition JSON (with slug, weekNumber, year, dateRange, introText, publishedAt, events)',
-      },
-    },
-    required: ['edition_json'],
-  },
-};
-
-export const SCRAPE_REVIEWS_TOOL: Anthropic.Tool = {
-  name: 'scrape_reviews',
-  description:
-    'Scrape critic reviews from Portuguese cultural publications (Ípsilon/Público, Time Out, Blitz, ArteCapital). Returns reviews with ratings, quotes, and sentiment.',
-  input_schema: {
-    type: 'object' as const,
-    properties: {},
-  },
-};
-
-export const MATCH_REVIEWS_TOOL: Anthropic.Tool = {
-  name: 'match_reviews_to_events',
-  description:
-    'Match scraped critic reviews to scraped events using AI. Enriches events with review data (quotes, ratings, critic scores). Must run after both scrape_all_sources and scrape_reviews.',
-  input_schema: {
-    type: 'object' as const,
-    properties: {},
-  },
-};
-
-export const NOTIFY_HUMAN_TOOL: Anthropic.Tool = {
-  name: 'notify_human',
-  description:
-    'Send a notification to the human curator requesting review. Displays a message in the console.',
-  input_schema: {
-    type: 'object' as const,
-    properties: {
-      message: {
-        type: 'string',
-        description: 'Message to display to the human curator',
-      },
-      summary: {
-        type: 'string',
-        description: 'Brief summary of what needs review (event counts, highlights)',
-      },
-    },
-    required: ['message', 'summary'],
-  },
-};
-
-// --- Tool Implementations ---
-
-export async function executeTool(
-  toolName: string,
-  toolInput: Record<string, unknown>,
-  config: PipelineConfig
-): Promise<string> {
-  mkdirSync(config.cacheDir, { recursive: true });
-
-  switch (toolName) {
-    case 'scrape_source': {
-      const sourceId = toolInput.source_id as string;
-      const scrapers = getScrapers([sourceId]);
+export function createScrapeTool(config: PipelineConfig) {
+  return betaZodTool({
+    name: 'scrape_source',
+    description:
+      'Scrape events from a specific source website. Available sources: cartaz-cultural, timeout-lisboa, visit-lisboa, eventbrite-lisboa, lisboa-live, fever-lisboa',
+    inputSchema: z.object({
+      source_id: z.enum([
+        'cartaz-cultural',
+        'timeout-lisboa',
+        'visit-lisboa',
+        'eventbrite-lisboa',
+        'lisboa-live',
+        'fever-lisboa',
+      ]),
+    }),
+    run: async ({ source_id }) => {
+      const scrapers = getScrapers([source_id]);
       if (scrapers.length === 0) {
-        return JSON.stringify({ error: `Unknown source: ${sourceId}` });
+        return JSON.stringify({ error: `Unknown source: ${source_id}` });
       }
       const events = await scrapers[0].scrape();
-      return JSON.stringify({ source: sourceId, count: events.length, events });
-    }
+      return JSON.stringify({ source: source_id, count: events.length, events });
+    },
+  });
+}
 
-    case 'scrape_all_sources': {
+export function createScrapeAllTool(config: PipelineConfig) {
+  return betaZodTool({
+    name: 'scrape_all_sources',
+    description: 'Scrape events from ALL configured source websites. Returns combined raw event data.',
+    inputSchema: z.object({}),
+    run: async () => {
+      mkdirSync(config.cacheDir, { recursive: true });
       const allScrapers = getScrapers();
       const allEvents: RawEvent[] = [];
       const results: Array<{ source: string; count: number }> = [];
@@ -189,7 +83,6 @@ export async function executeTool(
         }
       }
 
-      // Save to cache
       writeFileSync(
         join(config.cacheDir, 'raw-events.json'),
         JSON.stringify(allEvents, null, 2)
@@ -200,23 +93,18 @@ export async function executeTool(
         sources: results,
         savedTo: 'raw-events.json',
       });
-    }
+    },
+  });
+}
 
-    case 'read_file': {
-      const filename = toolInput.filename as string;
-      const filePath = join(config.cacheDir, filename);
-      if (!existsSync(filePath)) {
-        return JSON.stringify({ error: `File not found: ${filename}` });
-      }
-      const content = readFileSync(filePath, 'utf-8');
-      // Truncate if too large for context
-      if (content.length > 50000) {
-        return content.slice(0, 50000) + '\n...[truncated]';
-      }
-      return content;
-    }
-
-    case 'scrape_reviews': {
+export function createScrapeReviewsTool(config: PipelineConfig) {
+  return betaZodTool({
+    name: 'scrape_reviews',
+    description:
+      'Scrape critic reviews from Portuguese cultural publications (Ípsilon/Público, Time Out, Blitz, ArteCapital).',
+    inputSchema: z.object({}),
+    run: async () => {
+      mkdirSync(config.cacheDir, { recursive: true });
       const reviewScrapers = getAllReviewScrapers();
       const allReviews: CriticReview[] = [];
       const results: Array<{ source: string; count: number }> = [];
@@ -226,7 +114,7 @@ export async function executeTool(
           const reviews = await scraper.scrapeReviews();
           allReviews.push(...reviews);
           results.push({ source: scraper.id, count: reviews.length });
-        } catch (error) {
+        } catch {
           results.push({ source: scraper.id, count: 0 });
         }
       }
@@ -247,9 +135,17 @@ export async function executeTool(
         },
         savedTo: 'reviews.json',
       });
-    }
+    },
+  });
+}
 
-    case 'match_reviews_to_events': {
+export function createMatchReviewsTool(config: PipelineConfig) {
+  return betaZodTool({
+    name: 'match_reviews_to_events',
+    description:
+      'Match scraped critic reviews to scraped events using AI. Must run after both scrape_all_sources and scrape_reviews.',
+    inputSchema: z.object({}),
+    run: async () => {
       const rawPath = join(config.cacheDir, 'raw-events.json');
       const reviewsPath = join(config.cacheDir, 'reviews.json');
 
@@ -262,7 +158,6 @@ export async function executeTool(
 
       const events: RawEvent[] = JSON.parse(readFileSync(rawPath, 'utf-8'));
       const reviews: CriticReview[] = JSON.parse(readFileSync(reviewsPath, 'utf-8'));
-
       const enriched = await matchReviewsToEvents(events, reviews);
 
       writeFileSync(
@@ -277,19 +172,58 @@ export async function executeTool(
         totalReviewMatches: enriched.reduce((a, e) => a + e.matchedReviews.length, 0),
         savedTo: 'enriched-events.json',
       });
-    }
+    },
+  });
+}
 
-    case 'write_file': {
-      const filename = toolInput.filename as string;
-      const content = toolInput.content as string;
+export function createReadFileTool(config: PipelineConfig) {
+  return betaZodTool({
+    name: 'read_file',
+    description: 'Read a file from the pipeline cache directory',
+    inputSchema: z.object({
+      filename: z.string().describe('Filename to read (e.g., "raw-events.json", "curated-events.json")'),
+    }),
+    run: async ({ filename }) => {
+      const filePath = join(config.cacheDir, filename);
+      if (!existsSync(filePath)) {
+        return JSON.stringify({ error: `File not found: ${filename}` });
+      }
+      const content = readFileSync(filePath, 'utf-8');
+      if (content.length > 50000) {
+        return content.slice(0, 50000) + '\n...[truncated]';
+      }
+      return content;
+    },
+  });
+}
+
+export function createWriteFileTool(config: PipelineConfig) {
+  return betaZodTool({
+    name: 'write_file',
+    description: 'Write data to a file in the pipeline cache directory',
+    inputSchema: z.object({
+      filename: z.string().describe('Filename to write'),
+      content: z.string().describe('Content to write (JSON string)'),
+    }),
+    run: async ({ filename, content }) => {
+      mkdirSync(config.cacheDir, { recursive: true });
       writeFileSync(join(config.cacheDir, filename), content, 'utf-8');
       return JSON.stringify({ ok: true, filename });
-    }
+    },
+  });
+}
 
-    case 'publish_edition': {
-      const editionJson = toolInput.edition_json as string;
-      const edition = JSON.parse(editionJson);
-
+export function createPublishEditionTool(config: PipelineConfig) {
+  return betaZodTool({
+    name: 'publish_edition',
+    description: 'Publish the curated edition to the Astro content collection.',
+    inputSchema: z.object({
+      edition_json: z
+        .string()
+        .describe('Complete edition JSON (slug, weekNumber, year, dateRange, introText, publishedAt, events)'),
+    }),
+    run: async ({ edition_json }) => {
+      const edition = JSON.parse(edition_json);
       const editionsDir = join(config.contentDir, 'editions');
       mkdirSync(editionsDir, { recursive: true });
 
@@ -301,21 +235,26 @@ export async function executeTool(
         path: filePath,
         events: edition.events?.length || 0,
       });
-    }
+    },
+  });
+}
 
-    case 'notify_human': {
-      const message = toolInput.message as string;
-      const summary = toolInput.summary as string;
+export function createNotifyHumanTool() {
+  return betaZodTool({
+    name: 'notify_human',
+    description: 'Send a notification to the human curator requesting review.',
+    inputSchema: z.object({
+      message: z.string().describe('Message to display to the human curator'),
+      summary: z.string().describe('Brief summary of what needs review'),
+    }),
+    run: async ({ message, summary }) => {
       console.log('\n╔══════════════════════════════════════╗');
-      console.log('║  📬 NOTIFICAÇÃO DO AGENTE            ║');
+      console.log('║  NOTIFICAÇÃO DO AGENTE               ║');
       console.log('╠══════════════════════════════════════╣');
       console.log(`║  ${message}`);
       console.log(`║  Resumo: ${summary}`);
       console.log('╚══════════════════════════════════════╝\n');
       return JSON.stringify({ ok: true, delivered: true });
-    }
-
-    default:
-      return JSON.stringify({ error: `Unknown tool: ${toolName}` });
-  }
+    },
+  });
 }

@@ -1,11 +1,11 @@
 import { runAgent } from './agent-loop.js';
 import {
-  SCRAPE_ALL_TOOL,
-  SCRAPE_TOOL,
-  SCRAPE_REVIEWS_TOOL,
-  MATCH_REVIEWS_TOOL,
-  WRITE_FILE_TOOL,
-  READ_FILE_TOOL,
+  createScrapeAllTool,
+  createScrapeTool,
+  createScrapeReviewsTool,
+  createMatchReviewsTool,
+  createWriteFileTool,
+  createReadFileTool,
 } from './tools.js';
 import { getSourcePriorities } from '../memory/store.js';
 import type { PipelineConfig } from '../types.js';
@@ -65,16 +65,15 @@ Processo:
       name: 'Scout',
       systemPrompt: SCOUT_SYSTEM_PROMPT,
       tools: [
-        SCRAPE_ALL_TOOL,
-        SCRAPE_TOOL,
-        SCRAPE_REVIEWS_TOOL,
-        MATCH_REVIEWS_TOOL,
-        WRITE_FILE_TOOL,
-        READ_FILE_TOOL,
+        createScrapeAllTool(config),
+        createScrapeTool(config),
+        createScrapeReviewsTool(config),
+        createMatchReviewsTool(config),
+        createWriteFileTool(config),
+        createReadFileTool(config),
       ],
       maxTurns: 8,
     },
-    prompt,
-    config
+    prompt
   );
 }

@@ -1,7 +1,7 @@
 import { readFileSync, existsSync } from 'fs';
 import { join, resolve } from 'path';
 import { runAgent } from './agent-loop.js';
-import { READ_FILE_TOOL, WRITE_FILE_TOOL } from './tools.js';
+import { createReadFileTool, createWriteFileTool } from './tools.js';
 import { getMemorySummary, loadMemory } from '../memory/store.js';
 import type { PipelineConfig } from '../types.js';
 
@@ -68,12 +68,7 @@ IMPORTANTE:
 - Sê exigente mas justo — queremos qualidade, não quantidade
 - O tom é informado, entusiasta mas criterioso — como um amigo culto que recomenda`;
 
-/**
- * Build the curator's system prompt, incorporating learned patterns
- * and any evolved prompt from the Meta Agent.
- */
 function buildCuratorPrompt(): string {
-  // Check if Meta Agent has evolved the prompt
   const evolvedPromptPath = join(resolve('.'), 'memory', 'curator-prompt.txt');
   let basePrompt = BASE_CURATOR_PROMPT;
 
@@ -81,30 +76,26 @@ function buildCuratorPrompt(): string {
     const evolved = readFileSync(evolvedPromptPath, 'utf-8').trim();
     if (evolved.length > 100) {
       basePrompt = evolved;
-      console.log('  📝 [Curator] A usar prompt evoluído pelo Meta Agent');
+      console.log('  [Curator] A usar prompt evoluído pelo Meta Agent');
     }
   }
 
-  // Append learned patterns from memory
   const mem = loadMemory();
   const pat = mem.curationPatterns;
   const additions: string[] = [];
 
-  // Add learned tourist indicators
   if (pat.touristIndicators.length > 6) {
     additions.push(
       `\nINDICADORES TURÍSTICOS APRENDIDOS (excluir também):\n${pat.touristIndicators.map((i) => `- "${i}"`).join('\n')}`
     );
   }
 
-  // Add learned rejection patterns
   if (pat.rejectedPatterns.length > 0) {
     additions.push(
       `\nPADRÕES REJEITADOS PELO CURADOR HUMANO:\n${pat.rejectedPatterns.slice(-10).map((p) => `- ${p}`).join('\n')}`
     );
   }
 
-  // Add category weight hints
   const catWeights = Object.entries(pat.preferredCategories);
   const maxCat = catWeights.reduce((a, b) => (b[1] > a[1] ? b : a));
   const minCat = catWeights.reduce((a, b) => (b[1] < a[1] ? b : a));
@@ -116,7 +107,6 @@ function buildCuratorPrompt(): string {
     );
   }
 
-  // Add preferred venues if known
   if (pat.preferredVenues.length > 0) {
     const topVenues = pat.preferredVenues
       .sort((a, b) => b.score - a.score)
@@ -162,10 +152,9 @@ ${memorySummary ? `\nCONTEXTO DA MEMÓRIA DO SISTEMA:\n${memorySummary}` : ''}`;
     {
       name: 'Curator',
       systemPrompt: buildCuratorPrompt(),
-      tools: [READ_FILE_TOOL, WRITE_FILE_TOOL],
+      tools: [createReadFileTool(config), createWriteFileTool(config)],
       maxTurns: 8,
     },
-    prompt,
-    config
+    prompt
   );
 }
