@@ -21,7 +21,7 @@
     "test": "vitest run"
   },
   "dependencies": {
-    "@anthropic-ai/sdk": "^0.82.0",
+    "@anthropic-ai/sdk": "^0.95.2",
     "@types/express": "^5.0.6",
     "@types/node": "^25.5.2",
     "@vercel/blob": "^2.3.3",
@@ -29,7 +29,8 @@
     "express": "^5.2.1",
     "playwright": "^1.56.1",
     "tsx": "^4.21.0",
-    "typescript": "^6.0.2"
+    "typescript": "^6.0.2",
+    "zod": "^4.4.3"
   },
   "keywords": [],
   "license": "ISC",

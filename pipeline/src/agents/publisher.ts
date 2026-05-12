@@ -1,9 +1,9 @@
 import { runAgent } from './agent-loop.js';
 import {
-  READ_FILE_TOOL,
-  WRITE_FILE_TOOL,
-  PUBLISH_EDITION_TOOL,
-  NOTIFY_HUMAN_TOOL,
+  createReadFileTool,
+  createWriteFileTool,
+  createPublishEditionTool,
+  createNotifyHumanTool,
 } from './tools.js';
 import type { PipelineConfig } from '../types.js';
 
@@ -28,7 +28,7 @@ PROCESSO:
 
 FORMATO DA EDIÇÃO:
 {
-  "slug": "${'{weekId}'}",
+  "slug": "\${weekId}",
   "weekNumber": número_da_semana,
   "year": ano,
   "dateRange": { "start": "YYYY-MM-DD", "end": "YYYY-MM-DD" },
@@ -58,11 +58,15 @@ O weekNumber é ${getWeekNumber(config.weekStart)} e o year é ${new Date(config
     {
       name: 'Publisher',
       systemPrompt: PUBLISHER_SYSTEM_PROMPT,
-      tools: [READ_FILE_TOOL, WRITE_FILE_TOOL, PUBLISH_EDITION_TOOL, NOTIFY_HUMAN_TOOL],
+      tools: [
+        createReadFileTool(config),
+        createWriteFileTool(config),
+        createPublishEditionTool(config),
+        createNotifyHumanTool(),
+      ],
       maxTurns: 6,
     },
-    prompt,
-    config
+    prompt
   );
 }
 
