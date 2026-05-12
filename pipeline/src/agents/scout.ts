@@ -1,11 +1,11 @@
 import { runAgent } from './agent-loop.js';
 import {
-  createScrapeAllTool,
-  createScrapeTool,
-  createScrapeReviewsTool,
-  createMatchReviewsTool,
-  createWriteFileTool,
-  createReadFileTool,
+  SCRAPE_ALL_DEF,
+  SCRAPE_SOURCE_DEF,
+  SCRAPE_REVIEWS_DEF,
+  MATCH_REVIEWS_DEF,
+  WRITE_FILE_DEF,
+  READ_FILE_DEF,
 } from './tools.js';
 import { getSourcePriorities } from '../memory/store.js';
 import type { PipelineConfig } from '../types.js';
@@ -37,7 +37,6 @@ ESTRATÉGIA DE PRIORIDADE:
 
 IMPORTANTE:
 - As críticas são ESSENCIAIS — são o que diferencia a LX Cult(ure) de um simples agregador
-- Mesmo que nenhuma crítica faça match direto, o Curator usa o contexto crítico
 - Scrape reviews SEMPRE, mesmo que os event scrapers tenham falhado parcialmente
 - O ficheiro "enriched-events.json" é o output final que o Curator vai usar`;
 
@@ -47,9 +46,7 @@ export async function runScoutAgent(config: PipelineConfig): Promise<string> {
 
   if (priorities.length > 0) {
     priorityContext = `\nPRIORIDADES DAS FONTES (baseado em desempenho passado):
-${priorities.map((p) => `  ${p.priority.toUpperCase()} (${p.qualityScore}/100) — ${p.sourceId}`).join('\n')}
-
-Dá especial atenção às fontes de alta prioridade. Se falharem, tenta novamente individualmente.`;
+${priorities.map((p) => `  ${p.priority.toUpperCase()} (${p.qualityScore}/100) — ${p.sourceId}`).join('\n')}`;
   }
 
   const prompt = `Recolhe todos os eventos culturais E críticas/reviews em Lisboa para a semana de ${config.weekStart} a ${config.weekEnd} (${config.weekId}).
@@ -58,22 +55,22 @@ Processo:
 1. Scrape todos os eventos (scrape_all_sources)
 2. Scrape todas as críticas (scrape_reviews)
 3. Cruza críticas com eventos (match_reviews_to_events)
-4. Reporta resumo com: eventos encontrados, críticas encontradas, matches feitos${priorityContext}`;
+4. Reporta resumo${priorityContext}`;
 
   return runAgent(
     {
       name: 'Scout',
       systemPrompt: SCOUT_SYSTEM_PROMPT,
       tools: [
-        createScrapeAllTool(config),
-        createScrapeTool(config),
-        createScrapeReviewsTool(config),
-        createMatchReviewsTool(config),
-        createWriteFileTool(config),
-        createReadFileTool(config),
+        SCRAPE_ALL_DEF,
+        SCRAPE_SOURCE_DEF,
+        SCRAPE_REVIEWS_DEF,
+        MATCH_REVIEWS_DEF,
+        WRITE_FILE_DEF,
+        READ_FILE_DEF,
       ],
-      maxTurns: 8,
     },
-    prompt
+    prompt,
+    config
   );
 }

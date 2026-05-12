@@ -1,9 +1,9 @@
 import { runAgent } from './agent-loop.js';
 import {
-  createReadFileTool,
-  createWriteFileTool,
-  createPublishEditionTool,
-  createNotifyHumanTool,
+  READ_FILE_DEF,
+  WRITE_FILE_DEF,
+  PUBLISH_EDITION_DEF,
+  NOTIFY_HUMAN_DEF,
 } from './tools.js';
 import type { PipelineConfig } from '../types.js';
 
@@ -26,17 +26,6 @@ PROCESSO:
 4. Notifica o humano com um resumo do que vai ser publicado
 5. Publica a edição usando "publish_edition"
 
-FORMATO DA EDIÇÃO:
-{
-  "slug": "\${weekId}",
-  "weekNumber": número_da_semana,
-  "year": ano,
-  "dateRange": { "start": "YYYY-MM-DD", "end": "YYYY-MM-DD" },
-  "introText": "texto introdutório",
-  "publishedAt": "ISO datetime",
-  "events": [...]
-}
-
 VERIFICAÇÕES DE QUALIDADE:
 - Se houver menos de 5 eventos, alerta o humano mas continua
 - Se faltar uma categoria inteira, menciona na notificação
@@ -58,15 +47,10 @@ O weekNumber é ${getWeekNumber(config.weekStart)} e o year é ${new Date(config
     {
       name: 'Publisher',
       systemPrompt: PUBLISHER_SYSTEM_PROMPT,
-      tools: [
-        createReadFileTool(config),
-        createWriteFileTool(config),
-        createPublishEditionTool(config),
-        createNotifyHumanTool(),
-      ],
-      maxTurns: 6,
+      tools: [READ_FILE_DEF, WRITE_FILE_DEF, PUBLISH_EDITION_DEF, NOTIFY_HUMAN_DEF],
     },
-    prompt
+    prompt,
+    config
   );
 }
 

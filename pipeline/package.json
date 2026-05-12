@@ -11,6 +11,7 @@
     "pipeline:publish": "tsx src/run-pipeline.ts publish",
     "pipeline:auto": "tsx src/run-pipeline.ts --auto",
     "agents": "tsx src/agents/run-agents.ts",
+    "agents:setup": "tsx src/agents/setup-agents.ts",
     "agents:scout": "tsx src/agents/run-agents.ts scout",
     "agents:curator": "tsx src/agents/run-agents.ts curator",
     "agents:publisher": "tsx src/agents/run-agents.ts publisher",
