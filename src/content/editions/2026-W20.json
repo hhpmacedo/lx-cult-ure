@@ -1,0 +1,505 @@
+{
+  "slug": "2026-W20",
+  "weekNumber": 20,
+  "year": 2026,
+  "dateRange": {
+    "start": "2026-05-11",
+    "end": "2026-05-17"
+  },
+  "introText": "A semana promete movimento cultural intenso em Lisboa, com destaque para as artes performativas que ganham nova energia. Três exposições fotográficas notáveis abrem ou continuam em cartaz, enquanto a música ao vivo se espalha entre jazz clássico e novos talentos nacionais. O cinema independente mantém o pulso com as sessões habituais do Shortcutz, e o teatro musical continua a consolidar-se na cidade.",
+  "publishedAt": "2026-05-12T21:59:36.829Z",
+  "events": [
+    {
+      "title": "João Penalva - Retrospectiva: Personagens e Intérpretes",
+      "category": "artes-visuais",
+      "venue": "Culturgest",
+      "venueNeighborhood": "Campo Pequeno",
+      "dates": "Até 12 Jul",
+      "status": "ongoing",
+      "blurb": "Cada instalação do antigo bailarino é uma exposição em si mesma, absorvendo o visitante numa experiência verdadeiramente imersiva. Esta retrospectiva confirma Penalva como um dos artistas mais singulares da sua geração, capaz de transformar processos e acontecimentos em narrativas visuais complexas. Imperdível.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/arte/joao-penalva-retrospectiva",
+      "tags": [
+        "instalação",
+        "retrospectiva",
+        "arte contemporânea"
+      ],
+      "aiScore": 95,
+      "featured": true,
+      "id": "evt-083"
+    },
+    {
+      "title": "(Ainda) à Espera de Godot",
+      "category": "artes-visuais",
+      "venue": "Galeria Vera Cortês",
+      "venueNeighborhood": "Chiado",
+      "dates": "Até 16 Mai",
+      "status": "ongoing",
+      "blurb": "Daniel Blaufuks pega no clássico de Beckett para uma reflexão visual sobre a experiência contemporânea da espera. A sua sétima exposição na Vera Cortês revela-se uma das mais maduras do artista, transformando a condição existencial em matéria plástica de rara intensidade. Uma meditação sobre o tempo que não deve ser perdida.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/arte/still-waiting-for-godot",
+      "tags": [
+        "fotografia",
+        "conceptual",
+        "última semana"
+      ],
+      "aiScore": 92,
+      "featured": false,
+      "id": "evt-081"
+    },
+    {
+      "title": "Meu nome António",
+      "category": "artes-visuais",
+      "venue": "MUDE",
+      "venueNeighborhood": "Baixa",
+      "dates": "Até 31 Mai",
+      "status": "ongoing",
+      "time": "A confirmar",
+      "price": "Gratuito",
+      "blurb": "Teresa Couto Pinto captou como ninguém a essência de António Variações através de 85 fotografias íntimas. Uma exposição imperdível que documenta não só um dos músicos mais importantes da música portuguesa, mas também uma época e uma amizade genuína entre artista e fotógrafa.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/arte/meu-nome-antonio",
+      "tags": [
+        "fotografia",
+        "Variações",
+        "gratuito"
+      ],
+      "aiScore": 88,
+      "featured": false,
+      "id": "evt-011"
+    },
+    {
+      "title": "Lourdes Castro: existe luz na sombra",
+      "category": "artes-visuais",
+      "venue": "SNBA",
+      "venueNeighborhood": "Chiado",
+      "dates": "Até 16 Mai",
+      "status": "ongoing",
+      "blurb": "Última oportunidade para revisitar o percurso singular de uma das vozes mais distintivas da arte portuguesa. A exposição reúne obras e documentos do acervo particular da artista, revelando como amor e natureza se entrelaçam no seu universo poético. As suas célebres sombras ganham aqui nova luz.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/arte/lourdes-castro-existe-luz-na-sombra",
+      "tags": [
+        "arte portuguesa",
+        "sombras",
+        "última semana"
+      ],
+      "aiScore": 88,
+      "featured": false,
+      "id": "evt-082"
+    },
+    {
+      "title": "Al'Fado Concert: Fado & Sefardi Music",
+      "category": "musica-noite",
+      "venue": "",
+      "venueNeighborhood": "",
+      "dates": "21 Mai",
+      "status": "new",
+      "time": "21h",
+      "price": "Gratuito",
+      "blurb": "Uma proposta audaciosa que explora as ligações históricas entre o fado e a música sefardita, revelando raízes comuns numa fusão que promete ser tanto educativa quanto emocionante. Este concerto gratuito representa uma oportunidade rara de escutar estas tradições em diálogo. Para curiosos e melómanos aventureiros.",
+      "originalUrl": "https://www.eventbrite.pt/e/alfado-concert-fado-sefardi-music-tickets-1988671240213",
+      "tags": [
+        "fado",
+        "música sefardita",
+        "fusão",
+        "gratuito"
+      ],
+      "aiScore": 88,
+      "featured": true,
+      "id": "evt-086"
+    },
+    {
+      "title": "Come From Away",
+      "category": "artes-performativas",
+      "venue": "Local a confirmar",
+      "venueNeighborhood": "Centro",
+      "dates": "13 Mai",
+      "status": "new",
+      "time": "A confirmar",
+      "price": "A confirmar",
+      "blurb": "Este musical canadiano sobre a hospitalidade numa cidade pequena após o 11 de setembro tem conquistado plateias mundialmente. Uma história tocante sobre humanidade em tempos difíceis, com músicas memoráveis e um elenco que alterna entre dezenas de personagens com destreza impressionante.",
+      "originalUrl": "https://cartazculturallisboa.pt/evento/come-from-away/",
+      "tags": [
+        "musical",
+        "estreia",
+        "internacional"
+      ],
+      "aiScore": 85,
+      "featured": true,
+      "id": "evt-001"
+    },
+    {
+      "title": "José Pedro Croft: Reflexos, Enclaves, Desvios",
+      "category": "artes-visuais",
+      "venue": "MAC/CCB",
+      "venueNeighborhood": "Belém",
+      "dates": "Até 13 Set",
+      "status": "ongoing",
+      "blurb": "A segunda grande exposição do artista portuense no CCB revela a maturidade de um dos escultores mais proeminentes da cena nacional. Com curadoria de Luiz Camillo Osorio, a mostra percorre gravuras, desenhos e esculturas que confirmam o estatuto singular de Croft na arte contemporânea portuguesa.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/arte/jose-pedro-croft-reflexos-enclaves-desvios",
+      "tags": [
+        "escultura",
+        "arte portuguesa",
+        "contemporâneo"
+      ],
+      "aiScore": 85,
+      "featured": false,
+      "id": "evt-084"
+    },
+    {
+      "title": "Brian Blaker - Standards with Friends",
+      "category": "musica-noite",
+      "venue": "Good Company Books",
+      "venueNeighborhood": "Príncipe Real",
+      "dates": "Data em breve",
+      "status": "new",
+      "time": "A anunciar",
+      "price": "7€",
+      "blurb": "O veterano pianista de jazz Brian Blaker regressa ao ambiente intimista da livraria para uma sessão de standards clássicos. É o tipo de concerto que faz do Príncipe Real um bairro especial — música de qualidade num espaço acolhedor, sem artifícios.",
+      "originalUrl": "https://www.eventbrite.pt/e/live-music-brian-blaker-standards-with-friends-good-company-books-tickets-1988090039827",
+      "tags": [
+        "jazz",
+        "standards",
+        "intimista"
+      ],
+      "aiScore": 85,
+      "featured": false,
+      "id": "evt-162"
+    },
+    {
+      "title": "Casa-Museu Amália Rodrigues",
+      "category": "artes-visuais",
+      "venue": "Casa-Museu Amália Rodrigues",
+      "venueNeighborhood": "São Sebastião",
+      "dates": "13 Mai–30 Out",
+      "status": "new",
+      "price": "Desde 9€",
+      "blurb": "A casa onde viveu a Rainha do Fado reabriu com nova museografia, oferecendo um olhar mais intimista sobre Amália Rodrigues. Para além dos vestidos icónicos e dos discos de ouro, o espólio pessoal revela uma mulher complexa e uma artista de dimensões inesperadas. Uma visita obrigatória para compreender o fado além do folclore.",
+      "originalUrl": "https://feverup.com/pt/lisboa",
+      "tags": [
+        "fado",
+        "museu",
+        "biografia",
+        "cultura portuguesa"
+      ],
+      "aiScore": 85,
+      "featured": false,
+      "id": "evt-481"
+    },
+    {
+      "title": "Exposição no Reservatório da Mãe d'Água das Amoreiras",
+      "category": "artes-visuais",
+      "venue": "Reservatório da Mãe d'Água das Amoreiras",
+      "venueNeighborhood": "Amoreiras",
+      "dates": "13 Mai–30 Jun",
+      "status": "new",
+      "price": "Gratuito",
+      "blurb": "O magnífico reservatório setecentista das Águas Livres acolhe uma nova instalação que explora a relação entre água e memória urbana. Este espaço subterrâneo único, raramente aberto ao público, oferece uma experiência imersiva que dialoga com a arquitetura histórica. Uma oportunidade rara de redescobrir um dos espaços mais impressionantes e desconhecidos da cidade.",
+      "originalUrl": "https://feverup.com/m/487890",
+      "tags": [
+        "instalação",
+        "património",
+        "imersivo",
+        "gratuito"
+      ],
+      "aiScore": 85,
+      "featured": false,
+      "id": "evt-641"
+    },
+    {
+      "title": "5º Hot Clube - Long ago and far away",
+      "category": "musica-noite",
+      "venue": "Távola Jazz Club",
+      "venueNeighborhood": "Santos",
+      "dates": "12 Mai",
+      "status": "new",
+      "time": "A confirmar",
+      "price": "A confirmar",
+      "blurb": "Tributo ao lendário Dizzy Gillespie numa das salas de jazz mais autênticas da cidade. O Hot Clube mantém viva a tradição do jazz em Lisboa, e esta homenagem ao trompetista revolucionário promete uma noite de música sofisticada para verdadeiros aficionados.",
+      "originalUrl": "https://cartazculturallisboa.pt/evento/5to-hot-clube-long-ago-and-far-away-a-musica-de-dizzy-gillespie-live-jazz-no-tavola-jazz-club/",
+      "tags": [
+        "jazz",
+        "tributo",
+        "bebop"
+      ],
+      "aiScore": 82,
+      "featured": false,
+      "id": "evt-006"
+    },
+    {
+      "title": "Xerazade, a Coleção Interminável do CAM",
+      "category": "artes-visuais",
+      "venue": "Centro de Arte Moderna Gulbenkian",
+      "venueNeighborhood": "Avenidas Novas",
+      "dates": "Dom 14h–18h",
+      "status": "ongoing",
+      "time": "14h",
+      "price": "Gratuito",
+      "blurb": "Enquanto o Museu Gulbenkian permanece encerrado para obras até julho, o CAM assume o protagonismo com esta grande exposição da sua coleção. Uma oportunidade única para redescobrir peças raramente expostas num percurso curatorial que promete surpreender. Domingos de entrada livre são um convite irrecusável.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/arte/linha-de-mare-coleccao-do-cam",
+      "tags": [
+        "coleção",
+        "arte moderna",
+        "entrada livre"
+      ],
+      "aiScore": 82,
+      "featured": false,
+      "id": "evt-085"
+    },
+    {
+      "title": "Lusophone Book Club",
+      "category": "literatura",
+      "venue": "Good Company Books",
+      "venueNeighborhood": "",
+      "dates": "20 Mai",
+      "status": "new",
+      "time": "19h",
+      "price": "Gratuito",
+      "blurb": "Um encontro mensal que celebra a literatura em português nas suas múltiplas geografias e expressões. Numa cidade cada vez mais cosmopolita, este clube oferece um espaço de discussão em torno dos livros que definem o universo lusófono contemporâneo. Para quem procura literatura além das fronteiras nacionais.",
+      "originalUrl": "https://www.eventbrite.pt/e/lusophone-book-club-good-company-books-tickets-1987398440234",
+      "tags": [
+        "literatura",
+        "lusofonia",
+        "debate"
+      ],
+      "aiScore": 82,
+      "featured": true,
+      "id": "evt-089"
+    },
+    {
+      "title": "Latte - escrevi canções e são todas iguais",
+      "category": "musica-noite",
+      "venue": "Teatro Maria Matos",
+      "venueNeighborhood": "Lumiar",
+      "dates": "12 Mai",
+      "status": "new",
+      "time": "A confirmar",
+      "price": "A confirmar",
+      "blurb": "O jovem músico português apresenta ao vivo o álbum que tem dado que falar na cena indie nacional. Com um som melancólico e letras introspectivas, Latte representa uma nova geração que mistura influências internacionais com sensibilidade tipicamente portuguesa.",
+      "originalUrl": "https://cartazculturallisboa.pt/evento/latte-apresenta-escrevi-cancoes-e-sao-todas-iguais-ao-vivo-no-teatro-maria-matos/",
+      "tags": [
+        "indie",
+        "português",
+        "álbum novo"
+      ],
+      "aiScore": 80,
+      "featured": false,
+      "id": "evt-004"
+    },
+    {
+      "title": "Concerto de Carrilhão",
+      "category": "musica-noite",
+      "venue": "Palácio de Mafra",
+      "venueNeighborhood": "Mafra",
+      "dates": "Dom",
+      "status": "new",
+      "time": "16h",
+      "price": "Gratuito",
+      "blurb": "Abel Chaves regressa aos teclados do histórico carrilhão de Mafra para uma experiência sonora única. O som directo e os ecos do instrumento setecentista criam uma atmosfera de rara intensidade no palácio. Uma experiência imersiva que transcende o mero concerto, tornando-se numa viagem no tempo.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/noticias/este-domingo-ha-concerto-de-carrilhao-em-mafra-e-a-entrada-e-livre-041224",
+      "tags": [
+        "carrilhão",
+        "música antiga",
+        "palácio"
+      ],
+      "aiScore": 80,
+      "featured": false,
+      "id": "evt-091"
+    },
+    {
+      "title": "Honey Sessions - Concerto Íntimo em Galeria",
+      "category": "musica-noite",
+      "venue": "Galeria a anunciar",
+      "venueNeighborhood": "Centro",
+      "dates": "Data em breve",
+      "status": "new",
+      "time": "A anunciar",
+      "price": "Gratuito",
+      "blurb": "Uma sessão musical íntima que combina arte visual com performance ao vivo. O conceito é simples mas eficaz: música de qualidade num espaço de arte, criando uma atmosfera única que justifica a deslocação.",
+      "originalUrl": "https://www.eventbrite.fr/e/honey-sessions-intimate-concert-in-an-art-gallery-tickets-1988787877077",
+      "tags": [
+        "concerto íntimo",
+        "galeria",
+        "gratuito"
+      ],
+      "aiScore": 80,
+      "featured": false,
+      "id": "evt-163"
+    },
+    {
+      "title": "Exposição São Luiz, Um Retrato Íntimo",
+      "category": "artes-visuais",
+      "venue": "Teatro Nacional São Luiz",
+      "venueNeighborhood": "Chiado",
+      "dates": "A partir de 13 Mai",
+      "status": "new",
+      "time": "A confirmar",
+      "price": "A confirmar",
+      "blurb": "Uma incursão nos bastidores e na história de um dos teatros mais emblemáticos de Lisboa. A exposição promete revelar aspectos menos conhecidos do São Luiz, numa altura em que o espaço se afirma como referência da programação teatral contemporânea na cidade.",
+      "originalUrl": "https://cartazculturallisboa.pt/evento/exposicao-sao-luiz-um-retrato-intimo-titulo-provisorio/",
+      "tags": [
+        "fotografia",
+        "teatro",
+        "histórico"
+      ],
+      "aiScore": 78,
+      "featured": false,
+      "id": "evt-002"
+    },
+    {
+      "title": "Hugo Guezbar Trio",
+      "category": "musica-noite",
+      "venue": "Django Portugal Fest",
+      "venueNeighborhood": "",
+      "dates": "22 Mai",
+      "status": "new",
+      "time": "21h",
+      "price": "17€",
+      "blurb": "O Django Portugal Fest traz o melhor do jazz manouche à cidade, e este trio promete ser um dos momentos altos do festival. A guitarra virtuosística de Guezbar, herdeira da tradição Django Reinhardt, encontra-se com uma ritmática irrepreensível. Para quem aprecia jazz de câmara no seu melhor.",
+      "originalUrl": "https://www.eventbrite.pt/e/hugo-guezbar-trio-django-portugal-fest-tickets-1975368312799",
+      "tags": [
+        "jazz",
+        "guitarra",
+        "festival"
+      ],
+      "aiScore": 78,
+      "featured": false,
+      "id": "evt-087"
+    },
+    {
+      "title": "À distância de um braço",
+      "category": "artes-visuais",
+      "venue": "Lumina",
+      "venueNeighborhood": "Cascais",
+      "dates": "Até 30 Mai",
+      "status": "ongoing",
+      "time": "A confirmar",
+      "price": "A confirmar",
+      "blurb": "João Miguel Barros apresenta uma síntese do seu trabalho fotográfico recente, incluindo peças que integraram a Bienal de Macau. O fotógrafo português tem desenvolvido uma linguagem visual distintiva que vale a pena acompanhar nesta segunda mostra individual no país.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/arte/a-distancia-de-um-braco",
+      "tags": [
+        "fotografia",
+        "individual",
+        "internacional"
+      ],
+      "aiScore": 76,
+      "featured": false,
+      "id": "evt-009"
+    },
+    {
+      "title": "Human Entities 2026: Ana Meisel",
+      "category": "artes-performativas",
+      "venue": "",
+      "venueNeighborhood": "",
+      "dates": "3 Jun",
+      "status": "new",
+      "time": "18h30",
+      "price": "Gratuito",
+      "blurb": "A série Human Entities continua a explorar as fronteiras entre performance e identidade, desta vez com Ana Meisel. Este ciclo tem-se destacado por propor encontros íntimos entre artistas e público, questionando as convenções do espetáculo. Uma oportunidade de assistir ao trabalho de uma criadora emergente.",
+      "originalUrl": "https://www.eventbrite.pt/e/human-entities-2026-ana-meisel-tickets-1988117137878",
+      "tags": [
+        "performance",
+        "arte emergente",
+        "experimental"
+      ],
+      "aiScore": 76,
+      "featured": false,
+      "id": "evt-090"
+    },
+    {
+      "title": "Diana Vilarinho - Uma Carta Escrita",
+      "category": "literatura",
+      "venue": "Teatro da Trindade",
+      "venueNeighborhood": "Chiado",
+      "dates": "12 Mai",
+      "status": "new",
+      "time": "A confirmar",
+      "price": "A confirmar",
+      "blurb": "A actriz e escritora apresenta o seu mais recente trabalho literário num dos palcos históricos da cidade. Vilarinho tem vindo a construir uma carreira sólida que combina interpretação e escrita, prometendo uma noite onde a palavra falada ganha dimensão performativa.",
+      "originalUrl": "https://cartazculturallisboa.pt/evento/diana-vilarinho-apresenta-uma-carta-escrita-no-teatro-da-trindade/",
+      "tags": [
+        "lançamento",
+        "performance literária",
+        "nacional"
+      ],
+      "aiScore": 75,
+      "featured": false,
+      "id": "evt-003"
+    },
+    {
+      "title": "Lollo Meier",
+      "category": "musica-noite",
+      "venue": "Django Portugal Fest",
+      "venueNeighborhood": "",
+      "dates": "Esta semana",
+      "status": "new",
+      "price": "17€",
+      "blurb": "Outro destaque do Django Portugal Fest, com a virtuosidade característica do género que fez escola na Europa. Meier representa a nova geração de intérpretes desta tradição musical, trazendo frescura sem perder o essencial da herança manouche.",
+      "originalUrl": "https://www.eventbrite.pt/e/lollo-meier-django-portugal-fest-tickets-1975367315817",
+      "tags": [
+        "jazz",
+        "manouche",
+        "festival"
+      ],
+      "aiScore": 75,
+      "featured": false,
+      "id": "evt-088"
+    },
+    {
+      "title": "Curso de Aquarela Nível 2",
+      "category": "artes-visuais",
+      "venue": "The Lisbon Painting Studio",
+      "venueNeighborhood": "Centro",
+      "dates": "11 Mai–29 Jul",
+      "status": "new",
+      "time": "18h30",
+      "price": "257€",
+      "blurb": "Um curso sério para quem já domina os básicos da aquarela e quer aprofundar técnicas avançadas. São oito sessões bem estruturadas que prometem elevar o nível técnico dos participantes, longe do formato recreativo dos workshops de fim de semana.",
+      "originalUrl": "https://www.eventbrite.pt/e/bilhetes-watercolor-art-course-level-2-8-sessions-1986000525032",
+      "tags": [
+        "aquarela",
+        "técnicas avançadas",
+        "curso"
+      ],
+      "aiScore": 75,
+      "featured": false,
+      "id": "evt-161"
+    },
+    {
+      "title": "Museu de Marinha",
+      "category": "artes-visuais",
+      "venue": "Museu de Marinha",
+      "venueNeighborhood": "Belém",
+      "dates": "13 Mai–30 Set",
+      "status": "new",
+      "price": "8€",
+      "blurb": "O renovado Museu de Marinha apresenta uma narrativa mais crítica dos Descobrimentos, contextualizando a expansão portuguesa nas dinâmicas globais da época. A coleção de embarcações históricas ganha novo fôlego com tecnologia interativa que não compromete a seriedade histórica. Uma abordagem contemporânea a um tema fundamental da identidade nacional.",
+      "originalUrl": "https://feverup.com/m/125945",
+      "tags": [
+        "história",
+        "navegação",
+        "descobrimentos",
+        "museu"
+      ],
+      "aiScore": 75,
+      "featured": false,
+      "id": "evt-482"
+    },
+    {
+      "title": "Concertos na Casa-Museu Amália Rodrigues",
+      "category": "musica-noite",
+      "venue": "Casa-Museu Amália Rodrigues",
+      "venueNeighborhood": "São Bento",
+      "dates": "14 Mai–31 Out",
+      "status": "new",
+      "price": "Desde 20€",
+      "blurb": "A Casa-Museu da fadista maior abre as suas portas para uma série de concertos que promete honrar o legado de Amália. O espaço intimista e carregado de história oferece um enquadramento único para experiências musicais autênticas, longe do fado turistificado das casas comerciais.",
+      "originalUrl": "https://feverup.com/m/290633",
+      "tags": [
+        "fado",
+        "museu",
+        "intimista",
+        "património"
+      ],
+      "aiScore": 75,
+      "featured": false,
+      "id": "evt-721"
+    }
+  ]
+}
