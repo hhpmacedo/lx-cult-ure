@@ -32,6 +32,11 @@ jobs:
       - name: Install Playwright browsers
         run: cd pipeline && npx playwright install chromium --with-deps
 
+      - name: Setup Managed Agents (idempotent)
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: cd pipeline && npm run agents:setup
+
       - name: Run auto pipeline
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
