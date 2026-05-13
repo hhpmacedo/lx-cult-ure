@@ -1,0 +1,481 @@
+{
+  "slug": "2026-W20",
+  "weekNumber": 20,
+  "year": 2026,
+  "dateRange": {
+    "start": "2026-05-11",
+    "end": "2026-05-17"
+  },
+  "introText": "Esta semana marca um momento interessante na programação cultural lisboeta, com destaque para a estreia de 'Edible Theatre' de Maria-Rapaz na Casa Capitão, uma proposta experimental que promete desafiar as fronteiras entre performance e gastronomia. Nos palcos tradicionais, 'Sinédoque' no Teatro Maria Matos combina poesia, música e teatro numa proposta multidisciplinar, enquanto '50 Madrugadas' no Teatro Armando Cortez revisita o espírito revolucionário do 25 de Abril. Para os amantes da música intimista, Charlotte Algar apresenta-se na Cossoul com sonoridades brasileiras e argentinas, numa das apostas mais promissoras da semana.",
+  "publishedAt": "2026-05-13T08:49:51.832Z",
+  "events": [
+    {
+      "title": "João Penalva - Retrospectiva: Personagens e Intérpretes",
+      "category": "artes-visuais",
+      "venue": "Culturgest",
+      "venueNeighborhood": "Campo Pequeno",
+      "dates": "Até 12 Jul",
+      "status": "ongoing",
+      "blurb": "Cada instalação de João Penalva é, por si só, uma exposição completa. Esta retrospectiva do antigo bailarino transformado em artista visual oferece experiências imersivas que absorvem e demoram o espectador, numa demonstração da maturidade de um dos nomes mais consistentes da arte contemporânea nacional.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/arte/joao-penalva-retrospectiva",
+      "tags": [
+        "retrospectiva",
+        "instalação",
+        "arte contemporânea"
+      ],
+      "aiScore": 91,
+      "featured": true,
+      "id": "evt-083"
+    },
+    {
+      "title": "Edible Theatre",
+      "category": "artes-performativas",
+      "venue": "Casa Capitão",
+      "venueNeighborhood": "Santos",
+      "dates": "13 Mai",
+      "status": "new",
+      "blurb": "Maria-Rapaz apresenta uma proposta experimental que explora as fronteiras entre performance e gastronomia. A Casa Capitão, conhecida pelo seu programa de arte contemporânea, acolhe esta criação que promete ser uma experiência sensorial completa, desafiando as convenções teatrais tradicionais.",
+      "originalUrl": "https://cartazculturallisboa.pt/evento/maria-rapaz-apresenta-edible-theatre-na-casa-capitao-em-lisboa/",
+      "tags": [
+        "performance",
+        "experimental",
+        "arte contemporânea"
+      ],
+      "aiScore": 88,
+      "featured": true,
+      "id": "evt-001"
+    },
+    {
+      "title": "Lourdes Castro: existe luz na sombra",
+      "category": "artes-visuais",
+      "venue": "Sociedade Nacional de Belas Artes",
+      "venueNeighborhood": "Chiado",
+      "dates": "Até 16 Mai",
+      "status": "ongoing",
+      "blurb": "Última semana para revisitar o percurso singular de uma das vozes mais poéticas da arte portuguesa contemporânea. Esta exposição reúne obras e documentos do acervo particular da artista, onde amor e natureza ocupam lugar central numa linguagem visual única que transformou sombras em luz.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/arte/lourdes-castro-existe-luz-na-sombra",
+      "tags": [
+        "arte portuguesa",
+        "última semana",
+        "retrospectiva"
+      ],
+      "aiScore": 88,
+      "featured": false,
+      "id": "evt-081"
+    },
+    {
+      "title": "Fado na Típica de Alfama",
+      "category": "musica-noite",
+      "venue": "Típica de Alfama",
+      "venueNeighborhood": "Alfama",
+      "dates": "Todas as semanas",
+      "status": "ongoing",
+      "time": "22h30",
+      "price": "Gratuito",
+      "blurb": "Fado espontâneo e autêntico numa das últimas tascas-bar verdadeiramente genuínas de Alfama. Longe dos circuitos turísticos, a Típica mantém viva a tradição do fado de bairro, onde pessoas das redondezas se juntam quando os músicos aparecem, sem horário marcado nem encenação.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/coisas-para-fazer/gratis-em-lisboa-esta-semana",
+      "tags": [
+        "fado",
+        "autêntico",
+        "bairro"
+      ],
+      "aiScore": 87,
+      "featured": true,
+      "id": "evt-010"
+    },
+    {
+      "title": "José Pedro Croft: Reflexos, Enclaves, Desvios",
+      "category": "artes-visuais",
+      "venue": "MAC/CCB",
+      "venueNeighborhood": "Belém",
+      "dates": "Até 13 Set",
+      "status": "ongoing",
+      "blurb": "Segunda grande exposição do artista portuense no Centro Cultural de Belém, com curadoria de Luiz Camillo Osorio. Gravuras, desenhos, relevos e esculturas ocupam o eixo longitudinal do piso 0, revelando a densidade poética e formal de um dos nomes mais proeminentes da cena artística portuguesa.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/arte/jose-pedro-croft-reflexos-enclaves-desvios",
+      "tags": [
+        "escultura",
+        "arte portuguesa",
+        "CCB"
+      ],
+      "aiScore": 86,
+      "featured": false,
+      "id": "evt-084"
+    },
+    {
+      "title": "Meu nome António",
+      "category": "artes-visuais",
+      "venue": "MUDE",
+      "venueNeighborhood": "Baixa",
+      "dates": "Até 31 Mai",
+      "status": "ongoing",
+      "price": "Gratuito",
+      "blurb": "Teresa Couto Pinto foi a fotógrafa mais próxima de António Variações, captando a sua essência e espontaneidade como ninguém. As 85 imagens desta exposição gratuita revelam o lado mais íntimo e autêntico do músico, num testemunho visual único de uma das figuras mais marcantes da música portuguesa.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/arte/meu-nome-antonio",
+      "tags": [
+        "fotografia",
+        "antónio variações",
+        "música portuguesa"
+      ],
+      "aiScore": 85,
+      "featured": false,
+      "id": "evt-008"
+    },
+    {
+      "title": "Exposições Imersivas no Reservatório da Mãe d'Água das Amoreiras",
+      "category": "artes-visuais",
+      "venue": "Reservatório da Mãe d'Água das Amoreiras",
+      "venueNeighborhood": "Amoreiras",
+      "dates": "13 Mai–30 Jun",
+      "status": "new",
+      "price": "Gratuito",
+      "blurb": "O impressionante reservatório setecentista das Amoreiras abre as suas abóbadas para experiências imersivas que prometem transformar este espaço patrimonial único numa galeria de arte contemporânea. Uma oportunidade rara de visitar este monumento da engenharia hidráulica lisboeta, normalmente fechado ao público, enquanto se explora a intersecção entre património e criação artística atual.",
+      "originalUrl": "https://feverup.com/m/487890",
+      "tags": [
+        "património",
+        "arte imersiva",
+        "gratuito",
+        "estreia"
+      ],
+      "aiScore": 85,
+      "featured": false,
+      "id": "evt-641"
+    },
+    {
+      "title": "(Ainda) à Espera de Godot",
+      "category": "artes-visuais",
+      "venue": "Galeria Vera Cortês",
+      "venueNeighborhood": "Marvila",
+      "dates": "Até 16 Mai",
+      "status": "ongoing",
+      "blurb": "Daniel Blaufuks apropria-se do clássico de Beckett para uma reflexão visual sobre a espera como condição existencial do nosso tempo. Na sua sétima exposição na Vera Cortês, o artista transforma a dramaturgia beckettiana num exercício fotográfico e conceptual de rara intensidade.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/arte/still-waiting-for-godot",
+      "tags": [
+        "fotografia",
+        "última semana",
+        "conceitual"
+      ],
+      "aiScore": 84,
+      "featured": false,
+      "id": "evt-082"
+    },
+    {
+      "title": "Sinédoque",
+      "category": "artes-performativas",
+      "venue": "Teatro Maria Matos",
+      "venueNeighborhood": "Avenidas Novas",
+      "dates": "13 Mai",
+      "status": "new",
+      "blurb": "Uma proposta multidisciplinar que combina poesia, música e teatro num espetáculo único. O Teatro Maria Matos, referência na programação teatral contemporânea, recebe esta criação que promete explorar as possibilidades expressivas da linguagem cénica através da fusão de diferentes artes performativas.",
+      "originalUrl": "https://cartazculturallisboa.pt/evento/sinedoque-chega-a-lisboa-com-poesia-musica-e-teatro-num-espetaculo-unico-no-teatro-maria-matos/",
+      "tags": [
+        "teatro",
+        "poesia",
+        "multidisciplinar"
+      ],
+      "aiScore": 82,
+      "featured": false,
+      "id": "evt-002"
+    },
+    {
+      "title": "Hyperosmia",
+      "category": "artes-visuais",
+      "venue": "Arquivo Municipal Fotográfico",
+      "venueNeighborhood": "Belém",
+      "dates": "Até 19 Set",
+      "status": "ongoing",
+      "blurb": "Rita Barros, fotógrafa portuguesa radicada em Nova Iorque e antiga residente no mítico Chelsea Hotel, explora como os estímulos ambientais interferem na memória e na relação com o espaço. Uma reflexão visual profunda sobre percepção sensorial e memória, apresentada num dos espaços mais relevantes da fotografia em Lisboa.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/arte/hyperosmia",
+      "tags": [
+        "fotografia",
+        "memória",
+        "percepção"
+      ],
+      "aiScore": 81,
+      "featured": false,
+      "id": "evt-007"
+    },
+    {
+      "title": "Concerto de Carrilhão em Mafra",
+      "category": "musica-noite",
+      "venue": "Palácio de Mafra",
+      "venueNeighborhood": "Mafra",
+      "dates": "18 Mai",
+      "status": "new",
+      "time": "16h",
+      "price": "Entrada livre",
+      "blurb": "Abel Chaves regressa ao histórico carrilhão de Mafra para uma sessão de grande intensidade sonora. Uma experiência única que combina patrimônio histórico e música, oferecendo uma passagem por grandes clássicos num dos instrumentos mais impressionantes do país.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/noticias/este-domingo-ha-concerto-de-carrilhao-em-mafra-e-a-entrada-e-livre-041224",
+      "tags": [
+        "música histórica",
+        "patrimônio",
+        "gratuito"
+      ],
+      "aiScore": 80,
+      "featured": false,
+      "id": "evt-085"
+    },
+    {
+      "title": "Concertos na Sala Subterrânea do Metro Terreiro do Paço",
+      "category": "musica-noite",
+      "venue": "Sala Subterrânea da Estação do Metro Terreiro do Paço",
+      "venueNeighborhood": "Baixa",
+      "dates": "14 Mai–31 Jul",
+      "status": "new",
+      "price": "Desde 21€",
+      "blurb": "A acústica única da sala subterrânea da estação do Terreiro do Paço transforma-se em palco para uma programação musical alternativa que explora as sonoridades urbanas e experimentais. Este espaço inusitado, construído sobre vestígios arqueológicos, oferece uma experiência sonora verdadeiramente singular no coração da Baixa pombalina.",
+      "originalUrl": "https://feverup.com/m/471066",
+      "tags": [
+        "experimental",
+        "acústica",
+        "underground",
+        "estreia"
+      ],
+      "aiScore": 80,
+      "featured": false,
+      "id": "evt-642"
+    },
+    {
+      "title": "À Distância de um Braço",
+      "category": "artes-visuais",
+      "venue": "Lumina",
+      "venueNeighborhood": "Marvila",
+      "dates": "Até 30 Mai",
+      "status": "ongoing",
+      "blurb": "Segunda exposição individual de João Miguel Barros em Portugal, centrada no núcleo 'short stories' do seu trabalho fotográfico recente. A mostra inclui fotografias que integraram a Bienal Internacional de Arte de Macau, revelando a maturidade artística de um dos nomes mais interessantes da fotografia contemporânea nacional.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/arte/a-distancia-de-um-braco",
+      "tags": [
+        "fotografia",
+        "contemporâneo",
+        "individual"
+      ],
+      "aiScore": 79,
+      "featured": false,
+      "id": "evt-006"
+    },
+    {
+      "title": "50 Madrugadas",
+      "category": "artes-performativas",
+      "venue": "Teatro Armando Cortez",
+      "venueNeighborhood": "Avenidas Novas",
+      "dates": "13 Mai",
+      "status": "new",
+      "blurb": "Um espetáculo que revisita o espírito revolucionário do 25 de Abril, transportando para o palco a atmosfera das madrugadas que antecederam a Revolução dos Cravos. Uma proposta teatral que combina memória histórica e criação artística, numa reflexão sobre um dos momentos mais marcantes da história portuguesa.",
+      "originalUrl": "https://cartazculturallisboa.pt/evento/50-madrugadas-leva-o-espirito-do-25-de-abril-ao-palco-do-teatro-armando-cortez/",
+      "tags": [
+        "teatro",
+        "história",
+        "25 de abril"
+      ],
+      "aiScore": 78,
+      "featured": false,
+      "id": "evt-003"
+    },
+    {
+      "title": "Experiência Fado na Casa-Museu Amália Rodrigues",
+      "category": "musica-noite",
+      "venue": "Casa-Museu Amália Rodrigues",
+      "venueNeighborhood": "São Sebastião da Pedreira",
+      "dates": "14 Mai–31 Out",
+      "status": "new",
+      "price": "Desde 20€",
+      "blurb": "Na casa onde viveu a maior fadista portuguesa, uma experiência que promete ir além do fado comercial. O contexto museológico e o espaço íntimo podem proporcionar uma abordagem mais autêntica ao género, longe dos clichés turísticos.",
+      "originalUrl": "https://feverup.com/m/290633",
+      "tags": [
+        "fado",
+        "museu",
+        "Amália Rodrigues"
+      ],
+      "aiScore": 78,
+      "featured": false,
+      "id": "evt-723"
+    },
+    {
+      "title": "Festival Morabeza - Cabo Verde em Lisboa",
+      "category": "musica-noite",
+      "venue": "Museu de Lisboa - Palácio Pimenta",
+      "venueNeighborhood": "Lumiar",
+      "dates": "9 Mai",
+      "status": "new",
+      "price": "Entrada livre",
+      "blurb": "Segunda edição do festival que celebra a cultura cabo-verdiana em Lisboa, com mercado kriolo, gastronomia, artesanato e música. Um evento que reforça os laços culturais entre as duas margens do Atlântico, destacando a criatividade da diáspora na capital portuguesa.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/noticias/cabo-verde-em-lisboa-e-no-festival-morabeza-e-a-entrada-e-livre-050226",
+      "tags": [
+        "cabo-verde",
+        "diáspora",
+        "gratuito"
+      ],
+      "aiScore": 77,
+      "featured": false,
+      "id": "evt-087"
+    },
+    {
+      "title": "Festival L.O.V.E AFRICA",
+      "category": "literatura",
+      "venue": "Palácio Baldaya",
+      "venueNeighborhood": "Benfica",
+      "dates": "11-13 Mai",
+      "status": "new",
+      "blurb": "Terceira edição do festival literário dedicado à cultura africana, com conversas, leituras, performance e gastronomia. A livraria online Lulendo regressa ao Palácio Baldaya com uma programação rica que celebra a literatura e as artes africanas, numa proposta cultural inclusiva e diversa.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/noticias/festival-l-o-v-e-africa-leva-livros-conversas-e-musica-a-benfica-050926",
+      "tags": [
+        "literatura",
+        "cultura africana",
+        "diversidade"
+      ],
+      "aiScore": 76,
+      "featured": true,
+      "id": "evt-011"
+    },
+    {
+      "title": "Charlotte Algar",
+      "category": "musica-noite",
+      "venue": "Cossoul",
+      "venueNeighborhood": "Alcântara",
+      "dates": "13 Mai",
+      "status": "new",
+      "blurb": "Concerto intimista da cantautora Charlotte Algar, que apresenta o seu trabalho marcado por influências brasileiras e argentinas. A Cossoul, espaço conhecido pela sua programação musical cuidada, acolhe esta proposta que promete envolver o público numa atmosfera íntima e envolvente.",
+      "originalUrl": "https://cartazculturallisboa.pt/evento/charlotte-algar-apresenta-concerto-intimista-na-cossoul-com-influencias-brasileiras-e-argentinas/",
+      "tags": [
+        "música",
+        "intimista",
+        "brasil",
+        "argentina"
+      ],
+      "aiScore": 75,
+      "featured": false,
+      "id": "evt-004"
+    },
+    {
+      "title": "Visita Nocturna ao MACAM",
+      "category": "artes-visuais",
+      "venue": "Museu de Arte Contemporânea Armando Martins",
+      "venueNeighborhood": "Cascais",
+      "dates": "17 Mai",
+      "status": "new",
+      "time": "19h–22h",
+      "price": "Gratuito",
+      "blurb": "O MACAM antecipa o Dia Internacional dos Museus com entrada livre nocturna e visita orientada. Uma oportunidade rara de descobrir a colecção num ambiente mais intimista, longe das multidões diurnas e com uma perspectiva diferente sobre o espaço expositivo.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/coisas-para-fazer/gratis-em-lisboa-esta-semana",
+      "tags": [
+        "nocturno",
+        "gratuito",
+        "arte contemporânea"
+      ],
+      "aiScore": 75,
+      "featured": false,
+      "id": "evt-086"
+    },
+    {
+      "title": "Casa-Museu Amália Rodrigues",
+      "category": "artes-visuais",
+      "venue": "Casa-Museu Amália Rodrigues",
+      "venueNeighborhood": "São Bento",
+      "dates": "13 Mai–30 Out",
+      "status": "ongoing",
+      "price": "Desde 9€",
+      "blurb": "A casa onde viveu a maior fadista portuguesa mantém-se como um dos museus mais autênticos de Lisboa, longe do fado turistificado das tascas de Alfama. O espólio pessoal de Amália, desde os seus vestidos icónicos às cartas íntimas, oferece um retrato genuíno da mulher por trás da voz que definiu o fado moderno.",
+      "originalUrl": "https://feverup.com/m/101650",
+      "tags": [
+        "fado",
+        "património",
+        "autêntico",
+        "biografia"
+      ],
+      "aiScore": 75,
+      "featured": false,
+      "id": "evt-644"
+    },
+    {
+      "title": "Pilar 7 Bridge Experience",
+      "category": "artes-visuais",
+      "venue": "Pilar 7 Bridge Experience",
+      "venueNeighborhood": "Belém",
+      "dates": "13 Mai–9 Ago",
+      "status": "new",
+      "price": "5,50€",
+      "blurb": "Uma perspetiva única sobre a Ponte 25 de Abril através de uma experiência imersiva no interior do pilar. Apesar do nome em inglês, oferece uma visão privilegiada da engenharia portuguesa e da paisagem do Tejo que poucos lisboetas conhecem.",
+      "originalUrl": "https://feverup.com/m/493878",
+      "tags": [
+        "arquitetura",
+        "perspetiva única",
+        "ponte"
+      ],
+      "aiScore": 75,
+      "featured": false,
+      "id": "evt-721"
+    },
+    {
+      "title": "Arte e Moda na Coleção Gulbenkian",
+      "category": "artes-visuais",
+      "venue": "Museu Calouste Gulbenkian",
+      "venueNeighborhood": "Avenidas Novas",
+      "dates": "Até 13 Mai",
+      "status": "ongoing",
+      "blurb": "Exposição que explora as relações entre arte e moda através da rica coleção Gulbenkian. Uma oportunidade para descobrir como estas duas formas de expressão se influenciaram mutuamente ao longo dos séculos, numa apresentação cuidada que revela peças raras e surpreendentes do acervo da fundação.",
+      "originalUrl": "https://cartazculturallisboa.pt/evento/arte-e-moda-na-colecao-gulbenkian/",
+      "tags": [
+        "exposição",
+        "moda",
+        "coleção histórica"
+      ],
+      "aiScore": 72,
+      "featured": false,
+      "id": "evt-005"
+    },
+    {
+      "title": "Festival Coopera!",
+      "category": "artes-performativas",
+      "venue": "Jardins do Bombarda",
+      "venueNeighborhood": "Arroios",
+      "dates": "Fim de semana",
+      "status": "new",
+      "price": "Gratuito",
+      "blurb": "Festival dedicado às soluções coletivas e à participação cidadã, com conversas, oficinas e concertos gratuitos. Uma proposta que combina pensamento crítico e expressão artística, explorando temas como democracia económica e crise climática através de diferentes linguagens culturais.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/coisas-para-fazer/gratis-em-lisboa-esta-semana",
+      "tags": [
+        "participativo",
+        "social",
+        "gratuito"
+      ],
+      "aiScore": 72,
+      "featured": false,
+      "id": "evt-013"
+    },
+    {
+      "title": "Concerto no B.Leza",
+      "category": "musica-noite",
+      "venue": "B.Leza",
+      "venueNeighborhood": "Santos",
+      "dates": "28 Mai",
+      "status": "ongoing",
+      "price": "15€",
+      "blurb": "O B.Leza mantém a sua programação de qualidade com mais um concerto que promete trazer sonoridades interessantes ao espaço. Um dos poucos locais em Lisboa que consegue equilibrar ambiente intimista com propostas musicais consistentes.",
+      "originalUrl": "https://feverup.com/m/523713",
+      "tags": [
+        "concerto",
+        "música ao vivo",
+        "intimista"
+      ],
+      "aiScore": 72,
+      "featured": false,
+      "id": "evt-722"
+    },
+    {
+      "title": "Tatanka",
+      "category": "artes-performativas",
+      "venue": "Teatro Tivoli BBVA",
+      "venueNeighborhood": "Avenidas Novas",
+      "dates": "13 Mai",
+      "status": "new",
+      "blurb": "O Teatro Tivoli BBVA, uma das principais salas de espetáculos da cidade, recebe 'Tatanka', uma produção que promete marcar a programação teatral da semana. Embora os detalhes sejam escassos, o prestígio do espaço sugere uma proposta artística de qualidade.",
+      "originalUrl": "https://cartazculturallisboa.pt/evento/tatanka-no-teatro-tivoli-bbva/",
+      "tags": [
+        "teatro",
+        "grande formato"
+      ],
+      "aiScore": 70,
+      "featured": false,
+      "id": "evt-014"
+    }
+  ]
+}
