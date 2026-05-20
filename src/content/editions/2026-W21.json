@@ -1,0 +1,494 @@
+{
+  "slug": "2026-W21",
+  "weekNumber": 21,
+  "year": 2026,
+  "dateRange": {
+    "start": "2026-05-18",
+    "end": "2026-05-24"
+  },
+  "introText": "Lisboa prepara-se para uma semana cultural rica e diversificada, com destaque para a apresentação de 'Histórias de Ver e Andar' de Teolinda Gersão e a estreia da ópera 'Por Todos Nós' no Teatro Aberto. As artes visuais marcam presença forte com a inauguração de 'A Ilha Púrpura' de Manuel João Vieira no MAAT e a exposição 'ADAEQUATIO' de Vasco Grilo. Entre concertos, debates sobre soberania digital e espetáculos experimentais, a cidade confirma-se como um laboratório cultural vibrante para lisboetas exigentes.",
+  "publishedAt": "2026-05-20T09:30:55.166Z",
+  "events": [
+    {
+      "title": "'Por Todos Nós' - Nova Ópera Inspirada em Lídia Jorge",
+      "category": "artes-performativas",
+      "venue": "Teatro Aberto",
+      "venueNeighborhood": "Centro",
+      "dates": "20 Mai",
+      "status": "new",
+      "blurb": "O Teatro Aberto celebra os seus 50 anos e o Abril com uma nova ópera baseada na obra de Lídia Jorge. Esta produção original promete cruzar a tradição operática com a contemporaneidade da escrita jorgiana, numa celebração que honra tanto a revolução democrática como a maturidade artística da companhia.",
+      "originalUrl": "https://cartazculturallisboa.pt/evento/por-todos-nos-celebra-abril-e-os-50-anos-do-teatro-aberto-com-nova-opera-inspirada-em-lidia-jorge/",
+      "tags": [
+        "ópera",
+        "estreia",
+        "teatro aberto"
+      ],
+      "aiScore": 92,
+      "featured": true,
+      "id": "evt-002"
+    },
+    {
+      "title": "'A Ilha Púrpura: Notas e Paisagens' de Manuel João Vieira",
+      "category": "artes-visuais",
+      "venue": "MAAT",
+      "venueNeighborhood": "Belém",
+      "dates": "Até 7 Set",
+      "status": "ongoing",
+      "blurb": "O músico e artista plástico Manuel João Vieira apresenta 44 anos de percurso artístico numa exposição que revisita o Movimento Homeostético dos anos 80. Uma retrospetiva essencial que demonstra a versatilidade criativa de uma das figuras mais singulares da cultura portuguesa contemporânea.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/arte/a-ilha-purpura-notas-e-paisagens",
+      "tags": [
+        "retrospetiva",
+        "artes plásticas",
+        "maat"
+      ],
+      "aiScore": 90,
+      "featured": true,
+      "id": "evt-003"
+    },
+    {
+      "title": "João Penalva - Retrospetiva",
+      "category": "artes-visuais",
+      "venue": "Culturgest",
+      "venueNeighborhood": "Campo Pequeno",
+      "dates": "Até 12 Jul",
+      "status": "ongoing",
+      "blurb": "Cada instalação de João Penalva é uma exposição em si mesma, e esta retrospetiva comprova-o. O artista que começou por ser bailarino cria ambientes que nos absorvem e demoram, numa altura em que 'imersivo' se tornou palavra banalizada. 'Personagens e Intérpretes' mostra a maturidade de um dos nomes mais consistentes da arte contemporânea portuguesa.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/arte/joao-penalva-retrospectiva",
+      "tags": [
+        "retrospetiva",
+        "instalação",
+        "arte contemporânea",
+        "culturgest"
+      ],
+      "aiScore": 90,
+      "featured": false,
+      "id": "evt-084"
+    },
+    {
+      "title": "Teolinda Gersão apresenta 'Histórias de Ver e Andar em Lisboa'",
+      "category": "literatura",
+      "venue": "Local a confirmar",
+      "venueNeighborhood": "Centro",
+      "dates": "20 Mai",
+      "status": "new",
+      "blurb": "A veterana escritora portuguesa apresenta a sua mais recente obra, um olhar literário sobre a capital que promete conjugar o intimismo da sua prosa com a cartografia afetiva da cidade. Gersão, figura maior das letras contemporâneas, oferece uma perspetiva única sobre Lisboa através da sua sensibilidade apurada.",
+      "originalUrl": "https://cartazculturallisboa.pt/evento/teolinda-gersao-apresenta-historias-de-ver-e-andar-em-lisboa/",
+      "tags": [
+        "literatura",
+        "apresentação",
+        "lisboa"
+      ],
+      "aiScore": 88,
+      "featured": true,
+      "id": "evt-001"
+    },
+    {
+      "title": "Xerazade, a Coleção Interminável do CAM",
+      "category": "artes-visuais",
+      "venue": "Centro de Arte Moderna - Gulbenkian",
+      "venueNeighborhood": "Avenidas Novas",
+      "dates": "Até Jul 2026",
+      "status": "ongoing",
+      "time": "14h–18h (dom entrada livre)",
+      "price": "Gratuito (dom)",
+      "blurb": "Com o Museu Gulbenkian encerrado para obras, o CAM assume o protagonismo com esta grande exposição que revisita o seu espólio de forma inventiva. Aos domingos, entrada livre a partir das 14h para descobrir uma das mais importantes coleções de arte moderna e contemporânea do país. Uma oportunidade imperdível para conhecer melhor este tesouro cultural lisboeta.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/arte/linha-de-mare-coleccao-do-cam",
+      "tags": [
+        "gulbenkian",
+        "arte moderna",
+        "coleção",
+        "gratuito"
+      ],
+      "aiScore": 88,
+      "featured": false,
+      "id": "evt-083"
+    },
+    {
+      "title": "José Pedro Croft. Reflexos, Enclaves, Desvios",
+      "category": "artes-visuais",
+      "venue": "MAC/CCB",
+      "venueNeighborhood": "Belém",
+      "dates": "Até 13 Set",
+      "status": "ongoing",
+      "blurb": "Gravuras, desenhos, relevos e esculturas de um dos artistas mais proeminentes da cena contemporânea portuguesa ocupam o eixo longitudinal do MAC. A curadoria de Luiz Camillo Osorio destaca a versatilidade técnica e a consistência conceptual de José Pedro Croft. Uma exposição essencial para compreender uma das vozes mais singulares da nossa arte atual.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/arte/jose-pedro-croft-reflexos-enclaves-desvios",
+      "tags": [
+        "escultura",
+        "arte contemporânea",
+        "ccb",
+        "retrospetiva"
+      ],
+      "aiScore": 87,
+      "featured": false,
+      "id": "evt-085"
+    },
+    {
+      "title": "Aubrey na LX Factory - 11.º Aniversário Assemble Music",
+      "category": "musica-noite",
+      "venue": "LX Factory",
+      "venueNeighborhood": "Alcântara",
+      "dates": "22 Mai",
+      "status": "new",
+      "price": "Gratuito",
+      "blurb": "A lenda britânica da eletrónica Aubrey (Allen Saei) encabeça a primeira de cinco festas gratuitas que celebram o 11.º aniversário da Assemble Music. Pioneiro do acid house e techno, Aubrey promete uma aula de história da música eletrónica numa das localizações mais emblemáticas da cidade.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/coisas-para-fazer/gratis-em-lisboa-esta-semana",
+      "tags": [
+        "techno",
+        "acid house",
+        "gratuito",
+        "lx factory"
+      ],
+      "aiScore": 85,
+      "featured": true,
+      "id": "evt-010"
+    },
+    {
+      "title": "Avenida Open Week",
+      "category": "artes-visuais",
+      "venue": "Teatros e cinemas da Avenida da Liberdade",
+      "venueNeighborhood": "Avenidas Novas",
+      "dates": "18–29 Mai",
+      "status": "new",
+      "price": "Gratuito",
+      "blurb": "A Avenida da Liberdade abre as suas portas para mostrar o que normalmente fica escondido dos holofotes. Uma semana inteira de exposições, workshops e atividades gratuitas nos bastidores dos teatros Politeama, Variedades e Cinema São Jorge. Uma oportunidade rara de descobrir os segredos da principal artéria cultural da cidade.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/noticias/em-maio-os-bastidores-da-avenida-da-liberdade-ficam-a-vista-050826",
+      "tags": [
+        "bastidores",
+        "gratuito",
+        "teatros",
+        "cinema"
+      ],
+      "aiScore": 85,
+      "featured": false,
+      "id": "evt-081"
+    },
+    {
+      "title": "Casa-Museu Amália Rodrigues",
+      "category": "artes-visuais",
+      "venue": "Casa-Museu Amália Rodrigues",
+      "venueNeighborhood": "São Bento",
+      "dates": "20 Mai–30 Out",
+      "status": "new",
+      "price": "Desde 9€",
+      "blurb": "A casa onde viveu a Rainha do Fado abre as portas com entrada a preço acessível, revelando o quotidiano e os objetos pessoais de Amália Rodrigues. Um mergulho intimista no universo da maior intérprete portuguesa do século XX. Uma oportunidade única para perceber a mulher por trás do mito.",
+      "originalUrl": "https://feverup.com/m/101650",
+      "tags": [
+        "fado",
+        "museu",
+        "património",
+        "amália"
+      ],
+      "aiScore": 85,
+      "featured": false,
+      "id": "evt-321"
+    },
+    {
+      "title": "Exposição no Reservatório da Mãe d'Água das Amoreiras",
+      "category": "artes-visuais",
+      "venue": "Reservatório da Mãe d'Água das Amoreiras",
+      "venueNeighborhood": "Amoreiras",
+      "dates": "20 Mai–30 Jun",
+      "status": "new",
+      "price": "Gratuito",
+      "blurb": "Uma oportunidade rara de visitar este magnífico reservatório setecentista, obra-prima da engenharia hidráulica lisboeta. O espaço abobadado, normalmente fechado ao público, acolhe agora uma exposição que valoriza tanto a arquitectura como o conteúdo expositivo. Um dos segredos mais bem guardados da cidade, finalmente acessível.",
+      "originalUrl": "https://feverup.com/m/487890",
+      "tags": [
+        "arquitectura",
+        "gratuito",
+        "património"
+      ],
+      "aiScore": 85,
+      "featured": false,
+      "id": "evt-401"
+    },
+    {
+      "title": "Reservatório da Mãe d'Água das Amoreiras",
+      "category": "artes-visuais",
+      "venue": "Reservatório da Mãe d'Água das Amoreiras",
+      "venueNeighborhood": "Amoreiras",
+      "dates": "20 Mai–30 Jun",
+      "status": "new",
+      "price": "Gratuito",
+      "blurb": "Um dos espaços mais impressionantes e menos conhecidos da arquitetura hidráulica pombalina abre as portas gratuitamente. Esta obra-prima da engenharia do século XVIII, com as suas abóbadas majestosas, oferece uma experiência única de descoberta patrimonial. O ambiente quase sacro do reservatório funciona como uma instalação arquitetónica por si só.",
+      "originalUrl": "https://feverup.com/m/487890",
+      "tags": [
+        "património",
+        "arquitetura",
+        "gratuito",
+        "pombalino"
+      ],
+      "aiScore": 85,
+      "featured": false,
+      "id": "evt-642"
+    },
+    {
+      "title": "Carminho, Carolina Deslandes e Tozé Brito - FNAC Live",
+      "category": "musica-noite",
+      "venue": "Jardins de Belém",
+      "venueNeighborhood": "Belém",
+      "dates": "Final de Mai",
+      "status": "new",
+      "price": "Gratuito",
+      "blurb": "O FNAC Live regressa aos Jardins de Belém com um cartaz 100% português e entrada livre. Carminho representa o fado de qualidade, Carolina Deslandes o pop nacional e Tozé Brito a música de autor. Um dia inteiro dedicado à música portuguesa, com espaço também para novos talentos. Programa ideal para uma tarde de sol em Belém.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/noticias/carminho-carolina-deslandes-e-toze-brito-vao-dar-concertos-gratuitos-em-belem-050826",
+      "tags": [
+        "fado",
+        "pop português",
+        "gratuito",
+        "jardins"
+      ],
+      "aiScore": 83,
+      "featured": false,
+      "id": "evt-086"
+    },
+    {
+      "title": "'A Biologia da Cooperação' no Goethe-Institut",
+      "category": "artes-performativas",
+      "venue": "Goethe-Institut",
+      "venueNeighborhood": "Chiado",
+      "dates": "20 Mai",
+      "status": "new",
+      "blurb": "Espetáculo interdisciplinar que combina ciência, teatro e língua gestual numa reflexão sobre colaboração e comunidade. O Goethe-Institut aposta numa abordagem experimental que promete questionar as fronteiras entre diferentes formas de comunicação e conhecimento.",
+      "originalUrl": "https://cartazculturallisboa.pt/evento/a-biologia-da-cooperacao-leva-ciencia-teatro-e-lingua-gestual-ao-goethe-institut-em-lisboa/",
+      "tags": [
+        "teatro experimental",
+        "ciência",
+        "interdisciplinar"
+      ],
+      "aiScore": 82,
+      "featured": false,
+      "id": "evt-005"
+    },
+    {
+      "title": "Feira Analógica",
+      "category": "literatura",
+      "venue": "Mercado de Arroios",
+      "venueNeighborhood": "Arroios",
+      "dates": "18–19 Mai",
+      "status": "new",
+      "blurb": "A terceira edição desta feira dedicada à edição independente e cultura sonora reúne mais de 40 editoras, lojas e coletivos de todo o país. Num contexto crescentemente digital, a Analógica propõe um território de proximidade física com os objetos culturais. O lugar ideal para descobrir pequenas editoras, vinis raros e projetos editoriais alternativos.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/noticias/analogica-de-volta-a-arroios-com-discos-e-editoras-independentes-051626",
+      "tags": [
+        "edição independente",
+        "vinil",
+        "editoras",
+        "mercado"
+      ],
+      "aiScore": 82,
+      "featured": false,
+      "id": "evt-082"
+    },
+    {
+      "title": "Museu do Fado",
+      "category": "artes-visuais",
+      "venue": "Museu do Fado",
+      "venueNeighborhood": "Alfama",
+      "dates": "22 Mai–31 Out",
+      "status": "new",
+      "price": "1€",
+      "blurb": "Com entrada quase simbólica, o Museu do Fado oferece uma perspetiva académica e histórica sobre o género musical mais identitário de Lisboa. Desde as origens no século XIX até às interpretações contemporâneas, uma viagem completa pela alma sonora da cidade. Imperdível para quem quer compreender verdadeiramente o fado para além do cliché turístico.",
+      "originalUrl": "https://feverup.com/m/329381",
+      "tags": [
+        "fado",
+        "museu",
+        "história",
+        "alfama"
+      ],
+      "aiScore": 82,
+      "featured": false,
+      "id": "evt-322"
+    },
+    {
+      "title": "Eventos no Espaço Laboratório",
+      "category": "artes-performativas",
+      "venue": "Espaço LABORATÓRIO",
+      "venueNeighborhood": "Marvila",
+      "dates": "29–30 Mai",
+      "status": "ongoing",
+      "price": "15€–35€",
+      "blurb": "O Laboratório mantém-se fiel à sua vocação experimental, apresentando propostas que desafiam os géneros tradicionais. Este fim de semana promete duas noites distintas de performance contemporânea. Um espaço essencial para quem quer acompanhar a vanguarda artística da cidade.",
+      "originalUrl": "https://feverup.com/m/643597",
+      "tags": [
+        "experimental",
+        "performance",
+        "contemporâneo",
+        "vanguarda"
+      ],
+      "aiScore": 80,
+      "featured": false,
+      "id": "evt-165"
+    },
+    {
+      "title": "Concertos no Auditório do Museu da Farmácia",
+      "category": "musica-noite",
+      "venue": "Auditório do Museu da Farmácia",
+      "venueNeighborhood": "Estrela",
+      "dates": "20 Mai–30 Dez",
+      "status": "new",
+      "price": "Desde 5€",
+      "blurb": "Um dos segredos mais bem guardados da programação musical lisboeta. O pequeno auditório do Museu da Farmácia acolhe concertos de câmara e recitais numa atmosfera intimista e com preços acessíveis. Ideal para descobrir novos talentos ou redescobrir clássicos em formato mais próximo.",
+      "originalUrl": "https://feverup.com/m/114041",
+      "tags": [
+        "música-câmara",
+        "intimista",
+        "acessível"
+      ],
+      "aiScore": 80,
+      "featured": false,
+      "id": "evt-404"
+    },
+    {
+      "title": "Paris Marx - Soberania Digital no ciclo Human Entities 2026",
+      "category": "literatura",
+      "venue": "Local a confirmar",
+      "venueNeighborhood": "Centro",
+      "dates": "20 Mai",
+      "status": "new",
+      "blurb": "O investigador canadiano Paris Marx, autor de 'Road to Nowhere', debate as questões da soberania digital numa época de crescente dependência tecnológica. Uma conversa essencial sobre os desafios políticos e sociais da era digital, inserida no ciclo Human Entities 2026.",
+      "originalUrl": "https://cartazculturallisboa.pt/evento/paris-marx-discute-soberania-digital-no-ciclo-human-entities-2026/",
+      "tags": [
+        "debate",
+        "tecnologia",
+        "pensamento crítico"
+      ],
+      "aiScore": 78,
+      "featured": false,
+      "id": "evt-006"
+    },
+    {
+      "title": "Concerto de Carrilhão",
+      "category": "musica-noite",
+      "venue": "Palácio de Mafra",
+      "venueNeighborhood": "Mafra",
+      "dates": "19 Mai",
+      "status": "new",
+      "time": "16h",
+      "price": "Gratuito",
+      "blurb": "Abel Chaves regressa ao carrilhão de Mafra para uma experiência de grande intensidade sonora. O som direto e os ecos do grande carrilhão ecoam pelo palácio numa performance que passa por grandes clássicos. Uma experiência única de património musical vivo, fora dos circuitos habituais de Lisboa mas que vale a deslocação.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/noticias/este-domingo-ha-concerto-de-carrilhao-em-mafra-e-a-entrada-e-livre-041224",
+      "tags": [
+        "carrilhão",
+        "clássica",
+        "património",
+        "mafra"
+      ],
+      "aiScore": 78,
+      "featured": false,
+      "id": "evt-089"
+    },
+    {
+      "title": "Exposição na Academia das Ciências",
+      "category": "artes-visuais",
+      "venue": "Academia das Ciências de Lisboa",
+      "venueNeighborhood": "Santos",
+      "dates": "25 Set–29 Jan",
+      "status": "ongoing",
+      "price": "Desde 24€ / Entrada gratuita disponível",
+      "blurb": "A Academia das Ciências continua a surpreender com exposições que cruzam arte e ciência de forma inteligente. O espaço histórico do Chiado oferece um contexto único para mostras que fogem ao circuito comercial habitual. Vale a pena aproveitar as visitas gratuitas quando disponíveis.",
+      "originalUrl": "https://feverup.com/m/77953",
+      "tags": [
+        "arte-ciência",
+        "espaço histórico",
+        "exposição",
+        "interdisciplinar"
+      ],
+      "aiScore": 78,
+      "featured": false,
+      "id": "evt-166"
+    },
+    {
+      "title": "B.Leza",
+      "category": "musica-noite",
+      "venue": "B.Leza",
+      "venueNeighborhood": "Santos",
+      "dates": "10 Nov",
+      "status": "ongoing",
+      "price": "26€",
+      "blurb": "O B.Leza continua a ser uma das referências incontornáveis da música lusófona em Lisboa, programando artistas que raramente se veem noutros palcos. Um espaço com curadoria exigente e ambiente intimista, ideal para descobrir novos talentos ou reencontrar grandes nomes da música de língua portuguesa.",
+      "originalUrl": "https://feverup.com/m/620324",
+      "tags": [
+        "música lusófona",
+        "concerto",
+        "santos"
+      ],
+      "aiScore": 78,
+      "featured": false,
+      "id": "evt-323"
+    },
+    {
+      "title": "Concertos na Estação do Metro Terreiro do Paço",
+      "category": "artes-performativas",
+      "venue": "Sala Subterrânea da Estação do Metro Terreiro do Paço",
+      "venueNeighborhood": "Terreiro do Paço",
+      "dates": "21 Mai–31 Jul",
+      "status": "new",
+      "price": "Desde 21€",
+      "blurb": "A sala subterrânea da estação de metro mais emblemática de Lisboa transforma-se num espaço de concertos íntimo e surpreendente. O ambiente único, entre a arqueologia romana e a arquitetura contemporânea, cria uma atmosfera especial para performances musicais. Uma experiência que combina património histórico com programação cultural contemporânea.",
+      "originalUrl": "https://feverup.com/m/471066",
+      "tags": [
+        "concerto",
+        "metro",
+        "subterrâneo",
+        "arqueologia"
+      ],
+      "aiScore": 78,
+      "featured": false,
+      "id": "evt-647"
+    },
+    {
+      "title": "'À Distância de um Braço' de João Miguel Barros",
+      "category": "artes-visuais",
+      "venue": "Lumina",
+      "venueNeighborhood": "Centro",
+      "dates": "Até 30 Mai",
+      "status": "ongoing",
+      "blurb": "Segunda exposição individual em Portugal do fotógrafo João Miguel Barros, centrada na série 'short stories' e incluindo trabalhos apresentados na Bienal de Macau. A Lumina confirma-se como uma das galerias mais atentas à fotografia contemporânea portuguesa.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/arte/a-distancia-de-um-braco",
+      "tags": [
+        "fotografia",
+        "arte contemporânea",
+        "individual"
+      ],
+      "aiScore": 76,
+      "featured": false,
+      "id": "evt-008"
+    },
+    {
+      "title": "POR:TA Music Session #11 com Francisco Fontes",
+      "category": "musica-noite",
+      "venue": "POR:TA",
+      "venueNeighborhood": "Centro",
+      "dates": "20 Mai",
+      "status": "new",
+      "blurb": "A série de sessões musicais intimistas do POR:TA continua com Francisco Fontes, numa proposta que privilegia a proximidade entre artista e público. Estas sessões têm-se revelado uma plataforma importante para descobrir novos talentos e revisitar clássicos num ambiente descontraído.",
+      "originalUrl": "https://cartazculturallisboa.pt/evento/porta-music-session-11-francisco-fontes/",
+      "tags": [
+        "música ao vivo",
+        "sessão intimista",
+        "novo talento"
+      ],
+      "aiScore": 75,
+      "featured": false,
+      "id": "evt-004"
+    },
+    {
+      "title": "Banda Sonora - Tributo aos Foo Fighters",
+      "category": "artes-performativas",
+      "venue": "Cinema São Jorge",
+      "venueNeighborhood": "Avenidas Novas",
+      "dates": "19 Mai",
+      "status": "new",
+      "blurb": "O Cinema São Jorge estreia uma nova rubrica de concertos acústicos com os Foo Riders em tributo aos Foo Fighters. A iniciativa 'Banda Sonora' promete trazer música ao vivo mais regularmente a este espaço icónico da Avenida da Liberdade. Uma forma interessante de cruzar cinema e música num formato íntimo e alternativo.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/noticias/cinema-sao-jorge-estreia-rubrica-de-concertos-acusticos-com-tributo-a-foo-fighters-050726",
+      "tags": [
+        "acústico",
+        "tributo",
+        "cinema",
+        "rock"
+      ],
+      "aiScore": 75,
+      "featured": false,
+      "id": "evt-087"
+    }
+  ]
+}
