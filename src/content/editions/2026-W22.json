@@ -1,0 +1,502 @@
+{
+  "slug": "2026-W22",
+  "weekNumber": 22,
+  "year": 2026,
+  "dateRange": {
+    "start": "2026-05-25",
+    "end": "2026-05-31"
+  },
+  "introText": "A semana marca o arranque oficial dos Santos Populares em Lisboa, com arraiais a despontar por toda a cidade enquanto a ARCOlisboa celebra uma década de existência na Cordoaria Nacional. Entre a tradição festiva dos bairros e a contemporaneidade das galerias internacionais, Lisboa oferece um programa cultural diversificado que inclui ainda o regresso da Feira do Livro ao Parque Eduardo VII e espetáculos que celebram a fusão entre poesia e música.",
+  "publishedAt": "2026-05-27T09:45:29.860Z",
+  "events": [
+    {
+      "title": "João Penalva - Retrospectiva",
+      "category": "artes-visuais",
+      "venue": "Culturgest",
+      "venueNeighborhood": "Campo Pequeno",
+      "dates": "Até 12 Jul",
+      "status": "ongoing",
+      "blurb": "A grande retrospectiva do artista português que começou por ser bailarino revela-se numa série de instalações que são, cada uma, exposições completas. 'Personagens e Intérpretes' absorve e demora o espectador numa experiência verdadeiramente imersiva, longe da terminologia banalizada.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/arte/joao-penalva-retrospectiva",
+      "tags": [
+        "arte contemporânea",
+        "retrospectiva",
+        "instalação"
+      ],
+      "aiScore": 92,
+      "featured": true,
+      "id": "evt-081"
+    },
+    {
+      "title": "ARCOlisboa",
+      "category": "artes-visuais",
+      "venue": "Cordoaria Nacional",
+      "venueNeighborhood": "Belém",
+      "dates": "29–31 Mai",
+      "status": "new",
+      "time": "16h–21h (entrada gratuita até 25 anos)",
+      "price": "Gratuito para jovens",
+      "blurb": "A feira de arte contemporânea celebra dez anos com 84 galerias de 18 países, consolidando-se como o principal evento do setor em Portugal. Uma oportunidade única para descobrir tendências emergentes e contactar diretamente com galeristas nacionais e internacionais.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/noticias/aos-10-anos-arcolisboa-junta-84-galerias-e-mostra-duas-exposicoes-na-cordoaria-051926",
+      "tags": [
+        "arte contemporânea",
+        "galerias",
+        "internacional"
+      ],
+      "aiScore": 88,
+      "featured": false,
+      "id": "evt-001"
+    },
+    {
+      "title": "Temporada Musical Gulbenkian 2026/27",
+      "category": "musica-noite",
+      "venue": "Fundação Gulbenkian",
+      "venueNeighborhood": "Avenidas Novas",
+      "dates": "Temporada iniciada",
+      "status": "ongoing",
+      "time": "Vários horários",
+      "price": "15€–45€",
+      "blurb": "Mais de 120 concertos incluem grandes pianistas internacionais e bandas sonoras interpretadas ao vivo, desde Indiana Jones aos clássicos. Uma programação ambiciosa que confirma a Gulbenkian como referência musical da cidade.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/noticias/de-indiana-jones-aos-grandes-classicos-esta-presenta-a-nova-temporada-da-gulbenkian-052126",
+      "tags": [
+        "música clássica",
+        "pianistas",
+        "bandas sonoras"
+      ],
+      "aiScore": 88,
+      "featured": true,
+      "id": "evt-013"
+    },
+    {
+      "title": "José Pedro Croft - Reflexos, Enclaves, Desvios",
+      "category": "artes-visuais",
+      "venue": "MAC/CCB",
+      "venueNeighborhood": "Belém",
+      "dates": "Até 13 Set",
+      "status": "ongoing",
+      "blurb": "Gravuras, desenhos, relevos e esculturas de um dos artistas mais proeminentes da cena contemporânea portuguesa ocupam todo o eixo longitudinal do MAC. A segunda grande exposição do artista portuense no CCB apresenta curadoria de Luiz Camillo Osorio.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/arte/jose-pedro-croft-reflexos-enclaves-desvios",
+      "tags": [
+        "arte contemporânea",
+        "escultura",
+        "gravura"
+      ],
+      "aiScore": 88,
+      "featured": false,
+      "id": "evt-082"
+    },
+    {
+      "title": "Concertos Candlelight",
+      "category": "musica-noite",
+      "venue": "Academia das Ciências de Lisboa",
+      "venueNeighborhood": "Chiado",
+      "dates": "5 Jun–4 Set",
+      "status": "new",
+      "price": "Gratuito",
+      "blurb": "A série de concertos íntimos à luz de velas regressa ao espaço histórico da Academia das Ciências. O repertório clássico e contemporâneo ganha uma dimensão especial neste ambiente único. Uma experiência musical que combina o rigor interpretativo com a magia do espaço e da iluminação natural.",
+      "originalUrl": "https://feverup.com/m/647956",
+      "tags": [
+        "música clássica",
+        "concerto íntimo",
+        "gratuito"
+      ],
+      "aiScore": 88,
+      "featured": false,
+      "id": "evt-162"
+    },
+    {
+      "title": "Performance no Espaço LABORATÓRIO",
+      "category": "artes-performativas",
+      "venue": "Espaço LABORATÓRIO",
+      "venueNeighborhood": "Marvila",
+      "dates": "29 Mai",
+      "status": "new",
+      "price": "20€",
+      "blurb": "O Espaço LABORATÓRIO continua a afirmar-se como um dos núcleos mais interessantes da experimentação performativa em Lisboa. Esta proposta promete explorar as fronteiras entre teatro, dança e instalação, típico da programação deste espaço em Marvila. Uma aposta arriscada mas necessária no panorama cultural lisboeta.",
+      "originalUrl": "https://feverup.com/m/644586",
+      "tags": [
+        "experimental",
+        "performance",
+        "Marvila",
+        "contemporâneo"
+      ],
+      "aiScore": 88,
+      "featured": true,
+      "id": "evt-645"
+    },
+    {
+      "title": "Feira do Livro de Lisboa 2026",
+      "category": "literatura",
+      "venue": "Parque Eduardo VII",
+      "venueNeighborhood": "Avenidas Novas",
+      "dates": "A partir de 27 Mai",
+      "status": "new",
+      "time": "10h–22h",
+      "price": "Entrada gratuita",
+      "blurb": "O maior evento literário do país regressa ao seu local histórico com editoras, apresentações de livros e encontros com autores. Um programa imperdível para bibliófilo que se preze, onde se respira literatura em cada pavilhão.",
+      "originalUrl": "https://cartazculturallisboa.pt/evento/feira-do-livro-de-lisboa-2026-regressa-ao-parque-eduardo-vii/",
+      "tags": [
+        "literatura",
+        "livros",
+        "editoras",
+        "autores"
+      ],
+      "aiScore": 85,
+      "featured": true,
+      "id": "evt-002"
+    },
+    {
+      "title": "Arraial Resiste",
+      "category": "musica-noite",
+      "venue": "Beco do Rosendo",
+      "venueNeighborhood": "Mouraria",
+      "dates": "28 Mai–13 Jun",
+      "status": "new",
+      "time": "19h–2h",
+      "price": "Gratuito",
+      "blurb": "A Associação Renovar a Mouraria organiza um arraial que é simultaneamente festa popular e manifesto pela preservação dos espaços comunitários. Música, comida e resistência cultural num dos cantos mais autênticos da cidade.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/coisas-para-fazer/arraial-resiste",
+      "tags": [
+        "arraial",
+        "resistência",
+        "comunidade"
+      ],
+      "aiScore": 85,
+      "featured": false,
+      "id": "evt-007"
+    },
+    {
+      "title": "Autocolante – Iconografia da Liberdade",
+      "category": "artes-visuais",
+      "venue": "MUDE",
+      "venueNeighborhood": "Chiado",
+      "dates": "Em exibição",
+      "status": "ongoing",
+      "time": "10h–18h",
+      "price": "Gratuito",
+      "blurb": "1800 autocolantes do Arquivo Ephemera testemunham contextos políticos específicos, desde o pré-25 de Abril até à atualidade. Uma arqueologia visual da resistência e da comunicação política alternativa.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/coisas-para-fazer/gratis-em-lisboa-esta-semana",
+      "tags": [
+        "política",
+        "arquivo",
+        "25 de abril"
+      ],
+      "aiScore": 85,
+      "featured": false,
+      "id": "evt-012"
+    },
+    {
+      "title": "Meu nome António",
+      "category": "artes-visuais",
+      "venue": "MUDE",
+      "venueNeighborhood": "Baixa",
+      "dates": "Até 31 Mai",
+      "status": "ongoing",
+      "blurb": "Últimos dias para ver as 85 fotografias íntimas de Teresa Couto Pinto que captaram a essência de António Variações como nenhuma outra pessoa. Uma oportunidade rara de conhecer o músico através do olhar da fotógrafa que foi sua amiga e agente.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/arte/meu-nome-antonio",
+      "tags": [
+        "fotografia",
+        "António Variações",
+        "música portuguesa"
+      ],
+      "aiScore": 85,
+      "featured": false,
+      "id": "evt-083"
+    },
+    {
+      "title": "Concerto de Carrilhão",
+      "category": "musica-noite",
+      "venue": "Palácio de Mafra",
+      "venueNeighborhood": "Mafra",
+      "dates": "1 Jun",
+      "status": "new",
+      "time": "16h",
+      "price": "Gratuito",
+      "blurb": "Abel Chaves regressa ao grande carrilhão de Mafra para uma experiência sonora de grande intensidade. O concerto promete uma passagem por grandes clássicos numa acústica única, com os ecos a amplificarem a majestade do instrumento histórico.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/noticias/este-domingo-ha-concerto-de-carrilhao-em-mafra-e-a-entrada-e-livre-041224",
+      "tags": [
+        "música clássica",
+        "carrilhão",
+        "património"
+      ],
+      "aiScore": 85,
+      "featured": false,
+      "id": "evt-089"
+    },
+    {
+      "title": "The Jury Experience",
+      "category": "artes-performativas",
+      "venue": "Magic Moments Restaurant & Dance Club",
+      "venueNeighborhood": "Santos",
+      "dates": "29 Mai–27 Jun",
+      "status": "ongoing",
+      "price": "20€",
+      "blurb": "Uma experiência teatral imersiva onde o público assume o papel de júri num julgamento fictício. O formato inovador coloca os espetadores no centro da narrativa, questionando os limites entre justiça e espetáculo. Uma proposta arriscada que tem gerado conversas acesas sobre participação e responsabilidade.",
+      "originalUrl": "https://feverup.com/m/501997",
+      "tags": [
+        "teatro imersivo",
+        "participativo",
+        "experimental"
+      ],
+      "aiScore": 85,
+      "featured": false,
+      "id": "evt-161"
+    },
+    {
+      "title": "Assim a Casa Seja",
+      "category": "musica-noite",
+      "venue": "Local a confirmar",
+      "venueNeighborhood": "Lisboa",
+      "dates": "27 Mai",
+      "status": "new",
+      "time": "21h",
+      "price": "15€–20€",
+      "blurb": "Amélia Muge e Filipe Raposo unem-se num espetáculo que celebra a intersecção entre poesia, memória e música. Uma proposta intimista que promete tocar quem aprecia a canção de autor portuguesa mais reflexiva.",
+      "originalUrl": "https://cartazculturallisboa.pt/evento/assim-a-casa-seja-amelia-muge-e-filipe-raposo-celebram-poesia-memoria-e-musica-em-lisboa/",
+      "tags": [
+        "canção de autor",
+        "poesia",
+        "música portuguesa"
+      ],
+      "aiScore": 82,
+      "featured": false,
+      "id": "evt-003"
+    },
+    {
+      "title": "Hyperosmia",
+      "category": "artes-visuais",
+      "venue": "Arquivo Municipal Fotográfico",
+      "venueNeighborhood": "Lisboa",
+      "dates": "Até 19 Set",
+      "status": "ongoing",
+      "time": "10h–18h",
+      "price": "Gratuito",
+      "blurb": "Rita Barros, fotógrafa residente no mítico Chelsea Hotel de Nova Iorque, explora como os estímulos ambientais interferem na memória e corpo. Uma reflexão sensorial sobre o espaço urbano contemporâneo.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/arte/hyperosmia",
+      "tags": [
+        "fotografia",
+        "nova iorque",
+        "sensorial"
+      ],
+      "aiScore": 82,
+      "featured": false,
+      "id": "evt-011"
+    },
+    {
+      "title": "Xerazade, a Coleção Interminável do CAM",
+      "category": "artes-visuais",
+      "venue": "Gulbenkian - Centro de Arte Moderna",
+      "venueNeighborhood": "Avenidas Novas",
+      "dates": "Domingos",
+      "status": "ongoing",
+      "time": "A partir das 14h",
+      "price": "Gratuito",
+      "blurb": "Com o Museu Gulbenkian encerrado para obras até julho, a aposta concentra-se no CAM. Domingos são de entrada livre para descobrir esta grande exposição que explora os tesouros menos conhecidos da coleção de arte moderna da fundação.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/arte/linha-de-mare-coleccao-do-cam",
+      "tags": [
+        "arte moderna",
+        "coleção",
+        "gratuito"
+      ],
+      "aiScore": 82,
+      "featured": false,
+      "id": "evt-084"
+    },
+    {
+      "title": "Espetáculo no Espaço LABORATÓRIO",
+      "category": "artes-performativas",
+      "venue": "Espaço LABORATÓRIO",
+      "venueNeighborhood": "Marvila",
+      "dates": "29 Mai",
+      "status": "new",
+      "price": "20€",
+      "blurb": "O coletivo do LABORATÓRIO apresenta uma nova criação que explora os códigos da performance contemporânea. Conhecido pela sua abordagem experimental e pela proximidade com o público, o espaço mantém-se como referência da cena alternativa lisboeta. Uma oportunidade para descobrir propostas que desafiam as convenções teatrais.",
+      "originalUrl": "https://feverup.com/m/644586",
+      "tags": [
+        "performance",
+        "experimental",
+        "estreia"
+      ],
+      "aiScore": 82,
+      "featured": false,
+      "id": "evt-163"
+    },
+    {
+      "title": "Pilar 7 Bridge Experience",
+      "category": "artes-visuais",
+      "venue": "Pilar 7 Bridge Experience",
+      "venueNeighborhood": "Alcântara",
+      "dates": "27 Mai–19 Ago",
+      "status": "new",
+      "price": "5,50€",
+      "blurb": "Uma perspetiva única sobre a Ponte 25 de Abril através de um centro interpretativo que combina história, engenharia e panorâmicas espetaculares. A experiência oferece uma leitura política e social da construção da ponte, indo além do mero turismo. O preço baixo é um bónus para uma experiência verdadeiramente lisboeta.",
+      "originalUrl": "https://feverup.com/m/493878",
+      "tags": [
+        "arquitetura",
+        "história contemporânea",
+        "panorâmica",
+        "engenharia"
+      ],
+      "aiScore": 82,
+      "featured": false,
+      "id": "evt-644"
+    },
+    {
+      "title": "Santos à Campolide",
+      "category": "musica-noite",
+      "venue": "Quinta do Zé Pinto",
+      "venueNeighborhood": "Campolide",
+      "dates": "29 Mai–13 Jun",
+      "status": "new",
+      "time": "20h–2h",
+      "price": "Entrada livre",
+      "blurb": "Um dos arraiais mais concorridos da cidade abre com Toy e promete um cartaz sólido de música popular portuguesa. A Quinta do Zé Pinto oferece o ambiente perfeito para uma celebração à antiga dos Santos Populares.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/coisas-para-fazer/santos-a-campolide",
+      "tags": [
+        "arraial",
+        "santos populares",
+        "música popular"
+      ],
+      "aiScore": 80,
+      "featured": false,
+      "id": "evt-008"
+    },
+    {
+      "title": "Homenagem a Xico da Ladra",
+      "category": "musica-noite",
+      "venue": "Damas",
+      "venueNeighborhood": "Graça",
+      "dates": "Esta semana",
+      "status": "ongoing",
+      "price": "Receita para SOS Racismo",
+      "blurb": "Amigos e artistas juntam-se numa maratona de concertos e DJ sets na sala da Graça para celebrar a memória do programador musical. Uma iniciativa solidária que une a comunidade musical lisboeta numa causa importante.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/noticias/damas-celebram-a-memoria-de-xico-da-ladra-com-muita-musica-e-concertos-051526",
+      "tags": [
+        "solidariedade",
+        "programação musical",
+        "comunidade"
+      ],
+      "aiScore": 80,
+      "featured": false,
+      "id": "evt-090"
+    },
+    {
+      "title": "Residência Artística de Verão",
+      "category": "artes-performativas",
+      "venue": "Espaço LABORATÓRIO",
+      "venueNeighborhood": "Marvila",
+      "dates": "5 Jun–1 Ago",
+      "status": "new",
+      "price": "35€",
+      "blurb": "O LABORATÓRIO abre as portas aos processos criativos em desenvolvimento, permitindo ao público assistir a ensaios e work-in-progress. Uma oportunidade rara de observar o teatro em construção e dialogar diretamente com os criadores. O formato questiona a separação tradicional entre processo e produto final.",
+      "originalUrl": "https://feverup.com/m/635493",
+      "tags": [
+        "residência",
+        "processo criativo",
+        "work-in-progress"
+      ],
+      "aiScore": 80,
+      "featured": false,
+      "id": "evt-166"
+    },
+    {
+      "title": "Dis.Functional Design – Vozes da Diversidade",
+      "category": "artes-visuais",
+      "venue": "Local a confirmar",
+      "venueNeighborhood": "Lisboa",
+      "dates": "27 Mai",
+      "status": "new",
+      "time": "17h",
+      "price": "Gratuito",
+      "blurb": "Uma exposição que questiona os padrões normativos do design através de perspetivas inclusivas e diversas. Propõe uma reflexão crítica sobre como o design pode ser mais representativo das diferentes realidades sociais.",
+      "originalUrl": "https://cartazculturallisboa.pt/evento/dis-functionaldesign-chega-a-lisboa-com-vozes-da-diversidade/",
+      "tags": [
+        "design",
+        "inclusão",
+        "diversidade"
+      ],
+      "aiScore": 78,
+      "featured": false,
+      "id": "evt-006"
+    },
+    {
+      "title": "À distância de um braço",
+      "category": "artes-visuais",
+      "venue": "Lumina",
+      "venueNeighborhood": "Lisboa",
+      "dates": "Até 30 Mai",
+      "status": "ongoing",
+      "time": "10h–19h",
+      "price": "5€",
+      "blurb": "Síntese do trabalho recente de João Miguel Barros, esta exposição fotográfica inclui peças que integraram a Bienal de Arte de Macau. Os últimos dias para ver uma mostra que condensa décadas de investigação visual do autor.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/arte/a-distancia-de-um-braco",
+      "tags": [
+        "fotografia",
+        "últimos dias",
+        "bienal"
+      ],
+      "aiScore": 78,
+      "featured": false,
+      "id": "evt-010"
+    },
+    {
+      "title": "Poster Mostra",
+      "category": "artes-visuais",
+      "venue": "Rua Amorim",
+      "venueNeighborhood": "Marvila",
+      "dates": "30 Mai–30 Set",
+      "status": "new",
+      "time": "Inauguração: Sáb 16h",
+      "price": "Gratuito",
+      "blurb": "Quarenta trabalhos de fotografia, pintura e artes gráficas tomam as ruas de Marvila numa mostra a céu aberto. A inauguração no sábado inclui visita guiada pelos trabalhos dos vencedores das open calls e outros artistas convidados.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/coisas-para-fazer/poster-mostra-1",
+      "tags": [
+        "arte urbana",
+        "Marvila",
+        "exposição exterior"
+      ],
+      "aiScore": 78,
+      "featured": false,
+      "id": "evt-085"
+    },
+    {
+      "title": "Ciclo de Concertos do LAV",
+      "category": "musica-noite",
+      "venue": "LAV - Lisboa Ao Vivo",
+      "venueNeighborhood": "Alcântara",
+      "dates": "18 Jun",
+      "status": "new",
+      "price": "Desde 27€",
+      "blurb": "O LAV mantém-se como referência na programação musical alternativa da cidade. Sem detalhes sobre o artista, confiamos na curadoria histórica desta sala que tem trazido alguns dos melhores nomes da música independente a Lisboa.",
+      "originalUrl": "https://feverup.com/m/589877",
+      "tags": [
+        "concerto",
+        "independente",
+        "alternativo"
+      ],
+      "aiScore": 78,
+      "featured": false,
+      "id": "evt-247"
+    },
+    {
+      "title": "Museu de Marinha",
+      "category": "artes-visuais",
+      "venue": "Museu de Marinha",
+      "venueNeighborhood": "Belém",
+      "dates": "28 Mai–30 Set",
+      "status": "new",
+      "price": "8€",
+      "blurb": "Uma das coleções mais importantes da capital sobre a história marítima portuguesa, agora com uma programação renovada. O museu mantém a sua relevância através de um acervo que vai das caravelas aos navios contemporâneos. Uma visita essencial para compreender a relação única dos portugueses com o mar.",
+      "originalUrl": "https://feverup.com/m/125945",
+      "tags": [
+        "história marítima",
+        "descobrimentos",
+        "património",
+        "Belém"
+      ],
+      "aiScore": 78,
+      "featured": false,
+      "id": "evt-642"
+    }
+  ]
+}
