@@ -1,0 +1,125 @@
+{
+  "slug": "2026-W23",
+  "weekNumber": 23,
+  "year": 2026,
+  "dateRange": {
+    "start": "2026-06-01",
+    "end": "2026-06-07"
+  },
+  "introText": "A primeira semana de junho traz uma mistura estimulante de teatro contemporâneo e exposições que merecem atenção. Marina Mota regressa aos palcos com uma comédia que promete desconstruir estereótipos, enquanto o Gulbenkian apresenta uma mostra inédita sobre as relações entre arte e moda. Entre os arraiais populares e as propostas experimentais, Lisboa oferece alternativas culturais para lá do óbvio turístico.",
+  "publishedAt": "2026-06-03T10:54:46.386Z",
+  "events": [
+    {
+      "title": "Come From Away",
+      "category": "artes-performativas",
+      "venue": "Local a confirmar",
+      "venueNeighborhood": "Centro",
+      "dates": "3 Jun",
+      "status": "new",
+      "blurb": "Este musical baseado na história real dos voos desviados para o Canadá após o 11 de setembro tem conquistado crítica e público internacionalmente. A produção portuguesa promete manter a qualidade emocional e musical que fez desta peça um fenómeno. Uma oportunidade rara de ver um musical contemporâneo de qualidade em Lisboa.",
+      "originalUrl": "https://cartazculturallisboa.pt/evento/come-from-away/",
+      "tags": [
+        "musical",
+        "internacional",
+        "drama"
+      ],
+      "aiScore": 85,
+      "featured": true,
+      "id": "evt-004"
+    },
+    {
+      "title": "Arte e Moda na Coleção Gulbenkian",
+      "category": "artes-visuais",
+      "venue": "Museu Calouste Gulbenkian",
+      "venueNeighborhood": "São Sebastião",
+      "dates": "3 Jun",
+      "status": "new",
+      "blurb": "O Gulbenkian explora as intersecções entre arte e moda numa exposição que promete revelar peças inéditas da sua coleção. A instituição tem um historial de mostras bem curadas que conseguem estabelecer diálogos surpreendentes entre diferentes linguagens artísticas. Uma oportunidade para ver como o vestuário pode ser arte aplicada.",
+      "originalUrl": "https://cartazculturallisboa.pt/evento/arte-e-moda-na-colecao-gulbenkian/",
+      "tags": [
+        "exposição",
+        "moda",
+        "artes-decorativas",
+        "gulbenkian"
+      ],
+      "aiScore": 82,
+      "featured": true,
+      "id": "evt-002"
+    },
+    {
+      "title": "Radojka",
+      "category": "artes-performativas",
+      "venue": "Local a confirmar",
+      "venueNeighborhood": "Centro",
+      "dates": "3 Jun",
+      "status": "new",
+      "blurb": "Marina Mota volta ao teatro com uma comédia sobre cuidadoras sérvias que promete ir muito além do estereótipo. A atriz e encenadora tem um historial sólido na desconstrução de preconceitos através do humor inteligente. Uma proposta que pode surpreender pela abordagem a um tema socialmente relevante.",
+      "originalUrl": "https://cartazculturallisboa.pt/evento/radojka-de-marina-mota-comedia-cuidadoras-servias/",
+      "tags": [
+        "teatro",
+        "comédia",
+        "contemporâneo",
+        "estreia"
+      ],
+      "aiScore": 78,
+      "featured": false,
+      "id": "evt-001"
+    },
+    {
+      "title": "São Luiz, Um Retrato Íntimo",
+      "category": "artes-visuais",
+      "venue": "Teatro Nacional São Luiz",
+      "venueNeighborhood": "Chiado",
+      "dates": "3 Jun",
+      "status": "new",
+      "blurb": "O São Luiz apresenta uma exposição sobre a sua própria história, prometendo revelações sobre os bastidores de um dos teatros mais importantes de Lisboa. Esta retrospectiva pode oferecer uma perspectiva inédita sobre a vida cultural da cidade nas últimas décadas. Para quem se interessa pela arqueologia dos espaços culturais lisboetas.",
+      "originalUrl": "https://cartazculturallisboa.pt/evento/exposicao-sao-luiz-um-retrato-intimo-titulo-provisorio/",
+      "tags": [
+        "teatro",
+        "história",
+        "memória",
+        "chiado"
+      ],
+      "aiScore": 75,
+      "featured": false,
+      "id": "evt-005"
+    },
+    {
+      "title": "Amazonas Open Air",
+      "category": "musica-noite",
+      "venue": "Campo das Cebolas",
+      "venueNeighborhood": "Alfama",
+      "dates": "3 Jun",
+      "status": "new",
+      "blurb": "O Campo das Cebolas recebe mais uma sessão da Amazonas, coletivo que se tem destacado na promoção de música eletrónica e experimental. Este espaço junto ao Tejo oferece um ambiente único para descobrir sonoridades alternativas. Uma opção para quem procura algo diferente da oferta musical mainstream da cidade.",
+      "originalUrl": "https://cartazculturallisboa.pt/evento/amazonas-open-air-campo-das-cebolas/",
+      "tags": [
+        "eletrónica",
+        "ao-ar-livre",
+        "experimental",
+        "tejo"
+      ],
+      "aiScore": 73,
+      "featured": true,
+      "id": "evt-006"
+    },
+    {
+      "title": "Exposição Mafolofolo",
+      "category": "artes-visuais",
+      "venue": "Hangar",
+      "venueNeighborhood": "Marvila",
+      "dates": "3 Jun",
+      "status": "new",
+      "blurb": "O Hangar abre uma nova exposição com um título que sugere experimentação e irreverência. Este espaço em Marvila tem-se destacado por apostar em projetos artísticos emergentes e propostas menos convencionais. Vale a pena descobrir o que se esconde por trás desta nomenclatura enigmática.",
+      "originalUrl": "https://cartazculturallisboa.pt/evento/exposicao-mafolofolo-abre-no-hangar/",
+      "tags": [
+        "arte-contemporânea",
+        "marvila",
+        "experimental"
+      ],
+      "aiScore": 72,
+      "featured": false,
+      "id": "evt-003"
+    }
+  ]
+}
