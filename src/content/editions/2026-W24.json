@@ -1,0 +1,502 @@
+{
+  "slug": "2026-W24",
+  "weekNumber": 24,
+  "year": 2026,
+  "dateRange": {
+    "start": "2026-06-08",
+    "end": "2026-06-14"
+  },
+  "introText": "Lisboa acorda para um Junho cultural efervescente, marcado pelo regresso de grandes nomes às salas da cidade. Entre exposições notáveis que exploram os limites da arte contemporânea e concertos que prometem redefinir a cena musical local, a semana oferece um equilíbrio raro entre tradição e vanguarda. Destaque para as propostas experimentais que chegam aos espaços alternativos e para algumas iniciativas gratuitas que tornam a cultura acessível a todos os lisboetas.",
+  "publishedAt": "2026-06-10T09:55:39.842Z",
+  "events": [
+    {
+      "title": "Carlos Bunga. Habitar a Contradição",
+      "category": "artes-visuais",
+      "venue": "Gulbenkian",
+      "venueNeighborhood": "Avenidas Novas",
+      "dates": "Até 10 Jun",
+      "status": "ongoing",
+      "blurb": "O artista português que conquistou Veneza apresenta uma retrospectiva fundamental na Gulbenkian. Bunga constrói arquitecturas efémeras que questionam a habitabilidade e a precariedade, criando espaços que são simultaneamente abrigo e ruína. Uma das exposições mais importantes do ano em Lisboa.",
+      "originalUrl": "https://cartazculturallisboa.pt/evento/carlos-bunga-habitar-a-contradicao-2/",
+      "tags": [
+        "arte contemporânea",
+        "retrospectiva",
+        "arquitectura"
+      ],
+      "aiScore": 92,
+      "featured": true,
+      "id": "evt-003"
+    },
+    {
+      "title": "João Penalva - Retrospectiva",
+      "category": "artes-visuais",
+      "venue": "Culturgest",
+      "venueNeighborhood": "Campo Grande",
+      "dates": "Até 12 Jul",
+      "status": "ongoing",
+      "time": "10h–19h",
+      "price": "6€",
+      "blurb": "Cada instalação de João Penalva funciona como uma exposição dentro da exposição. 'Personagens e Intérpretes' revela o processo único de um artista que começou como bailarino e cujo trabalho genuinamente nos absorve e demora. Numa altura em que 'imersivo' se tornou chavão publicitário, aqui encontramos a coisa verdadeira.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/arte/joao-penalva-retrospectiva",
+      "tags": [
+        "retrospectiva",
+        "instalação",
+        "arte contemporânea"
+      ],
+      "aiScore": 92,
+      "featured": false,
+      "id": "evt-082"
+    },
+    {
+      "title": "Depois de Para Sempre",
+      "category": "artes-visuais",
+      "venue": "Pavilhão Julião Sarmento",
+      "venueNeighborhood": "Belém",
+      "dates": "Até 14 Jun",
+      "status": "ongoing",
+      "blurb": "Fernando Calhau e Rui Chafes dialogam numa exposição que explora memória e materialidade. Dois mestres da arte portuguesa contemporânea confrontam as suas poéticas distintas – a conceptualidade de Calhau com a fisicalidade escultórica de Chafes. Um encontro raro entre duas sensibilidades fundamentais.",
+      "originalUrl": "https://cartazculturallisboa.pt/evento/depois-de-para-sempre-exposicao-de-fernando-calhau-e-rui-chafes-no-pavilhao-juliao-sarmento/",
+      "tags": [
+        "escultura",
+        "arte conceptual",
+        "diálogo artístico"
+      ],
+      "aiScore": 89,
+      "featured": false,
+      "id": "evt-008"
+    },
+    {
+      "title": "Jacob Kirkegaard – Testimonium",
+      "category": "artes-visuais",
+      "venue": "CAM Gulbenkian",
+      "venueNeighborhood": "Avenidas Novas",
+      "dates": "Até 14 Jun",
+      "status": "ongoing",
+      "blurb": "O artista sonoro dinamarquês transforma o CAM numa experiência imersiva única. 'Testimonium' é uma instalação que explora as camadas invisíveis da memória através de paisagens sonoras complexas. Uma oportunidade rara de experienciar arte sonora conceptual de qualidade internacional.",
+      "originalUrl": "https://cartazculturallisboa.pt/evento/jacob-kirkegaard-traz-testimonium-ao-cam-gulbenkian-com-instalacao-sonora-imersiva/",
+      "tags": [
+        "arte sonora",
+        "instalação",
+        "dinamarca"
+      ],
+      "aiScore": 88,
+      "featured": false,
+      "id": "evt-002"
+    },
+    {
+      "title": "Feira do Livro de Lisboa",
+      "category": "literatura",
+      "venue": "Parque Eduardo VII",
+      "venueNeighborhood": "Avenidas Novas",
+      "dates": "Até 14 Jun",
+      "status": "ongoing",
+      "time": "10h–23h",
+      "price": "Gratuito",
+      "blurb": "Os últimos dias da maior feira literária do país trazem ainda mais de 2200 eventos distribuídos por 350 pavilhões. O destaque vai para o renovado Espaço dos Pequenos Editores, que finalmente ganha a visibilidade que merece. Uma oportunidade única para descobrir novos talentos editoriais antes do encerramento.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/coisas-para-fazer/feira-do-livro-de-lisboa",
+      "tags": [
+        "literatura",
+        "editores",
+        "gratuito",
+        "últimos dias"
+      ],
+      "aiScore": 88,
+      "featured": true,
+      "id": "evt-081"
+    },
+    {
+      "title": "João Penalva – Personagens e Intérpretes",
+      "category": "artes-visuais",
+      "venue": "Culturgest",
+      "venueNeighborhood": "Campo Pequeno",
+      "dates": "Até 12 Jul",
+      "status": "ongoing",
+      "blurb": "O artista português radicado em Londres apresenta uma exposição que explora as fronteiras entre arte e teatro. Penalva, figura incontornável da arte contemporânea nacional, constrói narrativas visuais que questionam os papéis que desempenhamos na vida e na arte. Uma reflexão sofisticada sobre identidade e representação.",
+      "originalUrl": "https://cartazculturallisboa.pt/evento/joao-penalva-personagens-e-interpretes-na-culturgest/",
+      "tags": [
+        "arte contemporânea",
+        "narrativa visual",
+        "identidade"
+      ],
+      "aiScore": 87,
+      "featured": false,
+      "id": "evt-006"
+    },
+    {
+      "title": "Ressonâncias",
+      "category": "artes-performativas",
+      "venue": "Parque Florestal de Monsanto",
+      "venueNeighborhood": "Monsanto",
+      "dates": "8–14 Jun",
+      "status": "new",
+      "time": "Vários horários",
+      "price": "Gratuito",
+      "blurb": "A Ordem do Ó leva-nos numa jornada simbólica através do percurso de um rio, explorando as transformações ambientais contemporâneas. Uma peça site-specific que convoca a floresta como cenário e parceiro dramatúrgico. Teatro que respira com a paisagem e nos faz questionar a nossa relação com o ambiente.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/coisas-para-fazer/gratis-em-lisboa-esta-semana",
+      "tags": [
+        "site-specific",
+        "ambiente",
+        "gratuito",
+        "estreia"
+      ],
+      "aiScore": 87,
+      "featured": true,
+      "id": "evt-084"
+    },
+    {
+      "title": "Olhos Múltiplos",
+      "category": "artes-visuais",
+      "venue": "MAC/CCB",
+      "venueNeighborhood": "Belém",
+      "dates": "Até 25 Out",
+      "status": "ongoing",
+      "blurb": "Uma exposição fundamental sobre a cultura visual contemporânea chega ao CCB. 'Olhos Múltiplos' explora como a proliferação de ecrãs transformou a nossa percepção da realidade. Com artistas nacionais e internacionais, esta mostra oferece um olhar crítico sobre o mundo das imagens em que vivemos.",
+      "originalUrl": "https://cartazculturallisboa.pt/evento/olhos-multiplos-chega-a-lisboa-com-exposicao-sobre-imagem-ecras-e-percecao-contemporanea/",
+      "tags": [
+        "cultura visual",
+        "tecnologia",
+        "percepção"
+      ],
+      "aiScore": 86,
+      "featured": false,
+      "id": "evt-012"
+    },
+    {
+      "title": "Arraial Resiste",
+      "category": "musica-noite",
+      "venue": "Beco do Rosendo",
+      "venueNeighborhood": "Mouraria",
+      "dates": "Até 13 Jun",
+      "status": "ongoing",
+      "time": "19h",
+      "price": "Gratuito",
+      "blurb": "Mais do que festa, uma afirmação colectiva sobre o direito à cidade. A Associação Renovar a Mouraria resiste no Beco do Rosendo com um arraial que é manifesto: 'a cidade precisa de espaços vivos, populares e acessíveis'. Programação diversa e entrada livre, porque a festa também é acto político.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/coisas-para-fazer/arraial-resiste",
+      "tags": [
+        "resistência",
+        "comunitário",
+        "gratuito",
+        "político"
+      ],
+      "aiScore": 86,
+      "featured": true,
+      "id": "evt-089"
+    },
+    {
+      "title": "Teatro – A CAVALO",
+      "category": "artes-performativas",
+      "venue": "Teatro São Luiz",
+      "venueNeighborhood": "Chiado",
+      "dates": "19–21 Jun",
+      "status": "new",
+      "time": "Sex 18h | Sáb e Dom 15h e 18h",
+      "price": "12€",
+      "blurb": "Sónia Baptista regressa com uma criação que promete questionar os limites entre humano e animal. A encenadora, conhecida pelo seu trabalho visceral e politizado, apresenta na Sala Bernardo Sassetti uma reflexão contemporânea sobre domesticação e liberdade. Uma proposta teatral que não deixará ninguém indiferente.",
+      "originalUrl": "https://cartazculturallisboa.pt/evento/teatro-a-cavalo/#",
+      "tags": [
+        "teatro contemporâneo",
+        "estreia",
+        "Sónia Baptista"
+      ],
+      "aiScore": 85,
+      "featured": false,
+      "id": "evt-001"
+    },
+    {
+      "title": "Fado Vadio no Arraial da Vila Berta",
+      "category": "musica-noite",
+      "venue": "Vila Berta",
+      "venueNeighborhood": "Graça",
+      "dates": "Até 13 Jun",
+      "status": "ongoing",
+      "time": "22h30",
+      "price": "Gratuito",
+      "blurb": "O que começou como brincadeira de vizinhos em 2010 mantém-se como um dos arraiais mais autênticos da cidade. Sem horário marcado nem protocolos, o fado aparece quando chega, espontâneo e genuíno. É aqui que ainda se percebe o que significa verdadeiramente a expressão 'fado vadio'.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/coisas-para-fazer/arraial-da-vila-berta-1",
+      "tags": [
+        "fado vadio",
+        "autêntico",
+        "gratuito",
+        "espontâneo"
+      ],
+      "aiScore": 85,
+      "featured": false,
+      "id": "evt-083"
+    },
+    {
+      "title": "Maria José Oliveira – Eu que já fui eu",
+      "category": "artes-visuais",
+      "venue": "MNAC Chiado",
+      "venueNeighborhood": "Chiado",
+      "dates": "Até 4 Out",
+      "status": "ongoing",
+      "blurb": "A artista apresenta uma retrospectiva que atravessa décadas de criação pictórica. Oliveira, figura incontornável da pintura portuguesa contemporânea, oferece um percurso intimista pela construção da identidade através da arte. Uma oportunidade única de conhecer a obra completa desta pintora essencial.",
+      "originalUrl": "https://cartazculturallisboa.pt/evento/maria-jose-oliveira-chega-a-lisboa-com-eu-que-ja-fui-eu/",
+      "tags": [
+        "pintura",
+        "retrospectiva",
+        "identidade feminina"
+      ],
+      "aiScore": 84,
+      "featured": false,
+      "id": "evt-010"
+    },
+    {
+      "title": "Concerto de Carrilhão em Mafra",
+      "category": "musica-noite",
+      "venue": "Palácio de Mafra",
+      "venueNeighborhood": "Mafra",
+      "dates": "14 Jun",
+      "status": "new",
+      "time": "16h",
+      "price": "Gratuito",
+      "blurb": "Abel Chaves regressa ao grande carrilhão de Mafra para uma experiência sonora de intensidade rara. O som directo e os ecos do palácio criam uma atmosfera única, passando por grandes clássicos numa das experiências musicais mais especiais que se podem viver perto de Lisboa. Entrada livre mas lugares limitados.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/noticias/este-domingo-ha-concerto-de-carrilhao-em-mafra-e-a-entrada-e-livre-041224",
+      "tags": [
+        "carrilhão",
+        "clássicos",
+        "experiência única",
+        "gratuito"
+      ],
+      "aiScore": 84,
+      "featured": false,
+      "id": "evt-092"
+    },
+    {
+      "title": "Bruno Zhu – Belas Artes",
+      "category": "artes-visuais",
+      "venue": "CAM Gulbenkian",
+      "venueNeighborhood": "Avenidas Novas",
+      "dates": "Até 28 Jul",
+      "status": "ongoing",
+      "blurb": "O jovem artista sino-americano apresenta uma instalação que questiona os códigos da arte institucional. 'Belas Artes' é um comentário mordaz sobre a educação artística e os mecanismos de legitimação cultural. Uma proposta inteligente e provocadora que não deixa ninguém indiferente.",
+      "originalUrl": "https://cartazculturallisboa.pt/evento/bruno-zhu-apresenta-belas-artes-no-cam-gulbenkian/",
+      "tags": [
+        "crítica institucional",
+        "arte contemporânea",
+        "ironia"
+      ],
+      "aiScore": 83,
+      "featured": false,
+      "id": "evt-007"
+    },
+    {
+      "title": "O Bailarico do Gay",
+      "category": "musica-noite",
+      "venue": "Casa Capitão",
+      "venueNeighborhood": "Marvila",
+      "dates": "Até 27 Jun",
+      "status": "ongoing",
+      "time": "22h",
+      "price": "5€–10€",
+      "blurb": "A Casa Capitão reinventa o bailarico dos santos populares com uma programação que cruza DJ sets, forró e música experimental. Nomes como Lara & Aliete e Herlander prometem noites que fogem ao óbvio. Uma alternativa refrescante aos arraiais tradicionais, sem perder o espírito de festa popular.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/coisas-para-fazer/casa-popular",
+      "tags": [
+        "alternativo",
+        "DJ sets",
+        "forró",
+        "experimental"
+      ],
+      "aiScore": 83,
+      "featured": false,
+      "id": "evt-088"
+    },
+    {
+      "title": "José Pedro Croft - Reflexos, Enclaves, Desvios",
+      "category": "artes-visuais",
+      "venue": "MAC/CCB",
+      "venueNeighborhood": "Belém",
+      "dates": "Até 13 Set",
+      "status": "ongoing",
+      "time": "10h–18h",
+      "price": "5€",
+      "blurb": "Uma retrospectiva de um dos nomes mais proeminentes da arte contemporânea portuguesa. Gravuras, desenhos, relevos e esculturas ocupam o eixo longitudinal do MAC, com curadoria de Luiz Camillo Osorio. A segunda grande exposição do artista portuense no CCB revela décadas de investigação formal rigorosa.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/arte/jose-pedro-croft-reflexos-enclaves-desvios",
+      "tags": [
+        "retrospectiva",
+        "escultura",
+        "arte portuguesa"
+      ],
+      "aiScore": 82,
+      "featured": false,
+      "id": "evt-086"
+    },
+    {
+      "title": "Festival Regador",
+      "category": "musica-noite",
+      "venue": "Horta do Regador",
+      "venueNeighborhood": "Marvila",
+      "dates": "Até 14 Jun",
+      "status": "ongoing",
+      "time": "Vários horários",
+      "price": "Gratuito",
+      "blurb": "Conversas sobre política, oficinas, mercados e bailaricos numa horta urbana onde 'tudo é pela beleza e pela vida em sociedade'. O Festival Regador prova que os santos populares podem ser pretexto para reflectir sobre modos de vida alternativos, sem perder a componente festiva.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/coisas-para-fazer/festival-regador",
+      "tags": [
+        "sustentável",
+        "político",
+        "comunitário",
+        "gratuito"
+      ],
+      "aiScore": 81,
+      "featured": false,
+      "id": "evt-091"
+    },
+    {
+      "title": "LUZ VELADA",
+      "category": "artes-visuais",
+      "venue": "Igreja Nossa Senhora da Conceição Velha",
+      "venueNeighborhood": "Baixa",
+      "dates": "Até 4 Set",
+      "status": "ongoing",
+      "blurb": "Uma intervenção artística que transforma o espaço sagrado numa experiência contemporânea de luz e espiritualidade. 'LUZ VELADA' explora o diálogo entre arte sacra e criação actual, criando um ambiente de contemplação única no coração da cidade. Uma proposta que redefine os limites entre arte e transcendência.",
+      "originalUrl": "https://cartazculturallisboa.pt/evento/luz-velada/",
+      "tags": [
+        "arte sacra",
+        "luz",
+        "contemplação"
+      ],
+      "aiScore": 80,
+      "featured": false,
+      "id": "evt-015"
+    },
+    {
+      "title": "Shortcutz Lisboa",
+      "category": "artes-performativas",
+      "venue": "Cossoul",
+      "venueNeighborhood": "Cais do Sodré",
+      "dates": "Até 24 Nov",
+      "status": "ongoing",
+      "time": "21h30",
+      "price": "Gratuito",
+      "blurb": "Todas as terças-feiras, a Cossoul transforma-se em laboratório de cinema. O Shortcutz, que começou em Lisboa e se espalhou pelo mundo, mantém o formato original: curtas em competição com votação do público. Uma iniciativa que descobriu muitos dos realizadores que hoje fazem cinema em Portugal.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/filmes/shortcutz-lisboa",
+      "tags": [
+        "cinema",
+        "curtas-metragens",
+        "competição",
+        "gratuito"
+      ],
+      "aiScore": 80,
+      "featured": false,
+      "id": "evt-087"
+    },
+    {
+      "title": "João Bragança Gil – To whom it may concern",
+      "category": "artes-visuais",
+      "venue": "Carpintarias de São Lázaro",
+      "venueNeighborhood": "São Vicente",
+      "dates": "Até 19 Jul",
+      "status": "ongoing",
+      "blurb": "O jovem artista português apresenta uma instalação que questiona os mecanismos de comunicação contemporâneos. 'To whom it may concern' explora a solidão digital e as formas de endereçamento na era das redes sociais. Uma reflexão pertinente sobre o nosso tempo apresentada num dos espaços mais interessantes da cidade.",
+      "originalUrl": "https://cartazculturallisboa.pt/evento/joao-braganca-gil-chega-a-lisboa-com-to-whom-it-may-concern/",
+      "tags": [
+        "arte digital",
+        "comunicação",
+        "solidão"
+      ],
+      "aiScore": 79,
+      "featured": false,
+      "id": "evt-011"
+    },
+    {
+      "title": "Autocolante - Iconografia da Liberdade",
+      "category": "artes-visuais",
+      "venue": "MUDE",
+      "venueNeighborhood": "Baixa",
+      "dates": "8 Jun–30 Set",
+      "status": "new",
+      "time": "10h–18h",
+      "price": "Gratuito",
+      "blurb": "Cerca de 1800 autocolantes do Arquivo Ephemera entram no MUDE, documentando décadas de comunicação política alternativa. Desde peças anteriores ao 25 de Abril até exemplares contemporâneos, nacionais e estrangeiros, a exposição revela como estes pequenos objectos se tornaram 'testemunhos materiais de contextos políticos específicos'.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/coisas-para-fazer/gratis-em-lisboa-esta-semana",
+      "tags": [
+        "política",
+        "arquivo",
+        "comunicação",
+        "gratuito"
+      ],
+      "aiScore": 79,
+      "featured": false,
+      "id": "evt-093"
+    },
+    {
+      "title": "Acontece Camões",
+      "category": "literatura",
+      "venue": "",
+      "venueNeighborhood": "",
+      "dates": "10 Jun",
+      "status": "new",
+      "blurb": "Paulo Monteiro e Lídia Franco juntam-se para dar nova vida à palavra camoniana. Esta iniciativa promete reinterpretar os clássicos através de uma leitura contemporânea, trazendo Camões para o século XXI. Um encontro entre a tradição literária portuguesa e a performance teatral actual.",
+      "originalUrl": "https://cartazculturallisboa.pt/evento/acontece-camoes-paulo-monteiro-e-lidia-franco-dao-voz-a-palavra-de-camoes/",
+      "tags": [
+        "Camões",
+        "literatura clássica",
+        "performance"
+      ],
+      "aiScore": 78,
+      "featured": false,
+      "id": "evt-004"
+    },
+    {
+      "title": "Poster Mostra",
+      "category": "artes-visuais",
+      "venue": "Marvila",
+      "venueNeighborhood": "Marvila",
+      "dates": "Até 30 Set",
+      "status": "ongoing",
+      "time": "Vários horários",
+      "price": "Gratuito",
+      "blurb": "Quarenta trabalhos que cruzam fotografia, pintura e artes gráficas, reunindo vencedores de open calls com nomes convidados como Binau e Teresa Freitas. Uma mostra que mapeia o estado actual da criação visual em Portugal, com entrada livre e programa de eventos paralelos.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/coisas-para-fazer/poster-mostra-1",
+      "tags": [
+        "colectiva",
+        "artes gráficas",
+        "gratuito",
+        "emergentes"
+      ],
+      "aiScore": 78,
+      "featured": false,
+      "id": "evt-085"
+    },
+    {
+      "title": "Tiro no Escuro – Francisco Leal",
+      "category": "artes-visuais",
+      "venue": "Espaço Cultural Dona Ajuda",
+      "venueNeighborhood": "Santos",
+      "dates": "Até 12 Jun",
+      "status": "ongoing",
+      "blurb": "Francisco Leal apresenta uma exposição individual que explora as tensões entre luz e sombra na fotografia contemporânea. 'Tiro no Escuro' revela um trabalho maduro que questiona os limites da representação visual. Uma proposta intimista num espaço que se afirma como alternativa cultural importante.",
+      "originalUrl": "https://cartazculturallisboa.pt/evento/exposicao-tiro-no-escuro-francisco-leal/",
+      "tags": [
+        "fotografia",
+        "luz",
+        "representação"
+      ],
+      "aiScore": 77,
+      "featured": false,
+      "id": "evt-013"
+    },
+    {
+      "title": "Xerazade - A Coleção Interminável do CAM",
+      "category": "artes-visuais",
+      "venue": "Centro de Arte Moderna - Gulbenkian",
+      "venueNeighborhood": "São Sebastião",
+      "dates": "Até Jul 2026",
+      "status": "ongoing",
+      "time": "10h–18h (14h–18h dom)",
+      "price": "Gratuito dom 14h",
+      "blurb": "Com o Museu Gulbenkian em obras, o CAM ganha protagonismo com esta grande exposição que explora os tesouros menos conhecidos da colecção. 'Xerazade' sugere narrativas infinitas através das obras, criando percursos inesperados. Domingos com entrada livre a partir das 14h.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/arte/linha-de-mare-coleccao-do-cam",
+      "tags": [
+        "colecção",
+        "arte moderna",
+        "narrativas",
+        "gratuito dom"
+      ],
+      "aiScore": 77,
+      "featured": false,
+      "id": "evt-094"
+    }
+  ]
+}
