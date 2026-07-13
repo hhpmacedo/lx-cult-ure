@@ -34,7 +34,7 @@ export async function runAgent(
   console.log(`\n  [${agentConfig.name}] A iniciar...`);
 
   const runner = client.beta.messages.toolRunner({
-    model: 'claude-sonnet-4-6',
+    model: 'claude-sonnet-5',
     max_tokens: 16000,
     system: agentConfig.systemPrompt,
     thinking: { type: 'adaptive' },

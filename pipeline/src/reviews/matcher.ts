@@ -1,5 +1,6 @@
 import Anthropic from '@anthropic-ai/sdk';
 import type { RawEvent, CriticReview } from '../types.js';
+import { HAIKU_MODEL } from '../ai/models.js';
 
 export interface EnrichedEvent extends RawEvent {
   matchedReviews: Array<{
@@ -69,7 +70,7 @@ export async function matchReviewsToEvents(
     const eventBatch = simpleEvents.slice(i, i + MAX_EVENTS_PER_BATCH);
 
     const response = await client.messages.create({
-      model: 'claude-haiku-4-5',
+      model: HAIKU_MODEL,
       max_tokens: 4000,
       messages: [
         {
