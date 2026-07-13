@@ -1,4 +1,5 @@
 import Anthropic from '@anthropic-ai/sdk';
+import { SONNET_MODEL } from '../ai/models.js';
 
 /**
  * Run an agent using the SDK's built-in Tool Runner.
@@ -16,7 +17,7 @@ import Anthropic from '@anthropic-ai/sdk';
 interface AgentConfig {
   name: string;
   systemPrompt: string;
-  tools: ReturnType<typeof import('@anthropic-ai/sdk/helpers/beta/zod').betaZodTool>[];
+  tools: Anthropic.Beta.Messages.BetaToolRunnerParams['tools'];
   maxTurns?: number;
 }
 
@@ -30,20 +31,22 @@ export async function runAgent(
   }
 
   const client = new Anthropic({ apiKey });
+  const maxTurns = agentConfig.maxTurns ?? 10;
 
   console.log(`\n  [${agentConfig.name}] A iniciar...`);
 
   const runner = client.beta.messages.toolRunner({
-    model: 'claude-sonnet-5',
+    model: SONNET_MODEL,
     max_tokens: 16000,
     system: agentConfig.systemPrompt,
     thinking: { type: 'adaptive' },
     tools: agentConfig.tools,
     messages: [{ role: 'user', content: userPrompt }],
+    stream: true,
+    max_iterations: maxTurns,
   });
 
   let turns = 0;
-  const maxTurns = agentConfig.maxTurns ?? 10;
 
   for await (const messageStream of runner) {
     turns++;
@@ -66,13 +69,9 @@ export async function runAgent(
       }
     }
 
-    if (turns >= maxTurns) {
-      console.log(`  [${agentConfig.name}] Atingido limite de ${maxTurns} turnos`);
-      break;
-    }
   }
 
-  const finalMessage = await runner.finalMessage();
+  const finalMessage = await runner.done();
 
   const textBlock = finalMessage.content.find(
     (b): b is Anthropic.Beta.BetaTextBlock => b.type === 'text'
