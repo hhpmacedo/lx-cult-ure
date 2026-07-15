@@ -1,6 +1,7 @@
 import Anthropic from '@anthropic-ai/sdk';
 import type { RawEvent, CuratedEvent } from '../types.js';
 import { CURATOR_SYSTEM_PROMPT, buildCurationPrompt } from './prompts.js';
+import { OPUS_MODEL } from './models.js';
 import { join, resolve } from 'path';
 import { buildFeedbackContext } from '../feedback/aggregate.js';
 
@@ -77,7 +78,7 @@ export async function curateEvents(
     );
 
     const response = await client.messages.create({
-      model: 'claude-sonnet-4-20250514',
+      model: OPUS_MODEL,
       max_tokens: 8000,
       system: CURATOR_SYSTEM_PROMPT,
       messages: [{ role: 'user', content: userPrompt }],

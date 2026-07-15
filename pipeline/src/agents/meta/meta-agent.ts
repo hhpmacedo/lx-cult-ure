@@ -1,4 +1,5 @@
 import Anthropic from '@anthropic-ai/sdk';
+import { OPUS_MODEL } from '../../ai/models.js';
 import { loadMemory, saveMemory, recordPromptVersion } from '../../memory/store.js';
 import type { Memory } from '../../memory/types.js';
 import { readFileSync, writeFileSync, existsSync } from 'fs';
@@ -73,7 +74,7 @@ export async function runMetaAgent(): Promise<ImprovementResult> {
     : 'Prompt não encontrado';
 
   const response = await client.messages.create({
-    model: 'claude-sonnet-4-6',
+    model: OPUS_MODEL,
     max_tokens: 8000,
     system: META_SYSTEM_PROMPT,
     thinking: { type: 'adaptive' },

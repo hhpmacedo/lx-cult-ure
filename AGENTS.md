@@ -1,7 +1,3 @@
-# CLAUDE.md
-
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
-
 ## Project Overview
 
 LX Cult(ure) is a weekly cultural events newsletter for Lisbon. It combines an Astro static site (frontend) with an AI-powered scraping/curation pipeline, delivered via email through Resend. The legal entity behind the project is Burgundy Avenue, Lda.

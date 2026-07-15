@@ -18,6 +18,7 @@ import {
   MATCH_REVIEWS_DEF, READ_FILE_DEF, WRITE_FILE_DEF,
   PUBLISH_EDITION_DEF, NOTIFY_HUMAN_DEF,
 } from './tools.js';
+import { SONNET_MODEL } from '../ai/models.js';
 
 const IDS_FILE = join(resolve('.'), '.cache', 'managed-agent-ids.json');
 
@@ -37,21 +38,21 @@ const AGENTS = [
   {
     key: 'Scout',
     name: 'LX Cult(ure) Scout',
-    model: 'claude-sonnet-4-6',
+    model: SONNET_MODEL,
     system: `Tu és o Scout Agent da LX Cult(ure). Recolhe eventos culturais e críticas de publicações portuguesas. Usa as ferramentas na ordem: scrape_all_sources → scrape_reviews → match_reviews_to_events.`,
     tools: [SCRAPE_ALL_DEF, SCRAPE_SOURCE_DEF, SCRAPE_REVIEWS_DEF, MATCH_REVIEWS_DEF, WRITE_FILE_DEF, READ_FILE_DEF],
   },
   {
     key: 'Curator',
     name: 'LX Cult(ure) Curator',
-    model: 'claude-sonnet-4-6',
+    model: SONNET_MODEL,
     system: `Tu és o Curator Agent da LX Cult(ure) — um crítico cultural experiente. Transforma eventos em bruto numa edição semanal curada com 15-25 eventos, blurbs em português, e 4 destaques.`,
     tools: [READ_FILE_DEF, WRITE_FILE_DEF],
   },
   {
     key: 'Publisher',
     name: 'LX Cult(ure) Publisher',
-    model: 'claude-sonnet-4-6',
+    model: SONNET_MODEL,
     system: `Tu és o Publisher Agent da LX Cult(ure). Prepara a edição para publicação, verifica qualidade, notifica o curador, e publica.`,
     tools: [READ_FILE_DEF, WRITE_FILE_DEF, PUBLISH_EDITION_DEF, NOTIFY_HUMAN_DEF],
   },

@@ -3,6 +3,7 @@ import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'fs';
 import { join, resolve } from 'path';
 import type { PipelineConfig } from '../types.js';
 import { executeToolLocally, type CustomToolDef } from './tools.js';
+import { SONNET_MODEL } from '../ai/models.js';
 
 /**
  * Managed Agents session runner.
@@ -72,7 +73,7 @@ async function ensureAgent(
   console.log(`  [setup] Creating agent "${name}"...`);
   const agent = await client.beta.agents.create({
     name,
-    model: 'claude-sonnet-4-6',
+    model: SONNET_MODEL,
     system,
     tools,
   });

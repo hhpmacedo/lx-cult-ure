@@ -1,4 +1,5 @@
 import Anthropic from '@anthropic-ai/sdk';
+import { SONNET_MODEL } from '../ai/models.js';
 import { readFileSync, existsSync } from 'fs';
 import { join, resolve } from 'path';
 import { recordPostEventReviews, loadMemory } from '../memory/store.js';
@@ -93,7 +94,7 @@ async function validatePostEvent() {
   );
 
   const response = await client.messages.create({
-    model: 'claude-sonnet-4-6',
+    model: SONNET_MODEL,
     max_tokens: 4000,
     thinking: { type: 'adaptive' },
     messages: [
