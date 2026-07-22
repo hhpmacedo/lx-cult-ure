@@ -1,0 +1,538 @@
+{
+  "slug": "2026-W30",
+  "weekNumber": 30,
+  "year": 2026,
+  "dateRange": {
+    "start": "2026-07-20",
+    "end": "2026-07-26"
+  },
+  "introText": "Julho aperta o calor e Lisboa entra em modo de verão cultural — mas nem tudo é praia e festival de estádio. Esta semana marca as últimas oportunidades para várias exposições de peso que fecham no final do mês, do CAM Gulbenkian renovado à Cordoaria Nacional, num adeus prolongado antes das paragens de Agosto. Entre instalação sonora, arte contemporânea e o simbolismo do cavalo, há substância suficiente para fugir ao óbvio. Aproveitem os finais de tarde, quando o museu se transforma em refúgio fresco e a arte respira melhor.",
+  "publishedAt": "2026-07-22T08:30:38.394Z",
+  "events": [
+    {
+      "title": "Museu Gulbenkian Reaberto",
+      "category": "artes-visuais",
+      "venue": "Museu Calouste Gulbenkian",
+      "venueNeighborhood": "Avenidas Novas",
+      "dates": "A partir de 18 Jul",
+      "status": "new",
+      "time": "Qua–Seg 10h–18h",
+      "price": "Gratuito (primeira semana)",
+      "blurb": "Depois das obras, a coleção fundadora regressa com nova iluminação e sem as paredes pintadas que descaracterizavam o projeto original de 1969. É a oportunidade de redescobrir uma das melhores coleções privadas do mundo como ela foi pensada para ser vista — com outra luz e outro fôlego. Vai com tempo, isto pede uma tarde inteira.",
+      "criticSource": "Time Out Lisboa",
+      "criticQuote": "Com outra luz e sem paredes pintadas, o Museu Gulbenkian reabre fiel ao projecto de 1969",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/noticias/com-outra-luz-e-sem-paredes-pintadas-o-museu-gulbenkian-reabre-fiel-ao-projecto-de-1969-071626",
+      "tags": [
+        "museu",
+        "reabertura",
+        "coleção permanente"
+      ],
+      "aiScore": 96,
+      "featured": true,
+      "id": "evt-081"
+    },
+    {
+      "title": "Festival ao Largo — Encerramento com 'O Barbeiro de Sevilha'",
+      "category": "artes-performativas",
+      "venue": "Praça Central do CCB",
+      "venueNeighborhood": "Belém",
+      "dates": "Até 25 Jul",
+      "status": "ongoing",
+      "time": "Noite",
+      "price": "Gratuito",
+      "blurb": "Com o São Carlos em obras, o histórico festival muda-se para a praça do CCB mas mantém o essencial: ópera e dança de excelência, ao ar livre e de graça. Esta última semana fecha com o Barbeiro de Sevilha de Rossini e criações do Programa Território da dança. É dos raros luxos verdadeiramente democráticos da cidade — não o desperdices.",
+      "criticSource": "Time Out Lisboa",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/coisas-para-fazer/festival-ao-largo",
+      "tags": [
+        "ópera",
+        "dança",
+        "ao ar livre",
+        "gratuito"
+      ],
+      "aiScore": 93,
+      "featured": true,
+      "id": "evt-082"
+    },
+    {
+      "title": "Jacob Kirkegaard: Testimonium",
+      "category": "artes-visuais",
+      "venue": "CAM — Centro de Arte Moderna Gulbenkian",
+      "venueNeighborhood": "Avenidas Novas",
+      "dates": "Até 26 Jul",
+      "status": "ongoing",
+      "time": "10h–18h",
+      "price": "Consultar bilheteira",
+      "blurb": "Kirkegaard é dos mais rigorosos artistas sonoros a trabalhar hoje, e esta instalação imersiva no CAM recém-reaberto é das experiências mais hipnóticas em cartaz. Fecha já no fim do mês — não deixem para depois, porque isto não se descreve, ouve-se e sente-se no corpo.",
+      "originalUrl": "https://cartazculturallisboa.pt/evento/jacob-kirkegaard-traz-testimonium-ao-cam-gulbenkian-com-instalacao-sonora-imersiva/",
+      "tags": [
+        "arte sonora",
+        "instalação",
+        "imersivo",
+        "últimos dias"
+      ],
+      "aiScore": 90,
+      "featured": false,
+      "id": "evt-001"
+    },
+    {
+      "title": "José Pedro Croft — Reflexos, Enclaves, Desvios",
+      "category": "artes-visuais",
+      "venue": "MAC/CCB",
+      "venueNeighborhood": "Belém",
+      "dates": "Até 13 Set",
+      "status": "ongoing",
+      "time": "10h–19h",
+      "price": "Consultar",
+      "blurb": "Gravuras, desenhos, relevos e esculturas de um dos nomes maiores da arte contemporânea portuguesa ocupam todo o eixo longitudinal do piso 0. A curadoria de Luiz Camillo Osorio organiza décadas de trabalho de Croft num percurso denso e recompensador. Uma exposição para quem gosta de ver como um artista pensa com as mãos.",
+      "criticSource": "Time Out Lisboa",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/arte/jose-pedro-croft-reflexos-enclaves-desvios",
+      "tags": [
+        "escultura",
+        "gravura",
+        "arte contemporânea"
+      ],
+      "aiScore": 89,
+      "featured": false,
+      "id": "evt-083"
+    },
+    {
+      "title": "Avenidas Hot Jazz",
+      "category": "musica-noite",
+      "venue": "Jardim do Arco do Cego",
+      "venueNeighborhood": "Avenidas Novas",
+      "dates": "Sextas, até 28 Ago",
+      "status": "ongoing",
+      "time": "Sex, noite",
+      "price": "Gratuito",
+      "blurb": "Parceria entre o Hot Clube e a Junta das Avenidas Novas, este ciclo transforma o Jardim do Arco do Cego num ponto de encontro obrigatório das sextas de Verão. Do clássico ao experimental, do instrumental à voz, é jazz de verdade e sem cover charge. Copo na mão, relva por baixo — não há melhor forma de acabar a semana.",
+      "criticSource": "Time Out Lisboa",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/coisas-para-fazer/avenidas-hot-jazz",
+      "tags": [
+        "jazz",
+        "ao ar livre",
+        "gratuito",
+        "Hot Clube"
+      ],
+      "aiScore": 87,
+      "featured": true,
+      "id": "evt-084"
+    },
+    {
+      "title": "Xerazade, a Coleção Interminável do CAM",
+      "category": "artes-visuais",
+      "venue": "CAM — Centro de Arte Moderna Gulbenkian",
+      "venueNeighborhood": "Avenidas Novas",
+      "dates": "Até Set 2027",
+      "status": "ongoing",
+      "time": "10h–18h",
+      "price": "Consultar bilheteira",
+      "blurb": "A grande exposição da coleção do CAM após a reabertura, com uma museografia repensada que finalmente faz jus ao acervo. É o coração do novo CAM e uma viagem essencial pela arte moderna e contemporânea portuguesa.",
+      "criticSource": "Time Out Lisboa",
+      "criticQuote": "Modernizado, arejado e muitíssimo bem iluminado.",
+      "originalUrl": "https://cartazculturallisboa.pt/evento/xerazade-a-colecao-interminavel-do-cam/",
+      "tags": [
+        "coleção",
+        "arte moderna",
+        "arte portuguesa"
+      ],
+      "aiScore": 85,
+      "featured": false,
+      "id": "evt-014"
+    },
+    {
+      "title": "Fado na Típica de Alfama",
+      "category": "musica-noite",
+      "venue": "Típica de Alfama",
+      "venueNeighborhood": "Alfama",
+      "dates": "Noites, sem hora fixa",
+      "status": "ongoing",
+      "time": "A partir das 22h30",
+      "price": "Gratuito",
+      "blurb": "Esquece as casas de fado para turistas: aqui o espetáculo começa quando os músicos chegam, geralmente já depois das 22h30, sem hora marcada. Tasca-bar de bairro onde vizinhos e curiosos se juntam para o fado espontâneo e genuíno. É o oposto do 'fado dinner' — e é por isso que vale a pena.",
+      "criticSource": "Time Out Lisboa",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/coisas-para-fazer/gratis-em-lisboa-esta-semana",
+      "tags": [
+        "fado",
+        "autêntico",
+        "gratuito",
+        "tasca"
+      ],
+      "aiScore": 85,
+      "featured": false,
+      "id": "evt-090"
+    },
+    {
+      "title": "Timescape — Jorge Martins",
+      "category": "artes-visuais",
+      "venue": "Cordoaria Nacional",
+      "venueNeighborhood": "Belém",
+      "dates": "Até 30 Ago",
+      "status": "ongoing",
+      "time": "10h–19h",
+      "price": "Consultar bilheteira",
+      "blurb": "Jorge Martins é um dos grandes nomes da pintura portuguesa contemporânea, e a Cordoaria — com aquele pé-direito monumental — dá-lhe o espaço que a sua luz merece. Uma retrospetiva ampla, contemplativa, para ver com tempo.",
+      "originalUrl": "https://cartazculturallisboa.pt/evento/timescape-jorge-martins-na-cordoaria-nacional/",
+      "tags": [
+        "pintura",
+        "retrospetiva",
+        "arte portuguesa"
+      ],
+      "aiScore": 84,
+      "featured": false,
+      "id": "evt-003"
+    },
+    {
+      "title": "Maputo Diary — Ditte Haarløv Johnsen",
+      "category": "artes-visuais",
+      "venue": "Narrativa",
+      "venueNeighborhood": "Príncipe Real",
+      "dates": "Até 1 Ago",
+      "status": "ongoing",
+      "time": "Consultar",
+      "price": "Gratuito",
+      "blurb": "A fotógrafa e cineasta dinamarquesa cresceu em Maputo no pós-independência e regressou em 2000 para construir, ao longo de duas décadas, um diário fotográfico entre o íntimo e o político. Um corpo de trabalho raro, feito de tempo e proximidade. Vai a tempo, que fecha já a 1 de agosto.",
+      "criticSource": "Time Out Lisboa",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/arte/maputo-diary",
+      "tags": [
+        "fotografia",
+        "documental",
+        "Moçambique"
+      ],
+      "aiScore": 84,
+      "featured": false,
+      "id": "evt-087"
+    },
+    {
+      "title": "Gaivotas no Pátio",
+      "category": "artes-performativas",
+      "venue": "Polo Cultural Gaivotas | Boavista",
+      "venueNeighborhood": "Cais do Sodré",
+      "dates": "Até 9 Set",
+      "status": "ongoing",
+      "time": "Noite",
+      "price": "Consultar",
+      "blurb": "O pátio do Gaivotas transforma-se, nas noites quentes, num pequeno festival de bolso com teatro, concertos e até circo contemporâneo. Programação exigente num espaço de trabalho artístico que raramente se abre assim ao público. Um dos segredos mais bem guardados do Verão lisboeta.",
+      "criticSource": "Time Out Lisboa",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/coisas-para-fazer/gaivotas-no-patio",
+      "tags": [
+        "teatro",
+        "circo",
+        "ao ar livre",
+        "concertos"
+      ],
+      "aiScore": 83,
+      "featured": false,
+      "id": "evt-089"
+    },
+    {
+      "title": "Bruno Zhu: Belas Artes",
+      "category": "artes-visuais",
+      "venue": "CAM — Centro de Arte Moderna Gulbenkian",
+      "venueNeighborhood": "Avenidas Novas",
+      "dates": "Até 28 Jul",
+      "status": "ongoing",
+      "time": "10h–18h",
+      "price": "Consultar bilheteira",
+      "blurb": "Bruno Zhu tem um olhar afiado sobre consumo, desejo e as ambiguidades da imagem, e traz esse jogo para o CAM com a ironia habitual. Uma das propostas contemporâneas mais inteligentes da Gulbenkian este ano — e das que dividem opiniões, o que é sempre bom sinal.",
+      "originalUrl": "https://cartazculturallisboa.pt/evento/bruno-zhu-apresenta-belas-artes-no-cam-gulbenkian/",
+      "tags": [
+        "arte contemporânea",
+        "instalação",
+        "últimos dias"
+      ],
+      "aiScore": 82,
+      "featured": false,
+      "id": "evt-002"
+    },
+    {
+      "title": "A Delicadeza do Excesso — Mariana Palma",
+      "category": "artes-visuais",
+      "venue": "Kubikgallery",
+      "venueNeighborhood": "Marvila",
+      "dates": "Até 12 Set",
+      "status": "ongoing",
+      "time": "Consultar",
+      "price": "Gratuito",
+      "blurb": "Cerca de trinta obras — pinturas de grande formato, aguarelas, cianotipias e instalações — em que a brasileira Mariana Palma investiga a abundância da natureza como potência de transformação. Com curadoria de Luiza Teixeira de Freitas, é uma mostra sensual e exuberante que compensa a visita a Marvila.",
+      "criticSource": "Time Out Lisboa",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/arte/a-delicadeza-do-excesso",
+      "tags": [
+        "pintura",
+        "instalação",
+        "galeria"
+      ],
+      "aiScore": 82,
+      "featured": false,
+      "id": "evt-085"
+    },
+    {
+      "title": "Rosa Barba: Desenhar Vocabulários",
+      "category": "artes-visuais",
+      "venue": "Fundação Calouste Gulbenkian",
+      "venueNeighborhood": "Avenidas Novas",
+      "dates": "Até 30 Set",
+      "status": "ongoing",
+      "time": "10h–18h",
+      "price": "Consultar bilheteira",
+      "blurb": "A artista italiana Rosa Barba faz do cinema material escultórico, explorando a película, o tempo e a linguagem em instalações que fascinam. É trabalho de referência internacional e raro de ver em Lisboa com este fôlego.",
+      "originalUrl": "https://cartazculturallisboa.pt/evento/rosa-barba-desenhar-vocabularios/",
+      "tags": [
+        "cinema experimental",
+        "instalação",
+        "internacional"
+      ],
+      "aiScore": 81,
+      "featured": false,
+      "id": "evt-005"
+    },
+    {
+      "title": "Diogo Pimentão: Força Transitória das Coisas",
+      "category": "artes-visuais",
+      "venue": "CAM — Centro de Arte Moderna Gulbenkian",
+      "venueNeighborhood": "Avenidas Novas",
+      "dates": "Até 19 Set",
+      "status": "ongoing",
+      "time": "10h–18h",
+      "price": "Consultar bilheteira",
+      "blurb": "Pimentão trabalha o grafite e o papel como se fossem escultura, esbatendo a fronteira entre desenho e objeto. É uma obra de subtileza extrema, das que recompensam o olhar demorado. Vale a pena combinar com as outras exposições do CAM na mesma visita.",
+      "originalUrl": "https://cartazculturallisboa.pt/evento/diogo-pimentao-apresenta-forca-transitoria-das-coisas-no-cam-gulbenkian/",
+      "tags": [
+        "desenho",
+        "escultura",
+        "arte portuguesa"
+      ],
+      "aiScore": 80,
+      "featured": false,
+      "id": "evt-004"
+    },
+    {
+      "title": "Autocolante — Iconografia da Liberdade",
+      "category": "artes-visuais",
+      "venue": "MUDE — Museu do Design e da Moda",
+      "venueNeighborhood": "Baixa",
+      "dates": "Em exposição",
+      "status": "ongoing",
+      "time": "Consultar",
+      "price": "Gratuito",
+      "blurb": "Cerca de 1800 autocolantes do Arquivo Ephemera — alguns anteriores ao 25 de Abril — entram no renovado MUDE como testemunhos materiais de contextos políticos concretos. Design, história e ativismo colados numa só superfície. Uma daquelas exposições que nos fazem olhar de outra forma para um objeto banal.",
+      "criticSource": "Time Out Lisboa",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/coisas-para-fazer/gratis-em-lisboa-esta-semana",
+      "tags": [
+        "design",
+        "arquivo",
+        "gratuito",
+        "25 de Abril"
+      ],
+      "aiScore": 80,
+      "featured": false,
+      "id": "evt-088"
+    },
+    {
+      "title": "Somersby Out Jazz — Parque de Miraflores",
+      "category": "musica-noite",
+      "venue": "Parque Urbano de Miraflores",
+      "venueNeighborhood": "Miraflores (Oeiras)",
+      "dates": "26 Jul (ciclo até 20 Set)",
+      "status": "ongoing",
+      "time": "Dom 17h",
+      "price": "Gratuito",
+      "blurb": "O Out Jazz celebra duas décadas a levar concertos e DJs para os jardins da margem. Este domingo o palco é Miraflores, com Easy B e Maddruga a puxar pelos grooves ao fim da tarde. Manta, cesto de piquenique e a melhor banda sonora possível para um domingo de Verão.",
+      "criticSource": "Time Out Lisboa",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/coisas-para-fazer/somersby-out-jazz",
+      "tags": [
+        "jazz",
+        "DJ",
+        "ao ar livre",
+        "gratuito"
+      ],
+      "aiScore": 79,
+      "featured": false,
+      "id": "evt-091"
+    },
+    {
+      "title": "Maria José Oliveira: Eu que já fui eu",
+      "category": "artes-visuais",
+      "venue": "Museu Nacional de Arte Contemporânea — Chiado",
+      "venueNeighborhood": "Chiado",
+      "dates": "Até 4 Out",
+      "status": "ongoing",
+      "time": "10h–18h",
+      "price": "Consultar bilheteira",
+      "blurb": "Uma exposição sobre memória, corpo e passagem do tempo, no coração do MNAC. Maria José Oliveira trabalha materiais orgânicos e têxteis com uma sensibilidade que toca fundo sem ser sentimental. Merecida atenção a uma trajetória longa e coerente.",
+      "originalUrl": "https://cartazculturallisboa.pt/evento/maria-jose-oliveira-chega-a-lisboa-com-eu-que-ja-fui-eu/",
+      "tags": [
+        "arte contemporânea",
+        "têxtil",
+        "arte portuguesa"
+      ],
+      "aiScore": 78,
+      "featured": false,
+      "id": "evt-006"
+    },
+    {
+      "title": "Mafolofolo",
+      "category": "artes-visuais",
+      "venue": "HANGAR — Centro de Investigação Artística",
+      "venueNeighborhood": "Graça",
+      "dates": "Até 24 Jul",
+      "status": "ongoing",
+      "time": "Consultar espaço",
+      "price": "Gratuito",
+      "blurb": "O HANGAR continua a ser dos espaços mais interessantes para arte contemporânea de matriz pós-colonial e africana em Lisboa. Esta exposição fecha esta semana — vale o desvio até à Damasceno Monteiro antes de ir embora.",
+      "originalUrl": "https://cartazculturallisboa.pt/evento/exposicao-mafolofolo-abre-no-hangar/",
+      "tags": [
+        "arte contemporânea",
+        "espaço independente",
+        "últimos dias",
+        "gratuito"
+      ],
+      "aiScore": 77,
+      "featured": false,
+      "id": "evt-008"
+    },
+    {
+      "title": "Nuno Sousa Vieira: Desisto — o que não vejo imagino",
+      "category": "artes-visuais",
+      "venue": "Galeria 3+1",
+      "venueNeighborhood": "Santos",
+      "dates": "Até 12 Set",
+      "status": "ongoing",
+      "time": "Consultar galeria",
+      "price": "Gratuito",
+      "blurb": "Nuno Sousa Vieira é dos artistas mais consistentes a trabalhar a memória industrial e o espaço, e a 3+1 é sempre garantia de curadoria séria. Entrada gratuita, num roteiro de galeria que vale bem a caminhada por Santos.",
+      "originalUrl": "https://cartazculturallisboa.pt/evento/nuno-sousa-vieira-chega-a-lisboa-com-desisto-o-que-nao-vejo-imagino/",
+      "tags": [
+        "galeria",
+        "arte portuguesa",
+        "gratuito"
+      ],
+      "aiScore": 76,
+      "featured": false,
+      "id": "evt-007"
+    },
+    {
+      "title": "Feira de Vinil de Lisboa",
+      "category": "musica-noite",
+      "venue": "Mercado de Santa Clara",
+      "venueNeighborhood": "Graça",
+      "dates": "24–26 Jul",
+      "status": "new",
+      "time": "Consultar",
+      "price": "Entrada livre",
+      "blurb": "A 20.ª edição da feira volta a encher o Mercado de Santa Clara de single, LP, cassetes e raridades de todos os géneros. É o ponto de encontro dos garimpeiros de discos da cidade — e há sempre aquela edição improvável a saltar de uma banca. Leva dinheiro e paciência para folhear.",
+      "criticSource": "Time Out Lisboa",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/coisas-para-fazer/feira-de-vinil-de-lisboa",
+      "tags": [
+        "vinil",
+        "feira",
+        "discos",
+        "gratuito"
+      ],
+      "aiScore": 76,
+      "featured": false,
+      "id": "evt-092"
+    },
+    {
+      "title": "Lembrança da Palestina — Vítor Pomar",
+      "category": "artes-visuais",
+      "venue": "Cordoaria Nacional",
+      "venueNeighborhood": "Belém",
+      "dates": "Até 13 Set",
+      "status": "ongoing",
+      "time": "10h–19h",
+      "price": "Consultar bilheteira",
+      "blurb": "Vítor Pomar, pintor de trajeto singular e espiritual, assina uma exposição de forte carga simbólica e ressonância política atualíssima. A Cordoaria dá-lhe o palco amplo que a obra pede.",
+      "originalUrl": "https://cartazculturallisboa.pt/evento/lembranca-da-palestina-vitor-pomar-na-cordoaria-nacional/",
+      "tags": [
+        "pintura",
+        "arte portuguesa",
+        "política"
+      ],
+      "aiScore": 75,
+      "featured": false,
+      "id": "evt-011"
+    },
+    {
+      "title": "Avenida 211 — Um edifício ocupado por artistas",
+      "category": "artes-visuais",
+      "venue": "Centro Cultural de Belém",
+      "venueNeighborhood": "Belém",
+      "dates": "Até 23 Jul",
+      "status": "ongoing",
+      "time": "10h–19h",
+      "price": "Consultar bilheteira",
+      "blurb": "Um edifício tomado por ateliers e intervenções que transformam o CCB numa espécie de organismo vivo de criação. Fecha esta semana e é das propostas mais surpreendentes do programa de Belém — vá antes que desmontem.",
+      "originalUrl": "https://cartazculturallisboa.pt/evento/avenida-211-um-edificio-ocupado-por-artistas-abre-ao-publico-em-lisboa/",
+      "tags": [
+        "arte contemporânea",
+        "coletiva",
+        "últimos dias"
+      ],
+      "aiScore": 74,
+      "featured": false,
+      "id": "evt-010"
+    },
+    {
+      "title": "Benfica ao Luar — 'Ler Lolita em Teerão'",
+      "category": "artes-performativas",
+      "venue": "Quinta da Granja",
+      "venueNeighborhood": "Benfica",
+      "dates": "25 Jul (ciclo até 29 Ago)",
+      "status": "new",
+      "time": "Sáb 22h",
+      "price": "Gratuito",
+      "blurb": "Cinema ao ar livre nos sábados de Verão pela freguesia de Benfica. Esta semana passa Ler Lolita em Teerão, de Eran Riklis, na Quinta da Granja. Entrada livre sujeita à lotação — chega cedo, leva casaquinho e desfruta do cinema como manda a estação.",
+      "criticSource": "Time Out Lisboa",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/filmes/benfica-ao-luar",
+      "tags": [
+        "cinema",
+        "ao ar livre",
+        "gratuito"
+      ],
+      "aiScore": 74,
+      "featured": false,
+      "id": "evt-093"
+    },
+    {
+      "title": "Play the Game — Go: Em Torno da Coleção da CGD",
+      "category": "artes-visuais",
+      "venue": "Culturgest",
+      "venueNeighborhood": "Avenidas Novas",
+      "dates": "Até 23 Jul",
+      "status": "ongoing",
+      "time": "10h–18h",
+      "price": "Consultar bilheteira",
+      "blurb": "A Culturgest revisita a sua coleção com um olhar lúdico e crítico, e o resultado é uma exposição que se percorre com prazer. Fecha já a 23 — última semana para ver como se joga com uma coleção institucional.",
+      "originalUrl": "https://cartazculturallisboa.pt/evento/play-the-game-go-em-torno-da-colecao-da-cgd/",
+      "tags": [
+        "coleção",
+        "arte contemporânea",
+        "últimos dias"
+      ],
+      "aiScore": 73,
+      "featured": false,
+      "id": "evt-009"
+    },
+    {
+      "title": "Natura Mirabilis — Arte e natureza no Jardim Gulbenkian",
+      "category": "artes-visuais",
+      "venue": "Fundação Calouste Gulbenkian",
+      "venueNeighborhood": "Avenidas Novas",
+      "dates": "Até 20 Out",
+      "status": "ongoing",
+      "time": "Horário do jardim",
+      "price": "Gratuito",
+      "blurb": "Arte instalada no jardim mais bonito de Lisboa, num diálogo entre obra e natureza que se percorre ao ar livre e de graça. Ideal para o fim de tarde de verão, quando o calor abranda e o jardim ganha outra luz.",
+      "originalUrl": "https://cartazculturallisboa.pt/evento/natura-mirabilis-arte-e-natureza-em-dialogo-no-jardim-gulbenkian/",
+      "tags": [
+        "ao ar livre",
+        "instalação",
+        "gratuito",
+        "jardim"
+      ],
+      "aiScore": 72,
+      "featured": false,
+      "id": "evt-013"
+    }
+  ]
+}
