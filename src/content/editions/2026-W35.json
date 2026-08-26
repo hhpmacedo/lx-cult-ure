@@ -1,0 +1,263 @@
+{
+  "slug": "2026-W35",
+  "weekNumber": 35,
+  "year": 2026,
+  "dateRange": {
+    "start": "2026-08-24",
+    "end": "2026-08-30"
+  },
+  "introText": "Última semana de Agosto, e Lisboa recusa-se a hibernar. Enquanto muitos ainda estendem a toalha na areia, a cidade oferece uma das suas melhores estações para quem fica: cinema ao relento em jardins históricos, jazz gratuito ao fim da tarde e um punhado de exposições de peso que fecham portas em breve — do José Pedro Croft no MAC/CCB ao Jorge Martins na Cordoaria. É a Lisboa dos que sabem que o verão também se vive de olhos postos na arte. Aproveitem antes que Setembro traga de volta a azáfama.",
+  "publishedAt": "2026-08-26T06:49:37.620Z",
+  "events": [
+    {
+      "title": "José Pedro Croft — Reflexos, Enclaves, Desvios",
+      "category": "artes-visuais",
+      "venue": "MAC/CCB",
+      "venueNeighborhood": "Belém",
+      "dates": "Até 13 Set",
+      "status": "ongoing",
+      "time": "10h–19h",
+      "price": "Consultar bilheteira",
+      "blurb": "Gravuras, desenhos, relevos e esculturas de um dos nomes maiores da arte contemporânea portuguesa ocupam o eixo longitudinal do piso 0 do MAC/CCB. É a segunda grande exposição de Croft em Belém, com curadoria de Luiz Camillo Osorio — daquelas visitas obrigatórias antes de fechar. Vá com tempo: a obra pede corpo e circulação.",
+      "criticSource": "Time Out Lisboa",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/arte/jose-pedro-croft-reflexos-enclaves-desvios",
+      "tags": [
+        "escultura",
+        "gravura",
+        "arte contemporânea"
+      ],
+      "aiScore": 92,
+      "featured": true,
+      "id": "evt-081"
+    },
+    {
+      "title": "Avenidas Hot Jazz — Jardim do Arco do Cego",
+      "category": "musica-noite",
+      "venue": "Jardim do Arco do Cego",
+      "venueNeighborhood": "Avenidas Novas",
+      "dates": "Sextas de Agosto (até 28 Ago)",
+      "status": "ongoing",
+      "time": "noite",
+      "price": "Gratuito",
+      "blurb": "A parceria entre o Hot Clube e a Junta das Avenidas Novas transforma o Jardim do Arco do Cego num ponto de encontro do jazz — do clássico ao experimental, do instrumental à voz. Selo Hot Clube é garantia de qualidade, e o ambiente de jardim ao fim da tarde é imbatível. Última sexta desta edição, aproveite.",
+      "criticSource": "Time Out Lisboa",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/coisas-para-fazer/avenidas-hot-jazz",
+      "tags": [
+        "jazz",
+        "gratuito",
+        "ao ar livre"
+      ],
+      "aiScore": 85,
+      "featured": true,
+      "id": "evt-088"
+    },
+    {
+      "title": "Timescape — Jorge Martins",
+      "category": "artes-visuais",
+      "venue": "Torreão Nascente da Cordoaria Nacional",
+      "venueNeighborhood": "Belém",
+      "dates": "Até 30 Ago",
+      "status": "ongoing",
+      "price": "Consultar bilheteira",
+      "blurb": "Cerca de 50 obras centradas na abstracção, a linguagem que acompanha Jorge Martins há décadas, reunidas no espaço amplo do Torreão Nascente. Uma retrospetiva sobre o desenho e a pintura de um artista que raramente se deixa fechar em fórmulas. Última semana — não deixe escapar.",
+      "criticSource": "Time Out Lisboa",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/arte/timescape",
+      "tags": [
+        "pintura",
+        "abstracção",
+        "retrospetiva"
+      ],
+      "aiScore": 84,
+      "featured": false,
+      "id": "evt-082"
+    },
+    {
+      "title": "Autocolante — Iconografia da Liberdade",
+      "category": "artes-visuais",
+      "venue": "MUDE",
+      "venueNeighborhood": "Baixa",
+      "dates": "Em exposição",
+      "status": "ongoing",
+      "price": "Gratuito",
+      "blurb": "Cerca de 1800 autocolantes vindos do Arquivo Ephemera — uns anteriores ao 25 de Abril, outros bem atuais — entram no renovado MUDE como testemunhos materiais de contextos políticos. Uma exposição inteligente sobre o design vernacular e a comunicação visual da resistência. Gratuita e no coração da Baixa.",
+      "criticSource": "Time Out Lisboa",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/coisas-para-fazer/gratis-em-lisboa-esta-semana",
+      "tags": [
+        "design",
+        "arquivo",
+        "política"
+      ],
+      "aiScore": 83,
+      "featured": false,
+      "id": "evt-084"
+    },
+    {
+      "title": "Fado na Típica de Alfama",
+      "category": "musica-noite",
+      "venue": "Típica de Alfama",
+      "venueNeighborhood": "Alfama",
+      "dates": "Semanalmente",
+      "status": "ongoing",
+      "time": "a partir das 22h30",
+      "price": "Consumo mínimo",
+      "blurb": "Nada de espectáculo afinado ao minuto: aqui o fado começa quando chegam os músicos e a espontaneidade é o segredo. Tasca-bar onde a vizinhança se junta com rotina, é o oposto exato do 'fado dinner' para turistas. Fado vadio como deve ser — imprevisível e sem guião.",
+      "criticSource": "Time Out Lisboa",
+      "criticQuote": "A espontaneidade é um dos grandes segredos da Típica de Alfama.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/coisas-para-fazer/gratis-em-lisboa-esta-semana",
+      "tags": [
+        "fado vadio",
+        "autêntico",
+        "Alfama"
+      ],
+      "aiScore": 82,
+      "featured": false,
+      "id": "evt-091"
+    },
+    {
+      "title": "A Delicadeza do Excesso — Mariana Palma",
+      "category": "artes-visuais",
+      "venue": "Kubikgallery",
+      "venueNeighborhood": "Santos",
+      "dates": "Até 12 Set",
+      "status": "ongoing",
+      "price": "Gratuito",
+      "blurb": "Cerca de 30 obras — pinturas de grande formato, aguarelas, cianotipias e instalações — em que a brasileira Mariana Palma investiga a abundância da natureza como potência de transformação. Curadoria de Luiza Teixeira de Freitas, num dos espaços de galeria mais consistentes da cidade. Vale a peregrinação a Santos.",
+      "criticSource": "Time Out Lisboa",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/arte/a-delicadeza-do-excesso",
+      "tags": [
+        "pintura",
+        "instalação",
+        "galeria"
+      ],
+      "aiScore": 80,
+      "featured": false,
+      "id": "evt-083"
+    },
+    {
+      "title": "Gaivotas no Pátio",
+      "category": "artes-performativas",
+      "venue": "Pólo Cultural Gaivotas | Boavista",
+      "venueNeighborhood": "Cais do Sodré",
+      "dates": "Até 9 Set",
+      "status": "ongoing",
+      "time": "noite",
+      "price": "Consultar programa",
+      "blurb": "Todos os verões o Pólo Cultural Gaivotas abre o pátio às noites quentes com uma programação que cruza teatro, concertos e até circo contemporâneo. É a Lisboa cultural municipal a funcionar como deve ser: de proximidade, ao ar livre e sem pretensões turísticas. Espreite o programa desta semana.",
+      "criticSource": "Time Out Lisboa",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/coisas-para-fazer/gaivotas-no-patio",
+      "tags": [
+        "teatro",
+        "circo",
+        "ao ar livre"
+      ],
+      "aiScore": 78,
+      "featured": true,
+      "id": "evt-085"
+    },
+    {
+      "title": "Shortcutz Lisboa — Noite de Curtas",
+      "category": "artes-performativas",
+      "venue": "Cossoul",
+      "venueNeighborhood": "Santos",
+      "dates": "Terças, até 24 Nov",
+      "status": "ongoing",
+      "time": "22h",
+      "price": "Gratuito",
+      "blurb": "Nascido em Lisboa em 2010 e hoje espalhado pelo mundo, o Shortcutz é mostra e competição de curtas-metragens em simultâneo. Terça à noite na Cossoul, com filmes a concurso e a comunidade do cinema nacional a marcar presença. Um dos melhores sítios para descobrir realizadores antes de serem nome.",
+      "criticSource": "Time Out Lisboa",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/filmes/shortcutz-lisboa",
+      "tags": [
+        "cinema",
+        "curtas-metragens",
+        "competição"
+      ],
+      "aiScore": 76,
+      "featured": false,
+      "id": "evt-086"
+    },
+    {
+      "title": "Somersby Out Jazz — Parque do Jamor",
+      "category": "musica-noite",
+      "venue": "Parque Urbano do Jamor",
+      "venueNeighborhood": "Oeiras",
+      "dates": "Domingos, até 20 Set",
+      "status": "ongoing",
+      "time": "tarde",
+      "price": "Gratuito",
+      "blurb": "O Out Jazz celebra duas décadas a levar música e DJ sets aos parques e jardins da margem. Este domingo o palco é o Jamor, com Milton Gulli e Lady G Brown. Fora de portas, sim, mas instituição do calendário lisboeta e um clássico dos domingos de verão.",
+      "criticSource": "Time Out Lisboa",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/coisas-para-fazer/somersby-out-jazz",
+      "tags": [
+        "jazz",
+        "soul",
+        "gratuito"
+      ],
+      "aiScore": 74,
+      "featured": false,
+      "id": "evt-089"
+    },
+    {
+      "title": "Pôr do Sol no Castelo — Coletivo Gira",
+      "category": "musica-noite",
+      "venue": "Castelo de São Jorge",
+      "venueNeighborhood": "Castelo",
+      "dates": "29 Ago",
+      "status": "new",
+      "time": "fim de tarde",
+      "price": "Consultar bilheteira",
+      "blurb": "O último de cinco sábados de DJ sets e concertos num dos pontos mais altos da cidade. Encerramento com o Coletivo Gira, num cenário que dispensa apresentações. Sim, há turistas, mas o programa e a curadoria musical são para dançar de verdade ao pôr do sol.",
+      "criticSource": "Time Out Lisboa",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/coisas-para-fazer/por-do-sol-no-castelo",
+      "tags": [
+        "DJ set",
+        "eletrónica",
+        "pôr do sol"
+      ],
+      "aiScore": 70,
+      "featured": false,
+      "id": "evt-090"
+    },
+    {
+      "title": "Cinema no Verão — Jardim das Amoreiras",
+      "category": "artes-performativas",
+      "venue": "Jardim das Amoreiras",
+      "venueNeighborhood": "Amoreiras",
+      "dates": "Até 29 Ago",
+      "status": "ongoing",
+      "time": "21h",
+      "price": "Gratuito",
+      "blurb": "Sextas e sábados de cinema ao ar livre num dos jardins mais bonitos e menos óbvios da cidade. Programação leve — de Beetlejuice a Free Guy — mas o verdadeiro atractivo é a experiência: manta, fresco e ecrã sob as árvores. Programa popular, mas genuinamente lisboeta.",
+      "criticSource": "Time Out Lisboa",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/coisas-para-fazer/cinema-no-verao-1",
+      "tags": [
+        "cinema ao ar livre",
+        "gratuito",
+        "verão"
+      ],
+      "aiScore": 68,
+      "featured": false,
+      "id": "evt-087"
+    },
+    {
+      "title": "Aniversário do Palácio Baldaya",
+      "category": "artes-performativas",
+      "venue": "Palácio Baldaya",
+      "venueNeighborhood": "Benfica",
+      "dates": "29 Ago–1 Set",
+      "status": "new",
+      "time": "vários horários",
+      "price": "Gratuito",
+      "blurb": "Quatro dias de música, teatro e lazer para celebrar o 9.º aniversário deste palácio recuperado em Benfica. Sábado há teatro para bebés, o Trio Choro Lusitano ao fim da tarde e mais. Programação de proximidade, gratuita e familiar, num espaço que merece ser mais conhecido.",
+      "criticSource": "Time Out Lisboa",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/coisas-para-fazer/2-aniversario-do-palacio-baldaya",
+      "tags": [
+        "teatro",
+        "música",
+        "gratuito"
+      ],
+      "aiScore": 64,
+      "featured": false,
+      "id": "evt-093"
+    }
+  ]
+}
