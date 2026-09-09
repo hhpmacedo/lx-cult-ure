@@ -1,0 +1,308 @@
+{
+  "slug": "2026-W37",
+  "weekNumber": 37,
+  "year": 2026,
+  "dateRange": {
+    "start": "2026-09-07",
+    "end": "2026-09-13"
+  },
+  "introText": "A rentrée cultural lisboeta chega em força nesta segunda semana de Setembro, com a cidade a sacudir o torpor estival e a encher os seus jardins, salas e pátios de programação. Entre o regresso do Festival Todos a Arroios — que transforma hospitais e escolas em palcos de pensamento e performance — e o Picadeiro Fest a inaugurar a temporada do São Luiz com entrada livre, há muito para descobrir sem esvaziar a carteira. O jazz espalha-se pelas praças, o cinema queer estica a tela nas escadinhas do Forno do Tijolo, e ainda vamos a tempo de apanhar a monumental exposição de José Pedro Croft no MAC/CCB antes que feche. Setembro promete, e nós estamos cá para o provar.",
+  "publishedAt": "2026-09-09T10:50:08.128Z",
+  "events": [
+    {
+      "title": "Festival Todos",
+      "category": "artes-performativas",
+      "venue": "Vários espaços (Escola Secundária de Camões, Galeria Monumental, Goethe-Institut, Mercado do Forno do Tijolo)",
+      "venueNeighborhood": "Arroios",
+      "dates": "10–13 Set",
+      "status": "new",
+      "price": "Gratuito",
+      "blurb": "O Todos regressa à mais diversa freguesia da cidade para pensar o futuro — e fá-lo com circo, dança, cinema, música, performance e conversas espalhadas por hospitais, escolas e galerias. É o tipo de festival que só faz sentido em Arroios, misturando linguagens e comunidades como poucos ousam. Um dos momentos altos da rentrée, e de graça.",
+      "criticSource": "Time Out Lisboa",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/coisas-para-fazer/festival-todos",
+      "tags": [
+        "festival",
+        "performance",
+        "multidisciplinar",
+        "gratuito"
+      ],
+      "aiScore": 95,
+      "featured": true,
+      "id": "evt-081"
+    },
+    {
+      "title": "José Pedro Croft. Reflexos, Enclaves, Desvios",
+      "category": "artes-visuais",
+      "venue": "MAC/CCB",
+      "venueNeighborhood": "Belém",
+      "dates": "Até 13 Set",
+      "status": "ongoing",
+      "time": "10h–19h",
+      "blurb": "Gravuras, desenhos, relevos e esculturas de um dos nomes maiores da arte contemporânea portuguesa ocupam todo o eixo longitudinal do piso 0 do MAC/CCB. A curadoria de Luiz Camillo Osorio dá corpo a uma leitura densa e rigorosa da obra de Croft. Está nos últimos dias — não deixe para a próxima semana.",
+      "criticSource": "Time Out Lisboa",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/arte/jose-pedro-croft-reflexos-enclaves-desvios",
+      "tags": [
+        "escultura",
+        "arte contemporânea",
+        "exposição",
+        "últimos dias"
+      ],
+      "aiScore": 90,
+      "featured": true,
+      "id": "evt-083"
+    },
+    {
+      "title": "Picadeiro Fest",
+      "category": "musica-noite",
+      "venue": "Teatro São Luiz",
+      "venueNeighborhood": "Chiado",
+      "dates": "9–13 Set",
+      "status": "new",
+      "price": "Gratuito",
+      "blurb": "Oito concertos de entrada livre distribuídos por três palcos do São Luiz — do Largo do Picadeiro à Sala Bernardo Sassetti — com curadoria de João Pereira. Um cartaz que cruza géneros e gerações no coração do Chiado, provando que a boa música não precisa de bilheteira. Ideal para começar a temporada com o ouvido bem aberto.",
+      "criticSource": "Time Out Lisboa",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/coisas-para-fazer/picadeiro-fest",
+      "tags": [
+        "concertos",
+        "gratuito",
+        "curadoria",
+        "estreia"
+      ],
+      "aiScore": 88,
+      "featured": true,
+      "id": "evt-082"
+    },
+    {
+      "title": "Cinema no Estendal",
+      "category": "artes-performativas",
+      "venue": "Mercado do Forno do Tijolo",
+      "venueNeighborhood": "Arroios",
+      "dates": "12–13 Set",
+      "status": "new",
+      "price": "Gratuito",
+      "blurb": "O cinema ao ar livre estica a tela nas escadinhas do Forno do Tijolo, e esta edição dedica-se ao cinema queer, com as curtas vencedoras do Queer Lisboa 2025. São 13 curtas-metragens numa noite de verão que junta comunidade, cinema e o encanto do improviso. Uma das propostas mais especiais da semana.",
+      "criticSource": "Time Out Lisboa",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/filmes/cinema-no-estendal",
+      "tags": [
+        "cinema",
+        "queer",
+        "curtas",
+        "ar livre"
+      ],
+      "aiScore": 84,
+      "featured": false,
+      "id": "evt-084"
+    },
+    {
+      "title": "Noites de Verão da Filho Único",
+      "category": "musica-noite",
+      "venue": "Jardim da Galeria Quadrum",
+      "venueNeighborhood": "Alvalade",
+      "dates": "11–26 Set",
+      "status": "new",
+      "time": "19h",
+      "price": "Gratuito",
+      "blurb": "A Filho Único, sempre atenta às margens mais interessantes da música, leva ao jardim da Quadrum um ciclo que abre com Sheila Ramirez e o Colectivo Gira, entre samba e cultura afro-brasileira. Programação de curadoria fina ao ar livre, num dos espaços mais discretamente cool da cidade. De confiança.",
+      "criticSource": "Time Out Lisboa",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/coisas-para-fazer/noites-de-verao-da-filho-unico",
+      "tags": [
+        "música",
+        "ar livre",
+        "gratuito",
+        "afro-brasileira"
+      ],
+      "aiScore": 82,
+      "featured": false,
+      "id": "evt-085"
+    },
+    {
+      "title": "Jazz na Praça",
+      "category": "musica-noite",
+      "venue": "Praça Paiva Couceiro",
+      "venueNeighborhood": "Penha de França",
+      "dates": "Até 19 Set",
+      "status": "ongoing",
+      "price": "Gratuito",
+      "blurb": "Sábados de jazz no epicentro simbólico da Penha de França, com a freguesia a programar vozes fresquíssimas. A 12 de Setembro sobem ao palco Bia Souza e o Bando da Lua — jazz de bairro, sem pose, mas com garra. Daqueles programas que fazem a cidade valer a pena.",
+      "criticSource": "Time Out Lisboa",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/musica/jazz-na-praca",
+      "tags": [
+        "jazz",
+        "gratuito",
+        "ao vivo",
+        "bairro"
+      ],
+      "aiScore": 78,
+      "featured": false,
+      "id": "evt-086"
+    },
+    {
+      "title": "Fado na Típica de Alfama",
+      "category": "musica-noite",
+      "venue": "Típica de Alfama",
+      "venueNeighborhood": "Alfama",
+      "dates": "Semanal",
+      "status": "ongoing",
+      "time": "A partir das 22h30",
+      "price": "Gratuito",
+      "blurb": "Nada de fado de menu turístico: aqui o espectáculo começa quando os músicos chegam, sem hora marcada, numa tasca-bar onde vizinhos e curiosos se juntam com a espontaneidade que faz do fado uma coisa viva. É o oposto da Gulbenkian, e é exatamente por isso que vale a pena. O fado autêntico ainda existe — e é aqui.",
+      "criticSource": "Time Out Lisboa",
+      "criticQuote": "A espontaneidade é um dos grandes segredos da Típica de Alfama",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/coisas-para-fazer/gratis-em-lisboa-esta-semana",
+      "tags": [
+        "fado",
+        "autêntico",
+        "gratuito",
+        "tasca"
+      ],
+      "aiScore": 76,
+      "featured": false,
+      "id": "evt-091"
+    },
+    {
+      "title": "Concerto de Órgão na Igreja de São Vicente de Fora",
+      "category": "musica-noite",
+      "venue": "Igreja de São Vicente de Fora",
+      "venueNeighborhood": "Alfama",
+      "dates": "13 Set (mensal até Dez)",
+      "status": "new",
+      "time": "17h",
+      "price": "Gratuito",
+      "blurb": "Após o restauro do baldaquino, regressa o ciclo de concertos de órgão da monumental São Vicente de Fora. É música sacra no seu contexto ideal — a acústica de uma das igrejas mais imponentes de Lisboa, ao segundo sábado de cada mês. Entrada livre e uma experiência rara.",
+      "criticSource": "Time Out Lisboa",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/coisas-para-fazer/gratis-em-lisboa-esta-semana",
+      "tags": [
+        "música sacra",
+        "órgão",
+        "gratuito",
+        "património"
+      ],
+      "aiScore": 74,
+      "featured": false,
+      "id": "evt-088"
+    },
+    {
+      "title": "Claquete – Ciclo de Cinema: Javier Bardem",
+      "category": "artes-performativas",
+      "venue": "Espaço Atmosfera M",
+      "venueNeighborhood": "Lisboa",
+      "dates": "Até 8 Out",
+      "status": "ongoing",
+      "time": "18h30 (quintas)",
+      "blurb": "A 6.ª edição do ciclo do Montepio dedica-se ao camaleónico Javier Bardem, com sessões semanais às quintas-feiras. Uma boa oportunidade para revisitar em sala um dos maiores actores do cinema espanhol contemporâneo. Programação com fôlego e critério.",
+      "criticSource": "Time Out Lisboa",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/coisas-para-fazer/claquete-ciclo-de-cinema",
+      "tags": [
+        "cinema",
+        "ciclo",
+        "Javier Bardem"
+      ],
+      "aiScore": 72,
+      "featured": false,
+      "id": "evt-087"
+    },
+    {
+      "title": "A Festa na Praça: Kiko Is Hot, Napa e Mariza",
+      "category": "musica-noite",
+      "venue": "Praça do Comércio",
+      "venueNeighborhood": "Baixa",
+      "dates": "13 Set",
+      "status": "new",
+      "time": "16h–21h",
+      "price": "Gratuito",
+      "blurb": "Um cartaz surpreendentemente robusto para um evento de marca: Kiko Is Hot, os Napa e, no topo, Mariza, a levar o fado à Praça do Comércio. Concerto gratuito da grande diva do género num dos cenários mais imponentes da cidade — apesar do enquadramento comercial, é difícil recusar. Chegue cedo.",
+      "criticSource": "Time Out Lisboa",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/coisas-para-fazer/gratis-em-lisboa-esta-semana",
+      "tags": [
+        "fado",
+        "concerto",
+        "gratuito",
+        "Mariza"
+      ],
+      "aiScore": 71,
+      "featured": false,
+      "id": "evt-092"
+    },
+    {
+      "title": "Somersby Out Jazz",
+      "category": "musica-noite",
+      "venue": "Jardins do Palácio Marquês de Pombal",
+      "venueNeighborhood": "Oeiras",
+      "dates": "Até 20 Set",
+      "status": "ongoing",
+      "price": "Gratuito",
+      "blurb": "O Out Jazz celebra duas décadas de concertos gratuitos nos parques da margem, com Razy e Soulsista a animarem os jardins do Palácio Marquês de Pombal. Domingos de groove e jazz sob as árvores, uma tradição que já faz parte do calendário de qualquer lisboeta que se preze. Leve manta e boa disposição.",
+      "criticSource": "Time Out Lisboa",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/coisas-para-fazer/somersby-out-jazz",
+      "tags": [
+        "jazz",
+        "gratuito",
+        "ar livre",
+        "domingo"
+      ],
+      "aiScore": 70,
+      "featured": false,
+      "id": "evt-090"
+    },
+    {
+      "title": "Gaivotas no Pátio",
+      "category": "artes-performativas",
+      "venue": "Pólo Cultural Gaivotas | Boavista",
+      "venueNeighborhood": "Santos",
+      "dates": "Até 9 Set",
+      "status": "ongoing",
+      "blurb": "A programação de verão do Pólo Cultural Gaivotas aproveita as noites quentes para levar teatro, concertos e até circo ao pátio. Está nos últimos dias, mas ainda vale a pena espreitar o que resta desta simpática iniciativa em Santos. Cultura de proximidade no seu melhor.",
+      "criticSource": "Time Out Lisboa",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/coisas-para-fazer/gaivotas-no-patio",
+      "tags": [
+        "teatro",
+        "circo",
+        "ar livre",
+        "últimos dias"
+      ],
+      "aiScore": 68,
+      "featured": false,
+      "id": "evt-089"
+    },
+    {
+      "title": "Museu do Fado",
+      "category": "musica-noite",
+      "venue": "Museu do Fado",
+      "venueNeighborhood": "Alfama",
+      "dates": "11 Set – 31 Out",
+      "status": "new",
+      "price": "Desde 1€",
+      "blurb": "Longe do 'fado dinner' para autocarros de excursão, o Museu do Fado é o lugar sério para perceber de onde vem esta música — arquivos, guitarras, vozes que fizeram história. A tarifa social a partir de 1€ torna-o um daqueles programas de tarde que qualquer lisboeta devia refazer de vez em quando. Vale pela substância documental, não pelo folclore.",
+      "originalUrl": "https://feverup.com/m/329381",
+      "tags": [
+        "fado",
+        "museu",
+        "património",
+        "acessível"
+      ],
+      "aiScore": 62,
+      "featured": false,
+      "id": "evt-401"
+    },
+    {
+      "title": "Casa-Museu Amália Rodrigues",
+      "category": "musica-noite",
+      "venue": "Casa-Museu Amália Rodrigues",
+      "venueNeighborhood": "São Bento",
+      "dates": "Até 30 Out",
+      "status": "ongoing",
+      "price": "Desde 9€",
+      "blurb": "A casa onde a maior voz do fado viveu quatro décadas permanece um lugar de peregrinação laica para qualquer lisboeta que leve a sério a nossa mitologia sonora. Longe do 'fado para turista' das casas de Alfama, aqui há objetos, silêncios e a memória intacta de Amália. Vale a visita pausada, de preferência num fim de tarde de semana.",
+      "originalUrl": "https://feverup.com/m/101650",
+      "tags": [
+        "fado",
+        "Amália",
+        "casa-museu",
+        "património"
+      ],
+      "aiScore": 62,
+      "featured": false,
+      "id": "evt-561"
+    }
+  ]
+}
