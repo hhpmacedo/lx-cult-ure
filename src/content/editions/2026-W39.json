@@ -1,0 +1,378 @@
+{
+  "slug": "2026-W39",
+  "weekNumber": 39,
+  "year": 2026,
+  "dateRange": {
+    "start": "2026-09-21",
+    "end": "2026-09-27"
+  },
+  "introText": "A semana que despede o Verão em Lisboa está mais rica do que o calendário deixa adivinhar. Entre a fotografia de rua que toma conta da Faculdade de Belas-Artes com o Lisbon Street Photo Fest, o regresso do Festival Política a São Vicente e a reabertura celebrada do Jardim das Esculturas do MNAC com Maria Reis ao vivo, há substância para quem quer trocar as farturas da Feira da Luz por algo mais duradouro. As Jornadas Europeias do Património abrem portas normalmente fechadas, o DocLisboa aquece motores em Marvila e as galerias apostam em exposições de fôlego internacional. Um bom momento para redescobrir a cidade sem sair dela.",
+  "publishedAt": "2026-09-23T10:51:22.030Z",
+  "events": [
+    {
+      "title": "Lisbon Street Photo Fest",
+      "category": "artes-visuais",
+      "venue": "Faculdade de Belas-Artes da Universidade de Lisboa",
+      "venueNeighborhood": "Chiado",
+      "dates": "24–27 Set",
+      "status": "new",
+      "blurb": "O grande encontro da fotografia de rua em Lisboa arranca com a exibição de 'I Am Martin Parr' e conversa com o realizador Lee Shulman. Exposições colectivas, portefólios e conversas ocupam os corredores das Belas-Artes durante quatro dias — programação obrigatória para quem leva a imagem a sério.",
+      "criticSource": "Time Out Lisboa",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/coisas-para-fazer/lisbon-street-photo-fest",
+      "tags": [
+        "fotografia",
+        "festival",
+        "Martin Parr",
+        "estreia"
+      ],
+      "aiScore": 90,
+      "featured": true,
+      "id": "evt-081"
+    },
+    {
+      "title": "Noites de Verão da Filho Único: Maria Reis",
+      "category": "musica-noite",
+      "venue": "Jardim do Museu Nacional de Arte Contemporânea",
+      "venueNeighborhood": "Chiado",
+      "dates": "26 Set",
+      "status": "new",
+      "time": "19h",
+      "price": "Gratuito",
+      "blurb": "O fecho da temporada da Filho Único coincide com a reabertura do restaurado Jardim das Esculturas do MNAC — e faz-se em grande com Maria Reis, uma das vozes mais singulares da nova canção portuguesa. Concerto ao pôr do sol, entrada livre e o cenário ideal para dizer adeus ao Verão.",
+      "criticSource": "Time Out Lisboa",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/coisas-para-fazer/noites-de-verao-da-filho-unico",
+      "tags": [
+        "ao vivo",
+        "gratuito",
+        "canção",
+        "Maria Reis"
+      ],
+      "aiScore": 87,
+      "featured": true,
+      "id": "evt-083"
+    },
+    {
+      "title": "\"Passports\", de Keisha Scarville",
+      "category": "artes-visuais",
+      "venue": "Narrativa",
+      "venueNeighborhood": "Lisboa",
+      "dates": "Até 7 Nov",
+      "status": "ongoing",
+      "blurb": "Partindo da primeira fotografia de passaporte do pai, Keisha Scarville construiu ao longo de 14 anos mais de 300 reinterpretações da mesma imagem, distinguidas como Livro do Ano nos Encontros de Arles 2026. Uma reflexão poderosa sobre identidade, Estado e os mecanismos do olhar — imperdível para quem gosta de fotografia com pensamento.",
+      "criticSource": "Encontros de Arles 2026",
+      "criticQuote": "Livro do Ano nos Encontros de Arles 2026",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/arte/passports",
+      "tags": [
+        "fotografia",
+        "exposição",
+        "identidade"
+      ],
+      "aiScore": 86,
+      "featured": false,
+      "id": "evt-085"
+    },
+    {
+      "title": "Festival Política",
+      "category": "literatura",
+      "venue": "Junta de Freguesia de São Vicente",
+      "venueNeighborhood": "São Vicente",
+      "dates": "24–26 Set",
+      "status": "new",
+      "blurb": "Na sua 10.ª edição, o festival dedicado aos direitos humanos e à cidadania muda-se para São Vicente depois de perder o apoio camarário. Três dias de conversas, debates e cultura política que merecem ser defendidos justamente pela sua resiliência — uma das programações mais necessárias do outono lisboeta.",
+      "criticSource": "Time Out Lisboa",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/noticias/festival-politica-de-volta-em-setembro-muda-se-para-sao-vicente-090326",
+      "tags": [
+        "cidadania",
+        "debates",
+        "direitos humanos",
+        "festival"
+      ],
+      "aiScore": 84,
+      "featured": true,
+      "id": "evt-082"
+    },
+    {
+      "title": "Ciclo de Cinema Don't Look Back — 70 anos Gulbenkian",
+      "category": "artes-performativas",
+      "venue": "Grande Auditório da Fundação Calouste Gulbenkian",
+      "venueNeighborhood": "Avenidas Novas",
+      "dates": "Até 27 Set",
+      "status": "ongoing",
+      "blurb": "Nas comemorações dos 70 anos, a Gulbenkian transforma o Grande Auditório numa sala dedicada à música e às revoluções artísticas e sociais da segunda metade do século XX. Este é o último fim-de-semana — vale a pena apanhá-lo antes que feche.",
+      "criticSource": "Time Out Lisboa",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/filmes/ciclo-de-cinema-dont-look-back",
+      "tags": [
+        "cinema",
+        "música",
+        "ciclo",
+        "Gulbenkian"
+      ],
+      "aiScore": 82,
+      "featured": true,
+      "id": "evt-084"
+    },
+    {
+      "title": "Ty Segall",
+      "category": "musica-noite",
+      "venue": "LAV — Lisboa ao Vivo",
+      "venueNeighborhood": "Marvila",
+      "dates": "2026 (data a confirmar)",
+      "status": "new",
+      "blurb": "O californiano é uma máquina de discos e um dos guitarristas mais fervilhantes do rock de garagem e psicadélico contemporâneo — ao vivo, transforma-se numa força imparável. No LAV, com o seu som denso e a energia de quem nunca toca a mesma canção duas vezes da mesma maneira, promete ser dos concertos da temporada. Um daqueles nomes que qualquer melómano lisboeta atento não deve deixar escapar.",
+      "originalUrl": "https://feverup.com/m/519702",
+      "tags": [
+        "rock de garagem",
+        "psicadélico",
+        "ao vivo",
+        "internacional"
+      ],
+      "aiScore": 82,
+      "featured": false,
+      "id": "evt-161"
+    },
+    {
+      "title": "Fado na Típica de Alfama",
+      "category": "musica-noite",
+      "venue": "Típica de Alfama",
+      "venueNeighborhood": "Alfama",
+      "dates": "Semanal",
+      "status": "ongoing",
+      "time": "a partir das 22h30",
+      "price": "Gratuito",
+      "blurb": "Esqueça o 'fado dinner' para turistas: esta tasca-bar de Alfama é o oposto disso. O fado acontece quando os músicos chegam, sem hora marcada, entre gente das redondezas — espontaneidade e verdade, como o fado deve ser vivido.",
+      "criticSource": "Time Out Lisboa",
+      "criticQuote": "A espontaneidade é um dos grandes segredos da Típica de Alfama",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/coisas-para-fazer/gratis-em-lisboa-esta-semana",
+      "tags": [
+        "fado",
+        "autêntico",
+        "gratuito",
+        "Alfama"
+      ],
+      "aiScore": 81,
+      "featured": false,
+      "id": "evt-090"
+    },
+    {
+      "title": "\"Umbral Mineral\", de Antonio Guerra",
+      "category": "artes-visuais",
+      "venue": "Instituto Cervantes",
+      "venueNeighborhood": "Baixa",
+      "dates": "25 Set – 6 Nov",
+      "status": "new",
+      "blurb": "Inserida na bienal Mostra Espanha 2026, esta exposição percorre as feridas do território abertas pela mineração em Fabero, Riotinto e Covas do Barroso. Fotografia, escultura e instalação cruzam Espanha e Portugal num território ambientalmente urgente — arte que olha o subsolo e o que dele fazemos.",
+      "criticSource": "Time Out Lisboa",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/arte/umbral-mineral",
+      "tags": [
+        "exposição",
+        "instalação",
+        "ambiente",
+        "Mostra Espanha"
+      ],
+      "aiScore": 80,
+      "featured": false,
+      "id": "evt-086"
+    },
+    {
+      "title": "Jornadas Europeias do Património — \"Reviver, resistir, reinventar\"",
+      "category": "artes-visuais",
+      "venue": "Vários museus, palácios e monumentos",
+      "venueNeighborhood": "Vários",
+      "dates": "Até 27 Set",
+      "status": "ongoing",
+      "price": "Maioria gratuita",
+      "blurb": "Dezenas de iniciativas em museus, palácios e monumentos da cidade, muitas de entrada gratuita, sob o mote 'Reviver, resistir, reinventar'. A oportunidade anual de entrar em espaços habitualmente fechados e olhar Lisboa com outros olhos.",
+      "criticSource": "Time Out Lisboa",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/coisas-para-fazer/jornadas-europeias-do-patrimonio",
+      "tags": [
+        "património",
+        "gratuito",
+        "museus",
+        "visitas"
+      ],
+      "aiScore": 78,
+      "featured": false,
+      "id": "evt-091"
+    },
+    {
+      "title": "\"Invocar o Silêncio. Equilíbrios Bioculturais\" — O Museu Convida… Indonésia",
+      "category": "artes-visuais",
+      "venue": "Museu do Oriente",
+      "venueNeighborhood": "Alcântara",
+      "dates": "Até 27 Set",
+      "status": "ongoing",
+      "blurb": "O Museu do Oriente abre uma janela para os rituais e tradições ancestrais da Indonésia, onde quotidiano, espiritualidade e natureza se entrelaçam. Uma exposição que convida à contemplação e a repensar a relação entre comunidade e mundo natural — nos seus últimos dias.",
+      "criticSource": "Time Out Lisboa",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/coisas-para-fazer/o-museu-convida-indonesia",
+      "tags": [
+        "exposição",
+        "Indonésia",
+        "museu"
+      ],
+      "aiScore": 74,
+      "featured": false,
+      "id": "evt-087"
+    },
+    {
+      "title": "Festa do DocLisboa na Musa de Marvila",
+      "category": "musica-noite",
+      "venue": "Musa de Marvila",
+      "venueNeighborhood": "Marvila",
+      "dates": "26 Set",
+      "status": "new",
+      "blurb": "Antes do festival de cinema documental arrancar, a festa já começa em Marvila com os DJs The Rolê, Didi e Firmeza a comandar a pista. Suor, dança e o espírito descontraído da Musa — o aperitivo perfeito para o DocLisboa.",
+      "criticSource": "Time Out Lisboa",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/coisas-para-fazer/gratis-em-lisboa-esta-semana",
+      "tags": [
+        "DJs",
+        "festa",
+        "DocLisboa",
+        "Marvila"
+      ],
+      "aiScore": 73,
+      "featured": false,
+      "id": "evt-089"
+    },
+    {
+      "title": "\"Motivos de Força Maior\", de Isa Toledo",
+      "category": "artes-visuais",
+      "venue": "Loja Mister Man (Rua dos Fanqueiros, 109)",
+      "venueNeighborhood": "Baixa",
+      "dates": "Até 10 Out",
+      "status": "ongoing",
+      "price": "Gratuito",
+      "blurb": "A artista e moradora da Baixa Isa Toledo comprou objectos em 25 lojas históricas do bairro e recombina-os semanalmente numa montra da Rua dos Fanqueiros. Uma investigação poética sobre o comércio que desaparece — arte pública que se vê da rua e faz pensar.",
+      "criticSource": "Time Out Lisboa",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/arte/motivos-de-forca-maior",
+      "tags": [
+        "arte pública",
+        "instalação",
+        "Baixa",
+        "gratuito"
+      ],
+      "aiScore": 72,
+      "featured": false,
+      "id": "evt-092"
+    },
+    {
+      "title": "Claquete — Ciclo de Cinema dedicado a Javier Bardem",
+      "category": "artes-performativas",
+      "venue": "Espaço Atmosfera M (Montepio)",
+      "venueNeighborhood": "Lisboa",
+      "dates": "Até 8 Out",
+      "status": "ongoing",
+      "time": "18h30 (quintas)",
+      "blurb": "A 6.ª edição do ciclo do Montepio dedica-se este ano ao actor espanhol Javier Bardem, com sessões semanais às quintas-feiras. Uma boa desculpa para revisitar a carreira de um dos grandes rostos do cinema ibérico numa sala intimista.",
+      "criticSource": "Time Out Lisboa",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/coisas-para-fazer/claquete-ciclo-de-cinema",
+      "tags": [
+        "cinema",
+        "ciclo",
+        "Javier Bardem"
+      ],
+      "aiScore": 70,
+      "featured": false,
+      "id": "evt-088"
+    },
+    {
+      "title": "\"O Lugar da Charneca\"",
+      "category": "artes-visuais",
+      "venue": "Charneca (freguesia de Santa Clara)",
+      "venueNeighborhood": "Santa Clara",
+      "dates": "Até 1 Nov",
+      "status": "ongoing",
+      "blurb": "Mais de 500 fotografias, documentos e testemunhos reconstroem a memória de um bairro contada pelos seus próprios moradores. Um exercício de história local que resgata festas, quotidianos e afectos — memória popular como forma de arte.",
+      "criticSource": "Time Out Lisboa",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/coisas-para-fazer/o-lugar-da-charneca",
+      "tags": [
+        "fotografia",
+        "memória",
+        "comunidade",
+        "exposição"
+      ],
+      "aiScore": 68,
+      "featured": false,
+      "id": "evt-093"
+    },
+    {
+      "title": "Concerto no LAV",
+      "category": "musica-noite",
+      "venue": "LAV - Lisboa Ao Vivo",
+      "venueNeighborhood": "Marvila",
+      "dates": "26 Set",
+      "status": "new",
+      "price": "Desde 26€",
+      "blurb": "O LAV continua a ser o farol de Marvila para quem quer música com pedigree fora do circuito mais óbvio da cidade. A programação desta noite de sábado é a única data verdadeiramente dentro da semana que merece a tua atenção — vale a viagem até à zona ribeirinha oriental, que anda a transformar-se na verdadeira frente cultural de Lisboa.",
+      "originalUrl": "https://feverup.com/m/620328",
+      "tags": [
+        "ao vivo",
+        "marvila",
+        "concerto"
+      ],
+      "aiScore": 68,
+      "featured": false,
+      "id": "evt-641"
+    },
+    {
+      "title": "Casa-Museu Amália Rodrigues",
+      "category": "musica-noite",
+      "venue": "Casa-Museu Amália Rodrigues",
+      "venueNeighborhood": "Lapa",
+      "dates": "Em exibição permanente",
+      "status": "ongoing",
+      "time": "10h–18h",
+      "price": "Desde 9€",
+      "blurb": "A casa onde viveu a maior voz do fado mantém-se um lugar de peregrinação genuína, longe das 'fado houses' para turistas. Os interiores preservados e o espólio pessoal contam a mulher por trás do mito. Uma visita obrigatória para quem quer perceber a alma da cidade sem folclore encenado.",
+      "originalUrl": "https://feverup.com/m/101650",
+      "tags": [
+        "fado",
+        "casa-museu",
+        "património",
+        "Amália"
+      ],
+      "aiScore": 68,
+      "featured": false,
+      "id": "evt-801"
+    },
+    {
+      "title": "Mi Casa ao vivo no LAV",
+      "category": "musica-noite",
+      "venue": "LAV — Lisboa Ao Vivo",
+      "venueNeighborhood": "Alcântara",
+      "dates": "26 Set",
+      "status": "new",
+      "price": "Desde 26€",
+      "blurb": "Os sul-africanos Mi Casa trazem o seu house soul e afropop ao LAV, num dos raros concertos desta semana com pergaminhos internacionais reais. O espaço de Alcântara é dos melhores da cidade para dança e groove, com som à altura. Se procuras uma noite de corpo em movimento sem cair no óbvio, é por aqui.",
+      "originalUrl": "https://feverup.com/m/620328",
+      "tags": [
+        "afropop",
+        "house",
+        "ao vivo"
+      ],
+      "aiScore": 62,
+      "featured": false,
+      "id": "evt-401"
+    },
+    {
+      "title": "Palácio Nacional da Ajuda",
+      "category": "artes-visuais",
+      "venue": "Palácio Nacional da Ajuda",
+      "venueNeighborhood": "Ajuda",
+      "dates": "Em exibição permanente",
+      "status": "ongoing",
+      "time": "10h–18h",
+      "price": "Desde 15€",
+      "blurb": "O último palácio real habitado em Portugal continua a ser um dos interiores mais impressionantes da cidade, das salas de aparato à coleção de artes decorativas. Com a nova ala do Tesouro Real inaugurada há pouco, ganhou fôlego renovado. Ideal para uma tarde de domingo com olhos atentos ao detalhe oitocentista.",
+      "originalUrl": "https://feverup.com/m/632427",
+      "tags": [
+        "palácio",
+        "artes decorativas",
+        "história",
+        "coleção real"
+      ],
+      "aiScore": 62,
+      "featured": false,
+      "id": "evt-802"
+    }
+  ]
+}
