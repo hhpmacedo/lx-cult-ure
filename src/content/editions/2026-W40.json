@@ -1,0 +1,308 @@
+{
+  "slug": "2026-W40",
+  "weekNumber": 40,
+  "year": 2026,
+  "dateRange": {
+    "start": "2026-09-28",
+    "end": "2026-10-04"
+  },
+  "introText": "A semana de arranque de Outubro traz o adeus a uma instituição — a Galeria Vera Cortês despede-se com uma última vernissage que é obrigatória para quem acompanha a arte contemporânea na cidade. Nas paredes, a fotografia domina o momento: de Eikoh Hosoe na Ochre à premiada série 'Passports' na Narrativa, há material de sobra para alimentar conversas. Do lado da música, o Lisboa Mistura regressa ao Palácio Pimenta com o seu caldeirão de sons crioulos, enquanto o MAAT celebra dez anos de portas abertas e Pedro Cabrita Reis instalado na Galeria Oval. E, entre alfarrabistas e casas com história, a Casa da Achada faz 17 anos a lembrar-nos que a cultura de bairro ainda resiste no centro.",
+  "publishedAt": "2026-09-30T12:01:11.488Z",
+  "events": [
+    {
+      "title": "'The Perfect Ground', de Béatrice Balcou — a última exposição da Vera Cortês",
+      "category": "artes-visuais",
+      "venue": "Galeria Vera Cortês",
+      "venueNeighborhood": "Avenidas Novas",
+      "dates": "1 Out – 19 Dez",
+      "status": "new",
+      "time": "Vernissage quinta às 18h",
+      "price": "Gratuito",
+      "blurb": "É o fim de uma era: a Vera Cortês, uma das galerias mais respeitadas do país, ocupa os seus últimos três meses de vida com a francesa Béatrice Balcou, conhecida pelas performances e por uma escultura de gesto contido e ritual. Ir à vernissage desta quinta é mais do que ver arte — é assistir ao encerramento de um capítulo essencial da arte contemporânea em Lisboa.",
+      "criticSource": "Time Out Lisboa",
+      "criticQuote": "A última vernissage de uma \"instituição\" no panorama da arte contemporânea em Lisboa e no país.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/arte/the-perfect-ground",
+      "tags": [
+        "arte contemporânea",
+        "performance",
+        "escultura",
+        "despedida"
+      ],
+      "aiScore": 94,
+      "featured": true,
+      "id": "evt-081"
+    },
+    {
+      "title": "'Kamaitachi', de Eikoh Hosoe",
+      "category": "artes-visuais",
+      "venue": "Galeria Ochre",
+      "venueNeighborhood": "Lisboa",
+      "dates": "30 Set – 24 Out",
+      "status": "new",
+      "price": "Gratuito",
+      "blurb": "Nome incontornável da fotografia japonesa, Eikoh Hosoe (1933–2024) leva-nos aos campos do Norte do Japão numa colaboração lendária com Tatsumi Hijikata, fundador do butoh. Corpo, ritual e paisagem fundem-se numa das séries mais poderosas do século XX — uma raridade absoluta poder vê-la em Lisboa.",
+      "criticSource": "Time Out Lisboa",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/arte/kamaitachi-de-eikoh-hosoe",
+      "tags": [
+        "fotografia",
+        "butoh",
+        "Japão",
+        "clássico"
+      ],
+      "aiScore": 90,
+      "featured": false,
+      "id": "evt-082"
+    },
+    {
+      "title": "'Com o coração livre de cuidados', de Pedro Cabrita Reis",
+      "category": "artes-visuais",
+      "venue": "MAAT",
+      "venueNeighborhood": "Belém",
+      "dates": "Até 15 Fev 2027",
+      "status": "ongoing",
+      "price": "Consultar bilheteira",
+      "blurb": "Um dos artistas portugueses mais internacionais ocupa a Galeria Oval do MAAT com quase 200 obras, na sua maioria inéditas, sob curadoria de João Pinharanda. Pintura, escultura e instalação numa exposição-marco das comemorações dos dez anos do museu.",
+      "criticSource": "Time Out Lisboa",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/arte/com-o-coracao-livre-de-cuidados",
+      "tags": [
+        "pintura",
+        "instalação",
+        "arte portuguesa"
+      ],
+      "aiScore": 88,
+      "featured": false,
+      "id": "evt-084"
+    },
+    {
+      "title": "Lisboa Mistura & Festas na Rua",
+      "category": "musica-noite",
+      "venue": "Palácio Pimenta",
+      "venueNeighborhood": "Campo Grande",
+      "dates": "3–4 Out",
+      "status": "new",
+      "price": "Gratuito",
+      "blurb": "O festival que melhor traduz a Lisboa mestiça regressa com Mayra Andrade, Valete, Karetus e Stereossauro num caldeirão de sons crioulos, hip-hop e eletrónica. No sábado, a associação Mundu Nôbu abre o palco a novos talentos com convidados como Bárbara Bandeira e Bateu Matou. Programação gratuita e genuinamente local.",
+      "criticSource": "Time Out Lisboa",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/musica/lisboa-mistura",
+      "tags": [
+        "world music",
+        "hip-hop",
+        "gratuito",
+        "festival"
+      ],
+      "aiScore": 87,
+      "featured": true,
+      "id": "evt-085"
+    },
+    {
+      "title": "'Passports', de Keisha Scarville",
+      "category": "artes-visuais",
+      "venue": "Galeria Narrativa",
+      "venueNeighborhood": "Lisboa",
+      "dates": "Até 7 Nov",
+      "status": "ongoing",
+      "price": "Gratuito",
+      "blurb": "A partir da primeira fotografia de passaporte do pai, Keisha Scarville construiu mais de 300 reinterpretações da mesma imagem, num trabalho de 14 anos sobre identidade, Estado e vigilância. Distinguido como Livro do Ano nos Encontros de Arles 2026 — vale a pena, e muito.",
+      "criticSource": "Encontros de Arles 2026",
+      "criticQuote": "Livro do Ano nos Encontros de Arles 2026.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/arte/passports",
+      "tags": [
+        "fotografia",
+        "identidade",
+        "premiado"
+      ],
+      "aiScore": 85,
+      "featured": false,
+      "id": "evt-083"
+    },
+    {
+      "title": "Aniversário do MAAT — 10 anos",
+      "category": "artes-visuais",
+      "venue": "MAAT",
+      "venueNeighborhood": "Belém",
+      "dates": "4–5 Out",
+      "status": "new",
+      "price": "Gratuito",
+      "blurb": "O MAAT faz dez anos e abre as portas de graça a todas as exposições durante dois dias — e não são poucas. O programa inclui visitas guiadas, oficinas (com os Teatro Praga a assinar 'Estas obras MAATam-me!') e até uma performance de ópera. Uma boa desculpa para revisitar o museu ribeirinho.",
+      "criticSource": "Time Out Lisboa",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/coisas-para-fazer/5-aniversario-do-maat",
+      "tags": [
+        "museu",
+        "gratuito",
+        "ópera",
+        "performance"
+      ],
+      "aiScore": 80,
+      "featured": false,
+      "id": "evt-087"
+    },
+    {
+      "title": "Festa de aniversário da Casa da Achada",
+      "category": "literatura",
+      "venue": "Casa da Achada — Centro Mário Dionísio",
+      "venueNeighborhood": "Mouraria",
+      "dates": "Sábado e domingo",
+      "status": "new",
+      "price": "Gratuito",
+      "blurb": "São 17 anos a semear literatura, música, cinema e debate no coração da cidade, e o aniversário celebra-se com dois dias de festa. Inaugura-se ainda a exposição de fotografias reencontradas de Giuseppe Morandi — um daqueles espaços que provam que a cultura de resistência ainda tem casa em Lisboa.",
+      "criticSource": "Time Out Lisboa",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/coisas-para-fazer/gratis-em-lisboa-esta-semana",
+      "tags": [
+        "literatura",
+        "comunidade",
+        "gratuito",
+        "fotografia"
+      ],
+      "aiScore": 78,
+      "featured": true,
+      "id": "evt-086"
+    },
+    {
+      "title": "Fontaines D.C. + Jungle — concertos de Outubro",
+      "category": "musica-noite",
+      "venue": "Várias salas",
+      "venueNeighborhood": "Lisboa",
+      "dates": "Outubro",
+      "status": "new",
+      "price": "Consultar bilheteira",
+      "blurb": "O mês arranca em grande na frente dos concertos: os irlandeses Fontaines D.C., em estado de graça criativa, e os britânicos Jungle, com o seu neo-soul dançável, encabeçam uma agenda que promete encher salas. Comprem bilhetes com antecedência.",
+      "criticSource": "Time Out Lisboa",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/musica/concertos-em-lisboa-em-janeiro",
+      "tags": [
+        "rock",
+        "indie",
+        "concertos",
+        "ao vivo"
+      ],
+      "aiScore": 76,
+      "featured": false,
+      "id": "evt-093"
+    },
+    {
+      "title": "'Umbral Mineral', de Antonio Guerra",
+      "category": "artes-visuais",
+      "venue": "Instituto Cervantes",
+      "venueNeighborhood": "Baixa",
+      "dates": "Até 6 Nov",
+      "status": "ongoing",
+      "price": "Gratuito",
+      "blurb": "Integrada na bienal Mostra Espanha 2026, a exposição de Antonio Guerra cruza fotografia, escultura e instalação para pensar as feridas que a mineração deixa no território — de Fabero a Riotinto e às contestadas Covas do Barroso. Uma reflexão ecológica oportuna e bem construída.",
+      "criticSource": "Time Out Lisboa",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/arte/umbral-mineral",
+      "tags": [
+        "fotografia",
+        "instalação",
+        "território",
+        "ecologia"
+      ],
+      "aiScore": 74,
+      "featured": false,
+      "id": "evt-088"
+    },
+    {
+      "title": "'Motivos de Força Maior', de Isa Toledo",
+      "category": "artes-visuais",
+      "venue": "Loja Mister Man (Rua dos Fanqueiros, 109)",
+      "venueNeighborhood": "Baixa",
+      "dates": "Até 10 Out",
+      "status": "ongoing",
+      "price": "Gratuito",
+      "blurb": "Uma investigação poética sobre o comércio histórico da Baixa: a artista e moradora Isa Toledo comprou objectos em 25 lojas da zona e, semana a semana, emparelha-os em montra criando peças novas. Arte pública subtil que nos faz olhar de outra forma para a rua que atravessamos distraídos.",
+      "criticSource": "Time Out Lisboa",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/arte/motivos-de-forca-maior",
+      "tags": [
+        "arte pública",
+        "instalação",
+        "Baixa",
+        "memória"
+      ],
+      "aiScore": 70,
+      "featured": false,
+      "id": "evt-090"
+    },
+    {
+      "title": "Claquete — Ciclo de Cinema dedicado a Javier Bardem",
+      "category": "artes-performativas",
+      "venue": "Espaço Atmosfera M",
+      "venueNeighborhood": "Lisboa",
+      "dates": "Até 8 Out",
+      "status": "ongoing",
+      "time": "Quintas às 18h30",
+      "price": "Consultar",
+      "blurb": "A 6.ª edição deste ciclo do Montepio dedica o cartaz ao intenso Javier Bardem, com sessões semanais à quinta-feira. Para quem gosta de cinema com curadoria e sala escura à moda antiga, uma alternativa discreta às estreias comerciais.",
+      "criticSource": "Time Out Lisboa",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/coisas-para-fazer/claquete-ciclo-de-cinema",
+      "tags": [
+        "cinema",
+        "ciclo",
+        "Javier Bardem"
+      ],
+      "aiScore": 68,
+      "featured": true,
+      "id": "evt-089"
+    },
+    {
+      "title": "'Portões que Falam — A Mitra de Lisboa'",
+      "category": "artes-visuais",
+      "venue": "Antigo Albergue da Mitra",
+      "venueNeighborhood": "Marvila",
+      "dates": "Até 22 Dez",
+      "status": "ongoing",
+      "time": "Sex–Dom",
+      "price": "Gratuito",
+      "blurb": "Objectos, fotografias e documentos contam quase um século do antigo Albergue da Mitra, um dos equipamentos sociais mais marcantes da história da cidade. Um mergulho na memória social de Lisboa que raramente entra nos roteiros oficiais.",
+      "criticSource": "Time Out Lisboa",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/coisas-para-fazer/portoes-que-falam-a-mitra-de-lisboa",
+      "tags": [
+        "memória",
+        "história",
+        "fotografia",
+        "gratuito"
+      ],
+      "aiScore": 66,
+      "featured": false,
+      "id": "evt-091"
+    },
+    {
+      "title": "'O Lugar da Charneca'",
+      "category": "artes-visuais",
+      "venue": "Charneca (freguesia de Santa Clara)",
+      "venueNeighborhood": "Santa Clara",
+      "dates": "Até 1 Nov",
+      "status": "ongoing",
+      "price": "Gratuito",
+      "blurb": "Mais de 500 fotografias, documentos e testemunhos de antigos e actuais moradores para contar a história e a memória de um bairro à margem dos circuitos. Um exercício de memória popular que merece a viagem até à periferia.",
+      "criticSource": "Time Out Lisboa",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/coisas-para-fazer/o-lugar-da-charneca",
+      "tags": [
+        "memória",
+        "fotografia",
+        "comunidade",
+        "gratuito"
+      ],
+      "aiScore": 62,
+      "featured": false,
+      "id": "evt-092"
+    },
+    {
+      "title": "Casa-Museu Amália Rodrigues",
+      "category": "musica-noite",
+      "venue": "Casa-Museu Amália Rodrigues",
+      "venueNeighborhood": "São Bento",
+      "dates": "Permanente",
+      "status": "ongoing",
+      "price": "Desde 9€",
+      "blurb": "A casa da Rua de São Bento onde a maior voz do fado viveu meio século permanece um dos lugares mais comoventes da cidade. Não é uma 'experiência de fado para turistas' — é o espólio íntimo de Amália, dos vestidos aos manuscritos, guardado tal como ela o deixou. Vale a visita justamente por resistir à espetacularização.",
+      "originalUrl": "https://feverup.com/m/101650",
+      "tags": [
+        "fado",
+        "museu",
+        "Amália",
+        "memória"
+      ],
+      "aiScore": 62,
+      "featured": false,
+      "id": "evt-801"
+    }
+  ]
+}
