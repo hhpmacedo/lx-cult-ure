@@ -1,0 +1,341 @@
+{
+  "slug": "2026-W41",
+  "weekNumber": 41,
+  "year": 2026,
+  "dateRange": {
+    "start": "2026-10-05",
+    "end": "2026-10-11"
+  },
+  "introText": "Entrou Outubro e com ele a rentrée cultural em pleno — a cidade respira castanhas, chuva anunciada e uma agenda que não dá tréguas. É uma semana de festivais em cadeia: Os Dias de Marvila levam teatro e performance aos bairros da freguesia sob o mote da Liberdade e Democracia, enquanto o MIL transforma a Casa Capitão num laboratório de conversas e concertos sobre o futuro da música. Nas galerias, a fotografia reina — de Keisha Scarville, premiada em Arles, à viagem butoh de Eikoh Hosoe — e há cinema de borla, aniversários de livrarias e o arranque de um festival sobre ética no Beato. Muito para ver, pouco para pagar.",
+  "publishedAt": "2026-10-07T12:45:55.631Z",
+  "events": [
+    {
+      "title": "MIL – Lisbon International Music Network",
+      "category": "musica-noite",
+      "venue": "Casa Capitão",
+      "venueNeighborhood": "Beato",
+      "dates": "Até 10 Out",
+      "status": "ongoing",
+      "price": "Convenção gratuita (c/ inscrição); concertos pagos",
+      "blurb": "Sob o lema provocador \"NO FAKES\", o MIL volta a ser o ponto de encontro onde a indústria da música se pensa a si própria — mais de 58 projectos, de B Fachada aos Duques do Precariado, entre conversas densas e descobertas sonoras. É dos poucos festivais que combina rigor de pensamento com bom gosto de cartaz. A Convenção é de acesso livre mediante inscrição, por isso não há desculpa.",
+      "criticSource": "Time Out Lisboa",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/musica/mil-lisbon-international-music-network",
+      "tags": [
+        "música",
+        "indústria",
+        "conferência",
+        "concertos"
+      ],
+      "aiScore": 90,
+      "featured": true,
+      "id": "evt-081"
+    },
+    {
+      "title": "\"Passports\", de Keisha Scarville, na Narrativa",
+      "category": "artes-visuais",
+      "venue": "Narrativa",
+      "venueNeighborhood": "Lisboa",
+      "dates": "Até 7 Nov",
+      "status": "ongoing",
+      "blurb": "A partir da primeira fotografia de passaporte do pai, Keisha Scarville construiu ao longo de 14 anos mais de 300 reinterpretações da mesma imagem — uma meditação inesgotável sobre identidade, Estado e pertença. Distinguido como Livro do Ano nos Encontros de Arles 2026, é um trabalho que arrepia pela persistência conceptual. Imperdível para quem leva fotografia a sério.",
+      "criticSource": "Encontros de Arles 2026 (Livro do Ano)",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/arte/passports",
+      "tags": [
+        "fotografia",
+        "identidade",
+        "exposição",
+        "premiado"
+      ],
+      "aiScore": 88,
+      "featured": true,
+      "id": "evt-083"
+    },
+    {
+      "title": "Os Dias de Marvila",
+      "category": "artes-performativas",
+      "venue": "Biblioteca de Marvila e vários espaços",
+      "venueNeighborhood": "Marvila",
+      "dates": "Até 11 Out",
+      "status": "ongoing",
+      "price": "Gratuito",
+      "blurb": "Teatro, música, dança e performance espalhados pelos bairros de Marvila, com epicentro na biblioteca e o tema Liberdade e Democracia a atravessar tudo. É o tipo de festival de proximidade e participação comunitária que faz a cidade acontecer longe dos circuitos óbvios. De borla e com alma — exactamente como deve ser.",
+      "criticSource": "Time Out Lisboa",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/coisas-para-fazer/os-dias-de-marvila-1",
+      "tags": [
+        "festival",
+        "artes performativas",
+        "comunidade",
+        "gratuito"
+      ],
+      "aiScore": 85,
+      "featured": true,
+      "id": "evt-082"
+    },
+    {
+      "title": "\"Kamaitachi\", de Eikoh Hosoe, na Ochre",
+      "category": "artes-visuais",
+      "venue": "Galeria Ochre",
+      "venueNeighborhood": "Lisboa",
+      "dates": "Até 24 Out",
+      "status": "ongoing",
+      "blurb": "Uma viagem pelos campos e aldeias do Norte do Japão através do olhar magistral de Eikoh Hosoe, em colaboração com Tatsumi Hijikata, figura fundadora do butoh. As imagens habitam a fronteira entre a paisagem e o corpo, entre o documento e o ritual. Fotografia japonesa do mais alto calibre, raramente vista por cá.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/arte/kamaitachi-de-eikoh-hosoe",
+      "tags": [
+        "fotografia",
+        "butoh",
+        "Japão",
+        "exposição"
+      ],
+      "aiScore": 84,
+      "featured": false,
+      "id": "evt-085"
+    },
+    {
+      "title": "\"The Perfect Ground\", de Béatrice Balcou, na Vera Cortês",
+      "category": "artes-visuais",
+      "venue": "Galeria Vera Cortês",
+      "venueNeighborhood": "Alvalade",
+      "dates": "Até 19 Dez",
+      "status": "ongoing",
+      "blurb": "A francesa Béatrice Balcou transforma o manuseamento e o cuidado das obras de arte num ritual quase litúrgico, numa prática que atravessa performance, escultura e instalação. Com obras em colecções como a do Pompidou, é das propostas mais refinadas em cena nas galerias lisboetas. Arte sobre a própria arte, feita com delicadeza rara.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/arte/the-perfect-ground",
+      "tags": [
+        "instalação",
+        "performance",
+        "galeria",
+        "escultura"
+      ],
+      "aiScore": 80,
+      "featured": false,
+      "id": "evt-086"
+    },
+    {
+      "title": "Exposições na Gulbenkian (entrada gratuita aos domingos)",
+      "category": "artes-visuais",
+      "venue": "Fundação Calouste Gulbenkian",
+      "venueNeighborhood": "Avenidas Novas",
+      "dates": "Domingos, a partir das 14h",
+      "status": "ongoing",
+      "time": "14h–",
+      "price": "Gratuito (domingos a partir das 14h)",
+      "blurb": "Aos domingos à tarde a Gulbenkian abre portas de borla, e vale bem a pena: \"Xerazade – A Colecção Interminável do CAM\", o \"Diogo Pimentão. Força Transitória das Coisas\" na Sala de Desenho e \"Gulbenkian, 70 anos em cartaz\" estão todas em cena. Uma das melhores programações de artes visuais do país, acessível a quem souber escolher a hora. Não há desculpa para não ir.",
+      "criticSource": "Time Out Lisboa",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/coisas-para-fazer/gratis-em-lisboa-esta-semana",
+      "tags": [
+        "museu",
+        "exposições",
+        "desenho",
+        "gratuito"
+      ],
+      "aiScore": 79,
+      "featured": false,
+      "id": "evt-093"
+    },
+    {
+      "title": "Aniversário da It's a Book, nos Anjos",
+      "category": "literatura",
+      "venue": "It's a Book",
+      "venueNeighborhood": "Anjos",
+      "dates": "10 Out",
+      "status": "new",
+      "time": "14h–20h",
+      "price": "Gratuito",
+      "blurb": "A livraria-refúgio dedicada à ilustração e à literatura infanto-juvenil faz dez anos e celebra com a Rua Forno do Tijolo cortada ao trânsito. Música, lanche e oficina aberta a todos, num bairro que se tem reinventado culturalmente. Um ponto de encontro de uma comunidade que resiste ao algoritmo com páginas de papel.",
+      "criticSource": "Time Out Lisboa",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/miudos/aniversario-da-its-a-book",
+      "tags": [
+        "livraria",
+        "ilustração",
+        "aniversário",
+        "gratuito"
+      ],
+      "aiScore": 78,
+      "featured": true,
+      "id": "evt-084"
+    },
+    {
+      "title": "MFA – Mostra de Fotografia e Autores",
+      "category": "artes-visuais",
+      "venue": "Vários espaços (Jardins do Bombarda, Pavilhões da Mitra, Mercado da Ribeira)",
+      "venueNeighborhood": "Vários",
+      "dates": "Até 31 Dez",
+      "status": "ongoing",
+      "blurb": "Uma mostra de larga escala dispersa por vários pontos da cidade, com destaque para a retrospectiva de Céu Guarda, \"Algarve 63\" de Tim Motion e \"Guerra com Gente Dentro\". É um percurso fotográfico que vale a pena fazer a pé, galeria a galeria, mercado a mercado. Memória e autoria em diálogo, para toda a cidade ver.",
+      "criticSource": "Time Out Lisboa",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/arte/20-exposicoes-da-mostra-de-fotografia-e-autores-mfa-lisboa",
+      "tags": [
+        "fotografia",
+        "mostra",
+        "autores",
+        "percurso"
+      ],
+      "aiScore": 77,
+      "featured": false,
+      "id": "evt-088"
+    },
+    {
+      "title": "\"Umbral Mineral\", de Antonio Guerra, no Instituto Cervantes",
+      "category": "artes-visuais",
+      "venue": "Instituto Cervantes",
+      "venueNeighborhood": "Lisboa",
+      "dates": "Até 6 Nov",
+      "status": "ongoing",
+      "blurb": "Inserida na Mostra Espanha 2026, esta exposição de Antonio Guerra cruza fotografia, escultura e instalação para pensar as cicatrizes que a mineração deixa no território — de Riotinto a Covas do Barroso. Um tema urgentíssimo, tratado com inteligência geográfica e peso político. Arte que nos faz olhar o chão com outros olhos.",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/arte/umbral-mineral",
+      "tags": [
+        "fotografia",
+        "território",
+        "ambiente",
+        "exposição"
+      ],
+      "aiScore": 76,
+      "featured": false,
+      "id": "evt-087"
+    },
+    {
+      "title": "Shortcutz Lisboa, na Cossoul",
+      "category": "artes-performativas",
+      "venue": "Cossoul",
+      "venueNeighborhood": "Santos",
+      "dates": "Sessões semanais (terças)",
+      "status": "ongoing",
+      "price": "Gratuito",
+      "blurb": "Regressam as curtas-metragens à Cossoul, com \"Quietness\" de Gonçalo Almeida e \"A Cada Dia que Passa\" de Emanuel Nevado em competição, e \"A Praia\" de Pedro Neves como convidada sugerida pelo Doclisboa. Desde 2010 que o Shortcutz é a montra do cinema português emergente em Lisboa. Semanal, gratuito e sempre com conversa depois — a forma ideal de descobrir novos realizadores.",
+      "criticSource": "Time Out Lisboa",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/filmes/shortcutz-lisboa",
+      "tags": [
+        "cinema",
+        "curtas",
+        "português",
+        "gratuito"
+      ],
+      "aiScore": 75,
+      "featured": false,
+      "id": "evt-089"
+    },
+    {
+      "title": "Festival Impacto",
+      "category": "literatura",
+      "venue": "Fábrica de Unicórnios do Beato / Casa do Jardim da Estrela",
+      "venueNeighborhood": "Beato",
+      "dates": "10–31 Out",
+      "status": "new",
+      "blurb": "Com a \"ética\" como tema central, o Festival Impacto põe-nos a pensar os dilemas do nosso tempo — política, ambiente, justiça, tecnologia e direitos humanos — através de conversas e encontros. É o tipo de programação que troca o espectáculo pelo debate sério, e ainda bem que há quem o faça. Para cabeças inquietas.",
+      "criticSource": "Time Out Lisboa",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/coisas-para-fazer/festival-impacto",
+      "tags": [
+        "conversas",
+        "ética",
+        "festival",
+        "ideias"
+      ],
+      "aiScore": 72,
+      "featured": false,
+      "id": "evt-091"
+    },
+    {
+      "title": "Casa-Museu Amália Rodrigues",
+      "category": "musica-noite",
+      "venue": "Casa-Museu Amália Rodrigues",
+      "venueNeighborhood": "São Bento",
+      "dates": "Visitável (permanente)",
+      "status": "ongoing",
+      "time": "10h–18h",
+      "price": "Desde 9€",
+      "blurb": "A casa onde Amália viveu quase meio século continua intacta, com os seus xailes, retratos e o piano de sempre — não é um museu de vitrines, é uma casa que ainda respira a diva. Para qualquer lisboeta que leve o fado a sério, é visita incontornável, de preferência sem a multidão dos autocarros turísticos. Vai a meio da semana, de manhã, e tem a casa quase só para ti.",
+      "originalUrl": "https://feverup.com/m/101650",
+      "tags": [
+        "fado",
+        "amália",
+        "casa-museu",
+        "património"
+      ],
+      "aiScore": 72,
+      "featured": false,
+      "id": "evt-1201"
+    },
+    {
+      "title": "Claquete – Ciclo de Cinema (dedicado a Javier Bardem)",
+      "category": "artes-performativas",
+      "venue": "atmosfera m",
+      "venueNeighborhood": "Lisboa",
+      "dates": "Até 8 Out",
+      "status": "ongoing",
+      "time": "18h30",
+      "price": "Gratuito (c/ inscrição)",
+      "blurb": "A última sessão deste ciclo dedicado a Javier Bardem fecha com \"Todos Sabem\" (2018), o thriller familiar de Asghar Farhadi filmado em Espanha. Cinema de autor num espaço íntimo, com entrada gratuita mediante inscrição. Uma boa desculpa para ver (ou rever) um dos grandes dramas do iraniano.",
+      "criticSource": "Time Out Lisboa",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/coisas-para-fazer/claquete-ciclo-de-cinema",
+      "tags": [
+        "cinema",
+        "ciclo",
+        "Farhadi",
+        "gratuito"
+      ],
+      "aiScore": 70,
+      "featured": false,
+      "id": "evt-090"
+    },
+    {
+      "title": "\"Motivos de Força Maior\", de Isa Toledo, na Baixa",
+      "category": "artes-visuais",
+      "venue": "Loja Mister Man (Rua dos Fanqueiros, 109)",
+      "venueNeighborhood": "Baixa",
+      "dates": "Até 10 Out",
+      "status": "ongoing",
+      "price": "Gratuito",
+      "blurb": "A artista e moradora da Baixa Isa Toledo comprou objectos em 25 lojas históricas da zona e, semana a semana, emparelha-os numa montra que se reinventa — uma investigação poética sobre o comércio e a memória da cidade. Arte pública subtil, feita à escala de uma vitrina na Rua dos Fanqueiros. É preciso andar devagar para a ver.",
+      "criticSource": "Time Out Lisboa",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/arte/motivos-de-forca-maior",
+      "tags": [
+        "arte pública",
+        "instalação",
+        "Baixa",
+        "gratuito"
+      ],
+      "aiScore": 68,
+      "featured": false,
+      "id": "evt-092"
+    },
+    {
+      "title": "O Lugar da Charneca",
+      "category": "artes-visuais",
+      "venue": "Charneca (freguesia de Santa Clara)",
+      "venueNeighborhood": "Santa Clara",
+      "dates": "Até 1 Nov",
+      "status": "ongoing",
+      "blurb": "Mais de 500 fotografias, documentos e testemunhos reunidos para contar a história e a memória de um bairro, pela voz dos seus moradores — antigos e actuais. É arquivo vivo, etnografia afectiva, memória de bairro transformada em exposição. Um daqueles projectos que só a periferia da cidade sabe fazer com esta verdade.",
+      "criticSource": "Time Out Lisboa",
+      "originalUrl": "https://www.timeout.pt/lisboa/pt/coisas-para-fazer/o-lugar-da-charneca",
+      "tags": [
+        "fotografia",
+        "memória",
+        "comunidade",
+        "arquivo"
+      ],
+      "aiScore": 67,
+      "featured": false,
+      "id": "evt-094"
+    },
+    {
+      "title": "Mosteiro dos Jerónimos — Visita",
+      "category": "artes-visuais",
+      "venue": "Mosteiro dos Jerónimos",
+      "venueNeighborhood": "Belém",
+      "dates": "Até 30 Dez",
+      "status": "new",
+      "price": "Desde 12,50€",
+      "blurb": "Sim, é o postal de Lisboa — mas o claustro manuelino continua a ser uma das obras-primas absolutas da arquitetura portuguesa, e revê-lo com calma fora da época alta é um privilégio de lisboeta. Vá cedo, antes das filas, e deixe-se perder na pedra rendilhada. Clássico por boas razões.",
+      "originalUrl": "https://feverup.com/m/113633",
+      "tags": [
+        "património",
+        "manuelino",
+        "arquitetura",
+        "Belém"
+      ],
+      "aiScore": 62,
+      "featured": false,
+      "id": "evt-641"
+    }
+  ]
+}
